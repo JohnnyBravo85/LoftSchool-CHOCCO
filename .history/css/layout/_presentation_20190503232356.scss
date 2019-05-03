@@ -13,18 +13,18 @@ $white: #fff;
 }
 
 .marketing-sector {
-  padding-top: 21.28%;
-  margin-bottom: 15.32%;
+  padding-top: rem(100px);
+  margin-bottom: rem(72px);
   &__title {
-    margin-bottom: 4.68%;
+    margin-bottom: rem(22px);
     line-height: 1;
     font-size: 3.75em;
     font-weight: 700;
     text-transform: uppercase;
   }
   &__description {
-    width: 72.55%;
-    margin-bottom: 6.81%;
+    max-width: 75%;
+    margin-bottom: rem(32px);
     font-size: 1.32em;
   }
 }
@@ -36,8 +36,12 @@ $white: #fff;
 
 .marketing-list__item {
   display: flex;
+  max-width: 33%;
   .marketing-list__img {
     margin-right: rem(9.3px);
+  }
+  &:last-child {
+    margin: 0;
   }
 }
 

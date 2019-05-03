@@ -23,8 +23,8 @@ $white: #fff;
     text-transform: uppercase;
   }
   &__description {
-    width: 72.55%;
-    margin-bottom: 6.81%;
+    max-width: 72.55%;
+    margin-bottom: rem(32px);
     font-size: 1.32em;
   }
 }

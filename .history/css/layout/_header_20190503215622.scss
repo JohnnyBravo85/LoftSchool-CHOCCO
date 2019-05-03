@@ -18,14 +18,19 @@
 .header__nav {
   display: flex;
   flex: 1;
-  padding: 0 4.79%;
+  justify-content: space-between;
 }
 
 .сompany-list {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   font-size: 1.125em;
+  &__item {
+    margin-right: 6%;
+    &:last-child {
+      margin: 0;
+      }
+  }
   &__link {
     color: inherit;
   }

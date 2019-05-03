@@ -4,7 +4,7 @@ $white: #fff;
 .presentation {
   padding-bottom: rem(46px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   &__block {
     width: 50%;
     display: flex;
@@ -13,31 +13,35 @@ $white: #fff;
 }
 
 .marketing-sector {
-  padding-top: 21.28%;
-  margin-bottom: 15.32%;
+  padding-top: rem(100px);
+  margin-bottom: rem(72px);
   &__title {
-    margin-bottom: 4.68%;
+    margin-bottom: rem(22px);
     line-height: 1;
     font-size: 3.75em;
     font-weight: 700;
     text-transform: uppercase;
   }
   &__description {
-    width: 72.55%;
-    margin-bottom: 6.81%;
+    max-width: 75%;
+    margin-bottom: rem(32px);
     font-size: 1.32em;
   }
 }
 
 .marketing-list {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .marketing-list__item {
   display: flex;
+  max-width: 33%;
   .marketing-list__img {
     margin-right: rem(9.3px);
+  }
+  &:last-child {
+    margin: 0;
   }
 }
 
@@ -47,10 +51,10 @@ $white: #fff;
 }
 
 .candy-bars {
-  width: 54%;
-  margin-right: -5.5%;
+  max-width: 55%;
+  margin-right: -8.6%;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: flex-start;
   &__pic {
     position: relative;

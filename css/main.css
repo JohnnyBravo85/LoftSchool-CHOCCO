@@ -377,12 +377,16 @@ button {
   .logo__link {
     color: inherit; }
 
+.header__nav {
+  display: flex;
+  flex: 1;
+  padding: 0 4.79%; }
+
 .сompany-list {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   font-size: 1.125em; }
-  .сompany-list__item:last-child {
-    margin: 0; }
   .сompany-list__link {
     color: inherit; }
 
@@ -403,43 +407,40 @@ button {
   display: flex;
   justify-content: space-between; }
   .presentation__block {
-    max-width: 55%;
+    width: 50%;
     display: flex;
     flex-flow: column; }
 
 .marketing-sector {
-  padding-top: 6.25rem;
-  margin-bottom: 4.5rem; }
+  padding-top: 21.28%;
+  margin-bottom: 15.32%; }
   .marketing-sector__title {
-    margin-bottom: 1.375rem;
+    margin-bottom: 4.68%;
     line-height: 1;
     font-size: 3.75em;
     font-weight: 700;
     text-transform: uppercase; }
   .marketing-sector__description {
-    max-width: 75%;
-    margin-bottom: 2rem;
+    width: 72.55%;
+    margin-bottom: 6.81%;
     font-size: 1.32em; }
 
 .marketing-list {
   display: flex;
-  width: 100%; }
+  justify-content: space-between; }
 
 .marketing-list__item {
-  display: flex;
-  max-width: 33%; }
+  display: flex; }
   .marketing-list__item .marketing-list__img {
     margin-right: 0.58125rem; }
-  .marketing-list__item:last-child {
-    margin: 0; }
 
 .marketing-list__text {
   max-width: 50%;
   font-size: 1em; }
 
 .candy-bars {
-  max-width: 60%;
-  margin-right: -8.6%;
+  width: 54%;
+  margin-right: -5.5%;
   display: flex;
   justify-content: end;
   align-items: flex-start; }
@@ -478,8 +479,8 @@ button {
     width: 1056px;
     height: 353px;
     position: absolute;
-    right: 1.5%;
-    bottom: -7%;
+    right: 2.5%;
+    bottom: -6%;
     z-index: 30;
     display: block;
     background: url(../img/welcome/header-decor.png); }

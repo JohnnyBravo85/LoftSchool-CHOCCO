@@ -17,7 +17,7 @@
 
 .header__nav {
   display: flex;
-  flex: 1;
+  flex: 5;
   padding: 0 4.79%;
 }
 
@@ -35,10 +35,12 @@
   position: relative;
   z-index: 15;
   display: flex;
+  flex: 1;
   font-size: 1.5em;
   &__link {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: inherit;
     .phone__img {
       @extend .phone__link;
