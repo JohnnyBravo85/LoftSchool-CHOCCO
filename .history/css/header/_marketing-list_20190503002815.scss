@@ -1,0 +1,6 @@
+.marketing-list {
+  display: flex;
+  &__item {
+    @extend .marketing-list;
+  }
+}

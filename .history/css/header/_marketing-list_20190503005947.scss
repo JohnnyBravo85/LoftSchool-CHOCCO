@@ -1,0 +1,14 @@
+.marketing-list {
+  display: flex;
+  &__item {
+    @extend .marketing-list;
+    .marketing-list__img {
+      margin-right: rem(9.3px);
+    }
+    .marketing-list__text {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+}

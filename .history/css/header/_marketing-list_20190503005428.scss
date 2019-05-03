@@ -1,0 +1,10 @@
+.marketing-list {
+  display: flex;
+  &__item {
+    @extend .marketing-list;
+    .marketing-list__img {
+      margin-right: rem(9.3px);
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+.marketing-tagline {
+  max-width: 74.5%;
+  padding-top: rem(100px);
+  &__title {
+    margin-bottom: rem(22px);
+    line-height: 1;
+    font-size: 3.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__description {
+    max-width: 70%;
+    font-size: 1.32em;
+  }
+}

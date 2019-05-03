@@ -1,0 +1,12 @@
+.phone {
+  display: flex;
+  font-size: 1.5em;
+  &__link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    .phone__img {
+      @extend
+    }
+  }
+}

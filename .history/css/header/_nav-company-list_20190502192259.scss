@@ -1,0 +1,15 @@
+.nav-сompany-list {
+  display: flex;
+  font-size: 1.125em;
+}
+
+.nav-сompany-list__item {
+  margin-right: rem(27px);
+  &:last-child {
+    margin: 0;
+  }
+  .nav-сompany-list__link {
+    color: inherit;
+  }
+}
+

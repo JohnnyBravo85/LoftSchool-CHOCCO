@@ -1,0 +1,12 @@
+.phone {
+  position: relative;
+  font-size: 1.5em;
+  &__link {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    &__img {
+      margin-right: rem(6px);
+    }
+  }
+}

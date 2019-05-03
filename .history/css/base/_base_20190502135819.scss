@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+    .inner-wrapper {
+      flex: 1;
+    }
+}

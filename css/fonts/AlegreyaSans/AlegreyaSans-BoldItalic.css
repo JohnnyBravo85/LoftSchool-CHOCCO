@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "AlegreyaSans-BoldItalic";
+    src: url("AlegreyaSans-BoldItalic.eot");
+    src: url("AlegreyaSans-BoldItalic.eot?#iefix") format("embedded-opentype"),
+         url("AlegreyaSans-BoldItalic.woff2") format("woff2"),
+         url("AlegreyaSans-BoldItalic.woff") format("woff"),
+         url("AlegreyaSans-BoldItalic.ttf") format("ttf"),
+         url("AlegreyaSans-BoldItalic.svg#AlegreyaSans-BoldItalic") format("svg");
+    font-style: italic;
+    font-weight: 700;
+}

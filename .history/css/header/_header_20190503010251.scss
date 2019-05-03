@@ -1,0 +1,12 @@
+$white: #fff;
+$skyblue: #61c4d9;
+
+.header {
+  height: 100%;
+  padding-top: rem(25px);
+  padding-bottom: rem(50px);
+  display: flex;
+  flex-flow: column;
+  color: $white;
+  background: $skyblue;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "AlegreyaSans-MediumItalic";
+    src: url("AlegreyaSans-MediumItalic.eot");
+    src: url("AlegreyaSans-MediumItalic.eot?#iefix") format("embedded-opentype"),
+         url("AlegreyaSans-MediumItalic.woff2") format("woff2"),
+         url("AlegreyaSans-MediumItalic.woff") format("woff"),
+         url("AlegreyaSans-MediumItalic.ttf") format("ttf"),
+         url("AlegreyaSans-MediumItalic.svg#AlegreyaSans-MediumItalic") format("svg");
+    font-style: italic;
+    font-weight: normal;
+}

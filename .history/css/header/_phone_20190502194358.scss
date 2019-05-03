@@ -1,0 +1,14 @@
+.phone {
+  position: relative;
+  font-size: 1.5em;
+  &::after {
+    content: "";
+    width: 12px;
+    height: 11px;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    background: url('../img/header/phone.png')
+  }
+}

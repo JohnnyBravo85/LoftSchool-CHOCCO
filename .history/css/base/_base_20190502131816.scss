@@ -1,0 +1,11 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+    .inner-wrapper {
+      flex: 1;
+    }
+}

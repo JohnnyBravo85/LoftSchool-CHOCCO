@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "AlegreyaSans-ExtraBold";
+    src: url("AlegreyaSans-ExtraBold.eot");
+    src: url("AlegreyaSans-ExtraBold.eot?#iefix") format("embedded-opentype"),
+         url("AlegreyaSans-ExtraBold.woff2") format("woff2"),
+         url("AlegreyaSans-ExtraBold.woff") format("woff"),
+         url("AlegreyaSans-ExtraBold.ttf") format("ttf"),
+         url("AlegreyaSans-ExtraBold.svg#AlegreyaSans-ExtraBold") format("svg");
+    font-style: normal;
+    font-weight: heavy;
+}

@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+    .inner-wrapper {
+      flex: 1;
+    }
+}
+
+body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  overflow: hidden;
+}
