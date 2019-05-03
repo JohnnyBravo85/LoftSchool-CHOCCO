@@ -1,12 +1,12 @@
 .header {
-  padding-top: 2.66%;
+  padding-top: rem(25px);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 5.64%;
+  max-width: 5.64%;
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
@@ -17,9 +17,9 @@
 
 .сompany-list {
   display: flex;
-  justify-content: space-between;
   font-size: 1.125em;
   &__item {
+    margin-right: rem(27px);
     &:last-child {
       margin: 0;
       }
@@ -30,8 +30,6 @@
 }
 
 .phone {
-  position: relative;
-  z-index: 15;
   display: flex;
   font-size: 1.5em;
   &__link {

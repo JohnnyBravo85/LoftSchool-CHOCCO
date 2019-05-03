@@ -17,9 +17,9 @@
 
 .сompany-list {
   display: flex;
-  justify-content: space-between;
   font-size: 1.125em;
   &__item {
+    margin-right: 4.26%;
     &:last-child {
       margin: 0;
       }

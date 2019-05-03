@@ -361,17 +361,16 @@ button {
 
 .welcome {
   color: #fff;
-  background: #61c4d9;
-  z-index: -10; }
+  background: #61c4d9; }
 
 .header {
-  padding-top: 1.5625rem;
+  padding-top: 2.66%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
 .logo {
-  max-width: 5.74%;
+  width: 5.64%;
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase; }
@@ -380,15 +379,16 @@ button {
 
 .сompany-list {
   display: flex;
+  justify-content: space-between;
   font-size: 1.125em; }
-  .сompany-list__item {
-    margin-right: 1.6875rem; }
-    .сompany-list__item:last-child {
-      margin: 0; }
+  .сompany-list__item:last-child {
+    margin: 0; }
   .сompany-list__link {
     color: inherit; }
 
 .phone {
+  position: relative;
+  z-index: 15;
   display: flex;
   font-size: 1.5em; }
   .phone__link, .phone__link .phone__img {
