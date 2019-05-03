@@ -46,14 +46,14 @@ $white: #fff;
 }
 
 .marketing-list__text {
-  max-width: 50%;
+  // max-width: 50%;
   font-size: 1em;
 }
 
 
 .candy-bars {
   max-width: 60%;
-  margin-right: -8.6%;
+  margin-right: rem(-80px);
   display: flex;
   justify-content: end;
   align-items: flex-start;

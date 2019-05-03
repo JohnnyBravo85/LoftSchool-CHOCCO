@@ -2,17 +2,17 @@ $green: #0f5a47;
 $white: #fff;
 
 .presentation {
-  padding-bottom: rem(46px);
   display: flex;
   justify-content: space-between;
   &__block {
-    max-width: 55%;
+    width: 50%;
     display: flex;
     flex-flow: column;
   }
 }
 
 .marketing-sector {
+  max-width: 100%;
   padding-top: rem(100px);
   margin-bottom: rem(72px);
   &__title {
@@ -23,7 +23,7 @@ $white: #fff;
     text-transform: uppercase;
   }
   &__description {
-    max-width: 75%;
+    max-width: 70%;
     margin-bottom: rem(32px);
     font-size: 1.32em;
   }
@@ -31,30 +31,18 @@ $white: #fff;
 
 .marketing-list {
   display: flex;
-  width: 100%;
-}
-
-.marketing-list__item {
-  display: flex;
-  max-width: 33%;
-  .marketing-list__img {
-    margin-right: rem(9.3px);
-  }
-  &:last-child {
-    margin: 0;
+  &__item {
+    @extend .marketing-list;
+    .marketing-list__img {
+      margin-right: rem(9.3px);
+    }
+    .marketing-list__text {
+      width: 50%;
+      font-size: 1em;
+    }
   }
 }
-
-.marketing-list__text {
-  max-width: 50%;
-  font-size: 1em;
-}
-
 
 .candy-bars {
-  max-width: 60%;
-  margin-right: -8.6%;
-  display: flex;
-  justify-content: end;
-  align-items: flex-start;
+  max-width: 50%;
 }

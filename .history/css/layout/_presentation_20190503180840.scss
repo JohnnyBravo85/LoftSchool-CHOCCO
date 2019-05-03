@@ -2,7 +2,6 @@ $green: #0f5a47;
 $white: #fff;
 
 .presentation {
-  padding-bottom: rem(46px);
   display: flex;
   justify-content: space-between;
   &__block {
@@ -35,25 +34,27 @@ $white: #fff;
 }
 
 .marketing-list__item {
+  margin-right: rem(47px);
   display: flex;
-  max-width: 33%;
   .marketing-list__img {
     margin-right: rem(9.3px);
   }
-  &:last-child {
+}
+
+    
+    
+  &__item:last-child {
     margin: 0;
+  }
+    .marketing-list__text {
+      font-size: 1em;
+    }
   }
 }
 
-.marketing-list__text {
-  max-width: 50%;
-  font-size: 1em;
-}
-
-
 .candy-bars {
   max-width: 60%;
-  margin-right: -8.6%;
+  margin-right: rem(-80px);
   display: flex;
   justify-content: end;
   align-items: flex-start;

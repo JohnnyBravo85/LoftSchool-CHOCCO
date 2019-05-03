@@ -346,7 +346,8 @@ table {
 img {
   max-width: 100%;
   max-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto; }
 
 button {
   cursor: pointer;
@@ -356,11 +357,12 @@ button {
 .container {
   width: 1100px;
   margin: 0 auto;
-  padding: 0 5rem; }
+  padding: 0 7.28%; }
 
 .welcome {
   color: #fff;
-  background: #61c4d9; }
+  background: #61c4d9;
+  z-index: -10; }
 
 .header {
   padding-top: 1.5625rem;
@@ -369,7 +371,7 @@ button {
   align-items: center; }
 
 .logo {
-  max-width: 4.82%;
+  max-width: 5.74%;
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase; }
@@ -397,14 +399,15 @@ button {
       margin-right: 0.375rem; }
 
 .presentation {
+  padding-bottom: 2.875rem;
   display: flex;
   justify-content: space-between; }
   .presentation__block {
+    max-width: 55%;
     display: flex;
     flex-flow: column; }
 
 .marketing-sector {
-  max-width: 100%;
   padding-top: 6.25rem;
   margin-bottom: 4.5rem; }
   .marketing-sector__title {
@@ -414,17 +417,32 @@ button {
     font-weight: 700;
     text-transform: uppercase; }
   .marketing-sector__description {
-    max-width: 70%;
+    max-width: 75%;
     margin-bottom: 2rem;
     font-size: 1.32em; }
 
-.marketing-list, .marketing-list__item {
-  display: flex; }
+.marketing-list {
+  display: flex;
+  width: 100%; }
+
+.marketing-list__item {
+  display: flex;
+  max-width: 33%; }
   .marketing-list__item .marketing-list__img {
     margin-right: 0.58125rem; }
-  .marketing-list__item .marketing-list__text {
-    width: 50%;
-    font-size: 1em; }
+  .marketing-list__item:last-child {
+    margin: 0; }
+
+.marketing-list__text {
+  max-width: 50%;
+  font-size: 1em; }
+
+.candy-bars {
+  max-width: 60%;
+  margin-right: -8.6%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start; }
 
 .button {
   width: 156px;
@@ -439,5 +457,18 @@ button {
 .marketing-sector__button {
   color: #0f5a47;
   background: #fff; }
+
+.welcome__container {
+  position: relative; }
+  .welcome__container::after {
+    content: "";
+    width: 512px;
+    height: 648px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    display: block;
+    background: url(../img/welcome/header-pattern.png); }
 
 /*# sourceMappingURL=main.css.map */

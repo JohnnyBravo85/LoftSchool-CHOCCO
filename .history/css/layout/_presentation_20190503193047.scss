@@ -36,7 +36,6 @@ $white: #fff;
 
 .marketing-list__item {
   display: flex;
-  max-width: 33%;
   .marketing-list__img {
     margin-right: rem(9.3px);
   }
@@ -53,7 +52,7 @@ $white: #fff;
 
 .candy-bars {
   max-width: 60%;
-  margin-right: -8.6%;
+  margin-right: rem(-80px);
   display: flex;
   justify-content: end;
   align-items: flex-start;
