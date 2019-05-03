@@ -443,6 +443,9 @@ button {
   display: flex;
   justify-content: end;
   align-items: flex-start; }
+  .candy-bars__pic {
+    position: relative;
+    z-index: 20; }
 
 .button {
   width: 156px;
@@ -467,8 +470,18 @@ button {
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: -5;
+    z-index: 10;
     display: block;
     background: url(../img/welcome/header-pattern.png); }
+  .welcome__container::before {
+    content: "";
+    width: 1056px;
+    height: 353px;
+    position: absolute;
+    right: 1.5%;
+    bottom: -7%;
+    z-index: 30;
+    display: block;
+    background: url(../img/welcome/header-decor.png); }
 
 /*# sourceMappingURL=main.css.map */
