@@ -321,6 +321,13 @@ body {
   flex-flow: column;
   overflow: hidden; }
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 7.28%;
+  display: flex;
+  flex-flow: column; }
+
 body, ul, li, p {
   margin: 0;
   padding: 0; }
@@ -354,14 +361,32 @@ button {
   border: none;
   background: transparent; }
 
-.container {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 0 7.28%; }
-
 .welcome {
   color: #fff;
   background: #61c4d9; }
+
+.welcome__container {
+  position: relative; }
+  .welcome__container::after {
+    content: "";
+    width: 512px;
+    height: 648px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/welcome/welcome-pattern.png"); }
+  .welcome__container::before {
+    content: "";
+    width: 1056px;
+    height: 353px;
+    position: absolute;
+    right: 2.5%;
+    bottom: -6%;
+    z-index: 30;
+    display: block;
+    background: url("../img/welcome/welcome-decor.png"); }
 
 .header {
   padding-top: 2.66%;
@@ -462,27 +487,129 @@ button {
   color: #0f5a47;
   background: #fff; }
 
-.welcome__container {
+.promotion {
+  height: 100%;
+  color: #0d0d0d; }
+
+.promotion__container {
+  padding-top: 9.1%;
+  padding-bottom: 12.19%;
+  align-items: center; }
+
+.promo {
+  margin-bottom: 6.07%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .promo__title {
+    margin-bottom: 3.4%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .promo__text {
+    max-width: 60%;
+    font-size: 1.125em;
+    text-align: center;
+    color: #666; }
+
+.promo-list {
+  display: flex;
+  justify-content: space-between; }
+
+.promo-list__item {
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .promo-list__item .promo-list__pic {
+    margin-bottom: 11.29%;
+    padding: 20.15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f2f5f4; }
+  .promo-list__item .promo-list__title {
+    margin-bottom: 10.9%;
+    font-size: 1.69em; }
+  .promo-list__item .promo-list__text {
+    max-width: 90%;
+    font-size: 1.125em;
+    text-align: center;
+    color: #666; }
+
+.promo-list__pic::after {
+  content: "";
+  width: 67px;
+  height: 21px;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+  display: block;
+  background: url("../img/promotion/three-points.png"); }
+
+.promo-list__item:last-child .promo-list__pic::after {
+  content: none; }
+
+.promotion__container {
   position: relative; }
-  .welcome__container::after {
+  .promotion__container::before {
     content: "";
-    width: 512px;
-    height: 648px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
+    width: 191px;
+    height: 314px;
     display: block;
-    background: url(../img/welcome/header-pattern.png); }
-  .welcome__container::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/promotion/promo-pattern.png"); }
+  .promotion__container::after {
     content: "";
-    width: 1056px;
-    height: 353px;
-    position: absolute;
-    right: 2.5%;
-    bottom: -6%;
-    z-index: 30;
+    width: 161px;
+    height: 292px;
     display: block;
-    background: url(../img/welcome/header-decor.png); }
+    position: absolute;
+    left: 0;
+    bottom: -14.5%;
+    background: url("../img/promotion/raspberries-bars.png"); }
+
+.reviews {
+  color: #666; }
+
+.reviews__container {
+  padding-top: 11.19%;
+  padding-bottom: 8.64%;
+  align-items: center; }
+
+.reviews__title {
+  margin-bottom: 6.28%;
+  font-size: 3em;
+  font-weight: 700;
+  color: #0d0d0d; }
+
+.reviews-block {
+  display: flex; }
+
+.reviews-block__img {
+  width: 27%; }
+
+.reviews-block__review {
+  max-width: 50%; }
+
+.reviews-block__title {
+  margin-bottom: 6.18%;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #323232; }
+
+.reviews-block__text {
+  margin-bottom: 6.81%;
+  font-size: 1.125em; }
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

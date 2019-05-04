@@ -1,0 +1,18 @@
+$black: #0d0d0d;
+
+.promotion {
+  padding-top: 9.09%;
+}
+
+.promo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  &__title {
+    margin-bottom: 3.4%;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black;
+  }
+}
