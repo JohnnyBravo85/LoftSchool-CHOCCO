@@ -48,13 +48,15 @@
 
 .carousel {
   display: flex;
+  flex: 1;
   justify-content: space-between;
 }
 
 .carousel__item {
-  width: 50%;
-}
-
-.carousel__img {
+  width: 94px;
+  height: 94px;
   border-radius: 100%;
+  &__img {
+    border-radius: 100%;
+  }
 }

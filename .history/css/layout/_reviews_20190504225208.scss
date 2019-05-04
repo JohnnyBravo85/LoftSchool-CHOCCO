@@ -48,13 +48,9 @@
 
 .carousel {
   display: flex;
-  justify-content: space-between;
 }
 
 .carousel__item {
-  width: 50%;
-}
-
-.carousel__img {
-  border-radius: 100%;
+  width: 94px;
+  height: 94px;
 }
