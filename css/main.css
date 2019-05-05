@@ -361,6 +361,49 @@ button {
   border: none;
   background: transparent; }
 
+.main-nav {
+  position: fixed;
+  top: 42%;
+  right: 8%;
+  z-index: 40; }
+  .main-nav__block {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+
+.main-nav__item {
+  margin-bottom: 15px;
+  display: flex; }
+  .main-nav__item:last-child {
+    margin-bottom: 0; }
+
+.main-nav__link {
+  position: relative;
+  display: block; }
+  .main-nav__link::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+
+.main-nav__item:hover .main-nav__link::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff; }
+
 .welcome {
   color: #fff;
   background: #61c4d9; }
@@ -432,40 +475,42 @@ button {
   display: flex;
   justify-content: space-between; }
   .presentation__block {
-    width: 50%;
+    width: 52.03%;
     display: flex;
     flex-flow: column; }
 
 .marketing-sector {
-  padding-top: 21.28%;
-  margin-bottom: 15.32%; }
+  padding-top: 21.46%;
+  margin-bottom: 15.47%; }
   .marketing-sector__title {
-    margin-bottom: 4.68%;
+    margin-bottom: 4.73%;
     line-height: 1;
     font-size: 3.75em;
     font-weight: 700;
     text-transform: uppercase; }
   .marketing-sector__description {
     width: 72.55%;
-    margin-bottom: 6.81%;
+    margin-bottom: 6.88%;
     font-size: 1.32em; }
 
 .marketing-list {
+  width: 100%;
   display: flex;
   justify-content: space-between; }
 
 .marketing-list__item {
+  width: 33%;
   display: flex; }
   .marketing-list__item .marketing-list__img {
     margin-right: 0.58125rem; }
 
 .marketing-list__text {
-  max-width: 50%;
+  max-width: 54.66%;
   font-size: 1em; }
 
 .candy-bars {
-  width: 54%;
-  margin-right: -5.5%;
+  width: 56.2%;
+  margin-right: -7.79%;
   display: flex;
   justify-content: end;
   align-items: flex-start; }
@@ -496,17 +541,18 @@ button {
   align-items: center; }
 
 .promo {
+  width: 100%;
   margin-bottom: 6.07%;
   display: flex;
   flex-flow: column;
   align-items: center; }
   .promo__title {
-    margin-bottom: 3.4%;
+    margin-bottom: 2.45%;
     font-size: 3em;
     text-transform: uppercase;
     font-weight: 700; }
   .promo__text {
-    max-width: 60%;
+    max-width: 43.2%;
     font-size: 1.125em;
     text-align: center;
     color: #666666; }
@@ -530,10 +576,10 @@ button {
     border-radius: 50%;
     background: #f2f5f4; }
   .promo-list__item .promo-list__title {
-    margin-bottom: 10.9%;
+    margin-bottom: 9.68%;
     font-size: 1.69em; }
   .promo-list__item .promo-list__text {
-    max-width: 90%;
+    max-width: 88.98%;
     font-size: 1.125em;
     text-align: center;
     color: #666666; }
@@ -545,7 +591,7 @@ button {
   position: absolute;
   right: -50%;
   top: 50%;
-  transform: translate(-50% -50%);
+  transform: translateY(-50%);
   display: block;
   background: url("../img/promotion/three-points.png"); }
 
@@ -575,7 +621,8 @@ button {
     background: url("../img/promotion/raspberries-bars.png"); }
 
 .reviews {
-  color: #666666; }
+  color: #666666;
+  background: #fff; }
 
 .reviews__container {
   padding-top: 11.19%;
@@ -590,6 +637,7 @@ button {
 
 .reviews-block {
   padding-top: 5.33%;
+  margin-bottom: 5.33%;
   position: relative;
   display: flex;
   background: url("../img/reviews/review-bg.png"); }
@@ -606,19 +654,19 @@ button {
 
 .reviews-block__img {
   width: 27%;
-  margin-right: 2.13%; }
+  margin-right: 2.15%; }
 
 .reviews-block__review {
-  max-width: 50%; }
+  max-width: 46.07%; }
 
 .reviews-block__title {
-  margin-bottom: 6.18%;
+  margin-bottom: 6.68%;
   font-size: 1.875em;
   font-weight: 500;
   color: #323232; }
 
 .reviews-block__text {
-  margin-bottom: 6.81%;
+  margin-bottom: 7.39%;
   font-size: 1.125em; }
 
 .reviews-block__user {
@@ -626,11 +674,17 @@ button {
   font-weight: 500; }
 
 .carousel {
+  width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
+
+.carousel__item {
+  margin-right: 4.48%; }
 
 .carousel__img {
-  border-radius: 100%; }
+  width: 92px;
+  height: 92px;
+  border-radius: 50%; }
 
 .reviews__container {
   position: relative; }
@@ -643,7 +697,7 @@ button {
     bottom: -31%;
     display: block;
     background: url("../img/reviews/dec+pat.png"); }
-  .reviews__container ::after {
+  .reviews__container::after {
     content: "";
     width: 173px;
     height: 99px;

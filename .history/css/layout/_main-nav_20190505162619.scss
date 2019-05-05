@@ -1,0 +1,27 @@
+.main-nav__block {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-nav__link {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 1px solid black;
+}
+
+.main-nav__link {
+  position: relative;
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    display: block;
+    border-radius: 50%;
+    border: 3px solid $menuwhite;
+  }
+}
