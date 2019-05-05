@@ -1,5 +1,6 @@
 .promotion {
   color: $black;
+  position: relative;
 }
 
 .promotion__container {
@@ -78,7 +79,7 @@
 }
 
 .promotion__container {
-  position: relative;
+  
   &::before {
     content: "";
     width: 191px;

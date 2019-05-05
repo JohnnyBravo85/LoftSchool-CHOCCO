@@ -25,9 +25,9 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: #fff;
+    background: black;
     position: absolute;
-    top: -20%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -64,6 +64,8 @@
   justify-content: space-between;
 }
 
+.carousel__item {
+}
 
 .carousel__img {
   border-radius: 100%;
@@ -89,6 +91,6 @@
     top: 0;
     right: 0;
     display: block;
-    background: url("../img/reviews/raspberries.png");
+    background: url("../img/reviews/raspberries.png")
   }
 }

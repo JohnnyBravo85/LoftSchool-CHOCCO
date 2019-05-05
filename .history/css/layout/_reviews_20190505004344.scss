@@ -16,21 +16,8 @@
 }
 
 .reviews-block {
-  padding-top: 5.33%;
-  position: relative;
   display: flex;
   background: url("../img/reviews/review-bg.png");
-  &::before {
-    content: "";
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 .reviews-block__img {
@@ -64,6 +51,8 @@
   justify-content: space-between;
 }
 
+.carousel__item {
+}
 
 .carousel__img {
   border-radius: 100%;
@@ -83,12 +72,12 @@
   }
   ::after {
     content: "";
-    width: 173px;
-    height: 99px;
+    width: 158px;
+    height: 422px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0%;
     display: block;
-    background: url("../img/reviews/raspberries.png");
+    background: url("../img/reviews/draspberries.png")
   }
 }

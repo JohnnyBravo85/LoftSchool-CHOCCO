@@ -488,7 +488,6 @@ button {
   background: #fff; }
 
 .promotion {
-  height: 100%;
   color: #0d0d0d; }
 
 .promotion__container {
@@ -590,8 +589,20 @@ button {
   color: #0d0d0d; }
 
 .reviews-block {
+  padding-top: 5.33%;
+  position: relative;
   display: flex;
   background: url("../img/reviews/review-bg.png"); }
+  .reviews-block::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .reviews-block__img {
   width: 27%;
@@ -618,10 +629,28 @@ button {
   display: flex;
   justify-content: space-between; }
 
-.carousel__item {
-  width: 50%; }
-
 .carousel__img {
   border-radius: 100%; }
+
+.reviews__container {
+  position: relative; }
+  .reviews__container::before {
+    content: "";
+    width: 158px;
+    height: 422px;
+    position: absolute;
+    left: 0;
+    bottom: -31%;
+    display: block;
+    background: url("../img/reviews/dec+pat.png"); }
+  .reviews__container ::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url("../img/reviews/raspberries.png"); }
 
 /*# sourceMappingURL=main.css.map */

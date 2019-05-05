@@ -17,7 +17,7 @@
 
 .reviews-block {
   padding-top: 5.33%;
-  position: relative;
+  // position: relative;
   display: flex;
   background: url("../img/reviews/review-bg.png");
   &::before {
@@ -89,6 +89,6 @@
     top: 0;
     right: 0;
     display: block;
-    background: url("../img/reviews/raspberries.png");
+    background: url("../img/reviews/raspberries.png") no-repeat;
   }
 }
