@@ -323,6 +323,7 @@ body {
 
 .container {
   width: 1100px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 7.28%;
   display: flex;
@@ -405,31 +406,35 @@ button {
   border: 2px solid #fff; }
 
 .welcome {
+  height: 100vh;
   color: #fff;
   background: #61c4d9; }
 
 .welcome {
   position: relative; }
-  .welcome::after {
+  .welcome::before {
     content: "";
     width: 512px;
-    height: 648px;
+    height: 548px;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 10;
     display: block;
-    background: url("../img/welcome/welcome-pattern.png"); }
-  .welcome::before {
+    background: url("../img/welcome/welcome-pattern.png") no-repeat; }
+
+.welcome__container {
+  position: relative; }
+  .welcome__container::before {
     content: "";
     width: 1056px;
     height: 353px;
     position: absolute;
-    right: 2.5%;
-    bottom: -6%;
+    right: 0;
+    bottom: -7.5%;
     z-index: 30;
     display: block;
-    background: url("../img/welcome/welcome-decor.png"); }
+    background: url("../img/welcome/welcome-decor.png") no-repeat; }
 
 .header {
   padding-top: 2.66%;
@@ -471,17 +476,19 @@ button {
       margin-right: 0.375rem; }
 
 .presentation {
+  height: 100%;
   padding-bottom: 2.875rem;
   display: flex;
   justify-content: space-between; }
   .presentation__block {
     width: 52.03%;
+    height: 100%;
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    justify-content: space-between; }
 
 .marketing-sector {
-  padding-top: 21.46%;
-  margin-bottom: 15.47%; }
+  padding-top: 21.46%; }
   .marketing-sector__title {
     margin-bottom: 4.73%;
     line-height: 1;
@@ -533,7 +540,32 @@ button {
   background: #fff; }
 
 .promotion {
+  height: 100vh;
   color: #0d0d0d; }
+
+.promotion {
+  position: relative; }
+  .promotion::before {
+    content: "";
+    height: 314px;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background: url("../img/promotion/promo-pattern.png") no-repeat left; }
+  .promotion::after {
+    content: "";
+    width: 161px;
+    height: 292px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -14.5%;
+    z-index: 20;
+    background: url("../img/promotion/raspberries-bars.png"); }
 
 .promotion__container {
   padding-top: 9.1%;
@@ -598,31 +630,33 @@ button {
 .promo-list__item:last-child .promo-list__pic::after {
   content: none; }
 
-.promotion__container {
-  position: relative; }
-  .promotion__container::before {
-    content: "";
-    width: 191px;
-    height: 314px;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: url("../img/promotion/promo-pattern.png"); }
-  .promotion__container::after {
-    content: "";
-    width: 161px;
-    height: 292px;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -14.5%;
-    background: url("../img/promotion/raspberries-bars.png"); }
-
 .reviews {
+  height: 100vh;
   color: #666666;
   background: #fff; }
+
+.reviews {
+  position: relative; }
+  .reviews::before {
+    content: "";
+    width: 158px;
+    height: 422px;
+    position: absolute;
+    left: 0;
+    bottom: -31%;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/dec+pat.png"); }
+  .reviews::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/raspberries.png"); }
 
 .reviews__container {
   padding-top: 11.19%;
@@ -685,26 +719,5 @@ button {
   width: 92px;
   height: 92px;
   border-radius: 50%; }
-
-.reviews__container {
-  position: relative; }
-  .reviews__container::before {
-    content: "";
-    width: 158px;
-    height: 422px;
-    position: absolute;
-    left: 0;
-    bottom: -31%;
-    display: block;
-    background: url("../img/reviews/dec+pat.png"); }
-  .reviews__container::after {
-    content: "";
-    width: 173px;
-    height: 99px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    background: url("../img/reviews/raspberries.png"); }
 
 /*# sourceMappingURL=main.css.map */
