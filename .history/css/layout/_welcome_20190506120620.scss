@@ -28,3 +28,18 @@
     background: url("../img/welcome/welcome-decor.png");
   }
 }
+
+.wel {
+  position: relative;
+  &::after {
+    content: "";
+    width: 512px;
+    height: 648px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/welcome/welcome-pattern.png");
+  }
+}

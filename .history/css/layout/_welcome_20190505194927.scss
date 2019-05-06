@@ -1,9 +1,10 @@
 .welcome {
   color: $colwhite;
   background: $bgskyblue;
+  height: 100vh;
 }
 
-.welcome {
+.welcome__container {
   position: relative;
   &::after {
     content: "";
