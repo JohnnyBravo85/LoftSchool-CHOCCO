@@ -10,12 +10,13 @@
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
-  &__link {
-    color: inherit;
-  }
 }
 
-.header__nav {
+.logo__link {
+  color: inherit;
+}
+
+.nav {
   display: flex;
   flex: 1;
   padding: 0 4.79%;
@@ -26,23 +27,45 @@
   flex: 1;
   justify-content: space-between;
   font-size: 1.125em;
-  &__link {
-    color: inherit;
-  }
+}
+
+.сompany-list__link {
+  color: inherit;
 }
 
 .phone {
-  position: relative;
-  z-index: 15;
   display: flex;
   font-size: 1.5em;
-  &__link {
-    display: flex;
-    align-items: center;
-    color: inherit;
-    .phone__img {
-      @extend .phone__link;
-      margin-right: rem(6px);
-    }
+}
+
+.phone__link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.phone__number {
+  position: relative;
+  &::before {
+  content: "";
+  width: 12px;
+  height: 11px;
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  background: url("../img/welcome/phone.png");
+  }
+  &::after {
+    content: "";
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    left: -7.5%;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    color: transparent;
   }
 }

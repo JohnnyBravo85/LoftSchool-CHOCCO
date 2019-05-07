@@ -1,0 +1,108 @@
+.reviews {
+  color: $colgrey;
+  background: $bgwhite;
+}
+
+.reviews {
+  position: relative;
+  &::before {
+    content: "";
+    width: 158px;
+    height: 422px;
+    position: absolute;
+    left: 0;
+    bottom: -31%;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/dec+pat.png")
+  }
+  &::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/raspberries.png");
+  }
+}
+
+.reviews__container {
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__titles {
+  margin-bottom: 6.28%;
+}
+
+.reviews-block {
+  padding: 4.79%;
+  margin-bottom: 5.33%;
+  position: relative;
+  display: flex;
+  background: url("../img/reviews/review-bg.png");
+  &::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: $bgwhite;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.reviews-block__item:first-child {
+  margin-right: 2.13%;
+}
+
+.reviews-block__pic {
+  min-width: 254px;
+}
+
+
+.reviews-block__title {
+  margin-bottom: 6.68%;
+  font-size: 1.875em;
+  font-weight: 500;
+  text-align: left;
+  color: $collightblack;
+}
+
+.reviews-block__text {
+  max-width: 65.02%;
+  margin-bottom: 7.39%;
+  font-size: 1.125em;
+}
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__item {
+  margin-right: 4.48%;
+}
+
+.carousel__item--active {
+  border-radius: 50%;
+  border: 8px solid #0f5a47;
+}
+
+
+.carousel__img {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}

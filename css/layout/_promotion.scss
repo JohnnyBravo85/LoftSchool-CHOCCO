@@ -1,23 +1,11 @@
 .promotion {
-  height: 100vh;
   color: $colblack;
+  background: url("../img/promotion/promo-pattern.png") no-repeat left center;
 }
 
 .promotion {
   position: relative;
   &::before {
-    content: "";
-    height: 314px;
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-    background: url("../img/promotion/promo-pattern.png") no-repeat left;
-  }
-  &::after {
     content: "";
     width: 161px;
     height: 292px;
@@ -31,29 +19,34 @@
 }
 
 .promotion__container {
-  padding-top: 9.1%;
-  padding-bottom: 12.19%;
   align-items: center;
+  justify-content: center;
 }
 
-.promo {
+.promotion__promo {
   width: 100%;
   margin-bottom: 6.07%;
   display: flex;
   flex-flow: column;
   align-items: center;
-  &__title {
-    margin-bottom: 2.45%;
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  &__text {
-    max-width: 43.2%;
-    font-size: 1.125em;
-    text-align: center;
-    color: $colgrey;
-  }
+}
+
+.titles {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $colblack;
+}
+
+.promotion__titles {
+  margin-bottom: 2.45%;
+}
+
+.promotion__text {
+  max-width: 43.2%;
+  font-size: 1.125em;
+  text-align: center;
+  color: $colgrey;
 }
 
 .promo-list {
@@ -66,35 +59,24 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    .promo-list__pic {
-      margin-bottom: 11.29%;
-      padding: 20.15%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background: $bglightestgrey;
-    }
-    .promo-list__title {
-      margin-bottom: 9.68%;
-      font-size: 1.69em;
-    }
-    .promo-list__text {
-      max-width: 88.98%;
-      font-size: 1.125em;
-      text-align: center;
-      color: $colgrey;
-    }
 }
 
 .promo-list__pic {
+  margin-bottom: 11.29%;
+  width: 40.3%;
+  height: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: $bglightestgrey;
   &::after {
     content: "";
     width: 67px;
     height: 21px;
     position: absolute;
-    right: -50%;
+    right: -100%;
     top: 50%;
     transform: translateY(-50%);
     display: block;
@@ -105,3 +87,16 @@
 .promo-list__item:last-child .promo-list__pic::after {
   content: none;
 }
+
+.promo-list__item h4 {
+  margin-bottom: 9.68%;
+  font-size: 1.69em;
+}
+
+.promo-list__item p {
+  max-width: 88.98%;
+  font-size: 1.125em;
+  text-align: center;
+  color: $colgrey;
+}
+

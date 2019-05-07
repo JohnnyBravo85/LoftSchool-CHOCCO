@@ -1,15 +1,14 @@
 .button {
-  width: 156px;
-  height: 58px;
+  padding: 22px 35px;
   font-size: 1.19em;
   font-weight: 800;
   text-transform: uppercase;
-  border-radius: 80px/80px;
+  border-radius: 25%/50%;
   color: $butwhite;
   background: $butgreen;
 }
 
-.marketing-sector__button {
+.presentation__button {
   color: $butgreen;
   background: $butwhite;
 }

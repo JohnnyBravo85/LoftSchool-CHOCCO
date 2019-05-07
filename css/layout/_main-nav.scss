@@ -1,6 +1,6 @@
 .main-nav {
   position: fixed;
-  top: 42%;
+  top: 30%;
   right: 8%;
   z-index: 40;
   &__block {
@@ -11,7 +11,7 @@
 }
 
 .main-nav__item {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   display: flex;
   &:last-child {
     margin-bottom: 0;
@@ -33,6 +33,20 @@
     border-radius: 50%;
     border: 3px solid $menuwhite;
   }
+}
+
+.main-nav__link--active.main-nav__link::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 50%;
+  transition: 0.4s;
+  border: 2px solid $menuwhite;
 }
 
 .main-nav__item:hover .main-nav__link::after {
