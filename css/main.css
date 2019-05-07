@@ -318,11 +318,12 @@ body {
 .wrapper {
   min-height: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   overflow: hidden; }
 
 .section {
   height: 100vh;
+  min-height: 650px;
   display: flex; }
 
 .container {
@@ -330,7 +331,7 @@ body {
   margin: 0 auto;
   padding: 0 7.28%;
   display: flex;
-  flex-flow: column; }
+  flex-direction: column; }
 
 body, ul, li, p {
   margin: 0;
@@ -372,7 +373,7 @@ button {
   z-index: 40; }
   .main-nav__block {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center; }
 
 .main-nav__item {
@@ -522,7 +523,7 @@ button {
   width: 52.03%;
   height: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-between; }
 
 .presentation__marketing-block {
@@ -605,7 +606,7 @@ button {
   width: 100%;
   margin-bottom: 6.07%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center; }
 
 .titles {
@@ -630,13 +631,13 @@ button {
 .promo-list__item {
   width: 33%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center; }
 
 .promo-list__pic {
   margin-bottom: 11.29%;
-  width: 40.3%;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -719,11 +720,17 @@ button {
     left: 50%;
     transform: translateX(-50%); }
 
-.reviews-block__item:first-child {
+.reviews-block__item {
+  display: flex; }
+
+.reviews-block__img {
   margin-right: 2.13%; }
 
 .reviews-block__pic {
-  min-width: 254px; }
+  width: 254px; }
+
+.reviews-block__review {
+  width: 46.07%; }
 
 .reviews-block__title {
   margin-bottom: 6.68%;
@@ -733,7 +740,6 @@ button {
   color: #323232; }
 
 .reviews-block__text {
-  max-width: 65.02%;
   margin-bottom: 7.39%;
   font-size: 1.125em; }
 

@@ -27,7 +27,7 @@
   width: 100%;
   margin-bottom: 6.07%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
 }
 
@@ -57,14 +57,14 @@
 .promo-list__item {
     width: 33%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     align-items: center;
 }
 
 .promo-list__pic {
   margin-bottom: 11.29%;
-  width: rem(125px);
-  height: rem(125px);
+  width: 7.813rem;
+  height: 7.813rem;
   position: relative;
   display: flex;
   justify-content: center;

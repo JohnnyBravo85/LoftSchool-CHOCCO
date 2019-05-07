@@ -67,11 +67,7 @@
 }
 
 .reviews-block__pic {
-  width: 254px;
-}
-
-.reviews-block__review {
-  width: 46.07%;
+  min-width: 254px;
 }
 
 
@@ -84,6 +80,7 @@
 }
 
 .reviews-block__text {
+  max-width: 65.02%;
   margin-bottom: 7.39%;
   font-size: 1.125em;
 }

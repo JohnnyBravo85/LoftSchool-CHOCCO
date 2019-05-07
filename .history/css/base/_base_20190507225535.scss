@@ -15,7 +15,7 @@ body {
 .wrapper {
   min-height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   padding: 0 7.28%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
  }
 
 body, ul, li, p {
