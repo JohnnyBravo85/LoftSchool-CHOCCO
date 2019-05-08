@@ -1,0 +1,11 @@
+.product {
+  position: relative;
+  background: skyblue;
+  &::before {
+    content: "";
+    width: 196px;
+    height: 578px;
+    position: absolute;
+    
+  }
+}

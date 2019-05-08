@@ -1,0 +1,28 @@
+.product {
+  position: relative;
+  background: $bggrey;
+  &::before {
+    content: "";
+    width: 196px;
+    height: 578px;
+    position: absolute;
+    right: 0;
+    bottom: -53%;
+    display: block;
+    background: url("../img/product/dec+pat-product.png") center no-repeat;
+  }
+}
+
+.product__container {
+  position: relative;
+  ::before {
+    content: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #0d0d0d;
+  }
+}

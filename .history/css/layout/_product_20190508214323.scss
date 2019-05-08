@@ -1,0 +1,13 @@
+.product {
+  position: relative;
+  background: skyblue;
+  &::before {
+    content: "";
+    width: 196px;
+    height: 578px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../img/product/dec+pat-product.png");
+  }
+}

@@ -366,26 +366,26 @@ button {
   border: none;
   background: transparent; }
 
-.main-nav {
+.fixed-nav {
   position: fixed;
   top: 30%;
-  right: 8%;
+  right: 3.5%;
   z-index: 40; }
-  .main-nav__block {
+  .fixed-nav__block {
     display: flex;
     flex-direction: column;
     align-items: center; }
 
-.main-nav__item {
+.fixed-nav__item {
   margin-bottom: 30px;
   display: flex; }
-  .main-nav__item:last-child {
+  .fixed-nav__item:last-child {
     margin-bottom: 0; }
 
-.main-nav__link {
+.fixed-nav__link {
   position: relative;
   display: block; }
-  .main-nav__link::before {
+  .fixed-nav__link::before {
     content: "";
     width: 0;
     height: 0;
@@ -397,7 +397,7 @@ button {
     border-radius: 50%;
     border: 3px solid #fff; }
 
-.main-nav__link--active.main-nav__link::after {
+.fixed-nav__link--active.fixed-nav__link::after {
   content: "";
   width: 16px;
   height: 16px;
@@ -410,7 +410,7 @@ button {
   transition: 0.4s;
   border: 2px solid #fff; }
 
-.main-nav__item:hover .main-nav__link::after {
+.fixed-nav__item:hover .fixed-nav__link::after {
   content: "";
   width: 16px;
   height: 16px;
@@ -583,7 +583,7 @@ button {
 
 .promotion {
   color: #0d0d0d;
-  background: url("../img/promotion/promo-pattern.png") no-repeat left center; }
+  background: url("../img/promotion/promo-pattern.png") left center no-repeat; }
 
 .promotion {
   position: relative; }
@@ -596,7 +596,7 @@ button {
     left: 0;
     bottom: -14.5%;
     z-index: 20;
-    background: url("../img/promotion/raspberries-bars.png"); }
+    background: url("../img/promotion/raspberries-bars.png") center no-repeat; }
 
 .promotion__container {
   align-items: center;
@@ -683,7 +683,7 @@ button {
     bottom: -20%;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/dec+pat-reviews.png"); }
+    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat; }
   .reviews::after {
     content: "";
     width: 173px;
@@ -693,7 +693,7 @@ button {
     right: 0;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/raspberries.png"); }
+    background: url("../img/reviews/raspberries.png") center no-repeat; }
 
 .reviews__container {
   align-items: center;
@@ -766,5 +766,101 @@ button {
   width: 92px;
   height: 102px;
   border-radius: 50%; }
+
+.product {
+  position: relative;
+  background: #f8faf9; }
+  .product::before {
+    content: "";
+    width: 196px;
+    height: 578px;
+    position: absolute;
+    right: 0;
+    bottom: -53%;
+    display: block;
+    background: url("../img/product/dec+pat-product.png") center no-repeat; }
+
+.product__container {
+  position: relative;
+  justify-content: center;
+  align-items: center; }
+
+.slider-control {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  border: 2px solid #0d0d0d;
+  border-radius: 3px;
+  border-top-color: transparent;
+  border-right-color: transparent; }
+
+.slider-control--left {
+  left: 4.5%;
+  transform: rotate(45deg); }
+
+.slider-control--rigth {
+  right: 4.5%;
+  transform: rotate(225deg); }
+
+.product-list__item {
+  display: flex; }
+
+.product-list__img {
+  width: 50%; }
+
+.product-list__block {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.product-list__text-block {
+  margin-bottom: 7.45%;
+  display: flex;
+  flex-direction: column; }
+
+.product-list__description-block {
+  margin-bottom: 10.86%; }
+
+.product-list__title {
+  margin-bottom: 8.73%;
+  font-size: 2.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d0d0d; }
+
+.product-list__specification {
+  margin-bottom: 7.03%;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #323232; }
+
+.product-list__description {
+  width: 66%;
+  color: #666666; }
+
+.specification-list {
+  display: flex;
+  font-size: 1.125em;
+  color: #333; }
+
+.specification-list__item {
+  margin-right: 11.71%; }
+  .specification-list__item:last-child {
+    margin-right: 0; }
+
+.specification-list__item div:last-child {
+  font-weight: 700; }
+
+.product-list__order-price {
+  display: flex; }
+
+.price {
+  margin-right: 6.6%;
+  font-size: 3.75em;
+  font-weight: 300;
+  color: #0d0d0d; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,8 @@
+.product {
+  position: relative;
+  background: skyblue;
+  &::before {
+    content: "";
+    
+  }
+}
