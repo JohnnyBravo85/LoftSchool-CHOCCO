@@ -84,11 +84,11 @@
   position: relative;
   &::before {
     content: "";
-    width: 461px;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: -10%;
+    left: 0;
+    right: 0;
+    z-index: 10;
     background: url("../img/product/leaves-product.png") bottom left no-repeat;
   }
 }

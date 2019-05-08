@@ -811,6 +811,17 @@ button {
 .product-list__img {
   width: 50%; }
 
+.product-list__img-inner {
+  position: relative; }
+  .product-list__img-inner::before {
+    content: "";
+    width: 461px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    background: url("../img/product/leaves-product.png") bottom left no-repeat; }
+
 .product-list__block {
   width: 50%;
   display: flex;

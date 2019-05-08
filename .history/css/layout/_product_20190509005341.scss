@@ -88,8 +88,10 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: -10%;
-    background: url("../img/product/leaves-product.png") bottom left no-repeat;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: url("../img/product/leaves-product.png") -10% no-repeat;
   }
 }
 
