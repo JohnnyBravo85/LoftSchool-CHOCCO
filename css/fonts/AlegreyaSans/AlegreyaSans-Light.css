@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "AlegreyaSans-Light";
+    src: url("AlegreyaSans-Light.eot");
+    src: url("AlegreyaSans-Light.eot?#iefix") format("embedded-opentype"),
+         url("AlegreyaSans-Light.woff2") format("woff2"),
+         url("AlegreyaSans-Light.woff") format("woff"),
+         url("AlegreyaSans-Light.ttf") format("ttf"),
+         url("AlegreyaSans-Light.svg#AlegreyaSans-Light") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}

@@ -1,0 +1,29 @@
+.phone {
+  position: relative;
+  font-size: 1.5em;
+  &::after {
+    content: "";
+    width: 12px;
+    height: 11px;
+    position: absolute;
+    display: block;
+    left: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../img/header/phone.png');
+  }
+  &::before {
+    content: "";
+    width: 20px;
+    height: 11px;
+    border: 1px solid black;
+    position: absolute;
+    display: block;
+    left: -9%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

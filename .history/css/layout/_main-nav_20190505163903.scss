@@ -1,0 +1,45 @@
+.main-nav__block {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.main-nav__item {
+  display: flex;
+}
+
+.main-nav__link {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 1px solid black;
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    display: block;
+    border-radius: 50%;
+    border: 3px solid $menuwhite;
+  }
+  &::after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    display: block;
+    border-radius: 50%;
+    border: 1px solid $menuwhite;
+  }
+}
+
+.main-nav__item:hover .main-nav__link::after {
+  
+}

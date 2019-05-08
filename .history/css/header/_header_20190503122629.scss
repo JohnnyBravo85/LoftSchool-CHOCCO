@@ -1,0 +1,21 @@
+$white: #fff;
+$skyblue: #61c4d9;
+
+.header {
+  padding-top: rem(25px);
+  padding-bottom: rem(50px);
+  display: flex;
+  flex-flow: column;
+  color: $white;
+  background: $skyblue;
+}
+
+.logo {
+  max-width: 4.82%;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  &__link {
+    color: inherit;
+  }
+}

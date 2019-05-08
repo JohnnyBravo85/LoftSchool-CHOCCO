@@ -1,0 +1,10 @@
+.main-nav__block {
+  display: flex;
+  flex-flow: column;
+}
+
+.main-nav__link {
+  width: 0;
+  height: 0;
+  border: 6px solid #fff;
+}

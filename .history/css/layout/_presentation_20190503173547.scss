@@ -1,0 +1,47 @@
+$green: #0f5a47;
+$white: #fff;
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  &__block {
+    max-width: 50%;
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.marketing-sector {
+  padding-top: rem(100px);
+  margin-bottom: rem(72px);
+  &__title {
+    margin-bottom: rem(22px);
+    line-height: 1;
+    font-size: 3.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__description {
+    max-width: 75%;
+    margin-bottom: rem(32px);
+    font-size: 1.32em;
+  }
+}
+
+.marketing-list {
+  display: flex;
+  &__item {
+    @extend .marketing-list;
+    .marketing-list__img {
+      margin-right: rem(9.3px);
+    }
+    .marketing-list__text {
+      max-width: 60%;
+      font-size: 1em;
+    }
+  }
+}
+
+.candy-bars {
+  max-width: 50%;
+}

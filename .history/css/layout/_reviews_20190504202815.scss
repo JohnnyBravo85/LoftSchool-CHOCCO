@@ -1,0 +1,31 @@
+.reviews {
+  color: $grey;
+}
+
+.reviews__container {
+  padding-top: 11.19%;
+  padding-bottom: 8.64%;
+  align-items: center;
+}
+
+.reviews__title {
+  margin-bottom: 6.28%;
+  font-size: 3em;
+  font-weight: 700;
+  color: $black;
+}
+
+.reviews-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reviews-block__img {
+}
+
+.reviews-block__review {
+  max-width: 60%;
+  &__title {
+    font-size: 1.125em;
+  }
+}

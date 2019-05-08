@@ -1,0 +1,88 @@
+.reviews {
+  color: $grey;
+}
+
+.reviews__container {
+  padding-top: 11.19%;
+  padding-bottom: 8.64%;
+  align-items: center;
+}
+
+.reviews__title {
+  margin-bottom: 6.28%;
+  font-size: 3em;
+  font-weight: 700;
+  color: $black;
+}
+
+.reviews-block {
+  position: relative;
+  display: flex;
+  background: url("../img/reviews/review-bg.png");
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.reviews-block__img {
+  width: 27%;
+  margin-right: 2.13%;
+}
+
+.reviews-block__review {
+  max-width: 50%;
+}
+
+.reviews-block__title {
+  margin-bottom: 6.18%;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: $lightblack;
+}
+
+.reviews-block__text {
+  margin-bottom: 6.81%;
+  font-size: 1.125em;
+}
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel__item {
+}
+
+.carousel__img {
+  border-radius: 100%;
+}
+
+.reviews__container {
+  position: relative;
+  &::before {
+    content: "";
+    width: 158px;
+    height: 422px;
+    position: absolute;
+    left: 0;
+    bottom: -31%;
+    display: block;
+    background: url("../img/reviews/dec+pat.png")
+  }
+  ::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url("../img/reviews/raspberries.png")
+  }
+}

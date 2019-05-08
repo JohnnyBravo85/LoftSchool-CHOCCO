@@ -1,0 +1,25 @@
+.welcome__container {
+  position: relative;
+  &::after {
+    content: "";
+    width: 512px;
+    height: 648px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    display: block;
+    background: url(../img/welcome/header-pattern.png);
+  }
+  &::before {
+    content: "";
+    width: 1056px;
+    height: 353px;
+    position: absolute;
+    right: 1.5%;
+    bottom: -7%;
+    z-index: 5;
+    display: block;
+    background: url(../img/welcome/header-decor.png);
+  }
+}

@@ -1,0 +1,9 @@
+.phone {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  &__link {
+    display: flex;
+    color: inherit;
+  }
+}

@@ -1,0 +1,57 @@
+.reviews {
+  color: $grey;
+}
+
+.reviews__container {
+  padding-top: 11.19%;
+  padding-bottom: 8.64%;
+  align-items: center;
+}
+
+.reviews__title {
+  margin-bottom: 6.28%;
+  font-size: 3em;
+  font-weight: 700;
+  color: $black;
+}
+
+.reviews-block {
+  display: flex;
+  background: url("../img/reviews/review-bg.png");
+}
+
+.reviews-block__img {
+  width: 27%;
+  margin-right: 2.13%;
+}
+
+.reviews-block__review {
+  max-width: 50%;
+}
+
+.reviews-block__title {
+  margin-bottom: 6.18%;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: $lightblack;
+}
+
+.reviews-block__text {
+  margin-bottom: 6.81%;
+  font-size: 1.125em;
+}
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel__item {
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+}

@@ -1,0 +1,8 @@
+.phone {
+  font-size: 1.5em;
+  &::after {
+    content: "";
+    display: block;
+    
+  }
+}
