@@ -1,0 +1,138 @@
+.reviews {
+  color: $colgrey;
+  background: $bgwhite;
+}
+
+.reviews {
+  position: relative;
+  &::before {
+    content: "";
+    width: 158px;
+    height: 370px;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat;
+  }
+  &::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/raspberries.png") center no-repeat;
+  }
+}
+
+.reviews__container {
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__titles {
+  margin-bottom: 6.28%;
+}
+
+.reviews-block {
+  padding: 4.79%;
+  margin-bottom: 5.33%;
+  position: relative;
+  display: flex;
+  background: url("../img/reviews/review-bg.png") no-repeat right center;
+  background-size: cover;
+  &::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: $bgwhite;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.reviews-block__item {
+  display: flex;
+}
+
+.reviews-block__img {
+  margin-right: 2.13%;
+}
+
+.reviews-block__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  max-width: 254px;
+}
+
+.reviews-block__review {
+  width: 46.07%;
+}
+
+
+.reviews-block__title {
+  margin-bottom: 6.68%;
+  font-size: 1.875em;
+  font-weight: 500;
+  text-align: left;
+  color: $collightblack;
+}
+
+.reviews-block__text {
+  margin-bottom: 7.39%;
+  font-size: 1.125em;
+}
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__item {
+  width: rem(92.5px);
+  height: rem(92.8px);
+  margin-right: 4.48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carousel__item--active {
+  position: relative;
+  &::before {
+    content: "";
+    width: 92.5px;
+    height: 92.8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 8px solid #0f5a47;
+    border-radius: 50%;
+  }
+  
+}
+
+.carousel__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
