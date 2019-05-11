@@ -1,0 +1,33 @@
+.form-block {
+  color: $colgreen;
+}
+
+.form__titles {
+  margin-bottom: 5.32%;
+  color: $colgreen;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form__adress-block {
+  width: 48.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-titles {
+  font-size: 1.125em;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form__name-input {
+  width: 47.83%;
+}

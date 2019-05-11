@@ -330,7 +330,9 @@ body {
   margin: 0 auto;
   padding: 0 7.28%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 body, ul, li, p {
   margin: 0;
@@ -363,7 +365,11 @@ img {
 button {
   cursor: pointer;
   border: none;
-  background: transparent; }
+  background: transparent;
+  outline: none; }
+
+input {
+  outline: none; }
 
 .fixed-nav {
   position: fixed;
@@ -439,7 +445,9 @@ button {
     background: url("../img/welcome/welcome-pattern.png") no-repeat; }
 
 .welcome__container {
-  position: relative; }
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between; }
   .welcome__container::before {
     content: "";
     width: 1056px;
@@ -602,10 +610,6 @@ button {
     z-index: 20;
     background: url("../img/promotion/raspberries-bars.png") center no-repeat; }
 
-.promotion__container {
-  align-items: center;
-  justify-content: center; }
-
 .promotion__promo {
   width: 100%;
   margin-bottom: 6.07%;
@@ -698,10 +702,6 @@ button {
     z-index: 20;
     display: block;
     background: url("../img/reviews/raspberries.png") center no-repeat; }
-
-.reviews__container {
-  align-items: center;
-  justify-content: center; }
 
 .reviews__titles {
   margin-bottom: 6.28%; }
@@ -802,9 +802,7 @@ button {
     background: url("../img/product/dec+pat-product.png") center no-repeat; }
 
 .product__container {
-  position: relative;
-  justify-content: center;
-  align-items: center; }
+  position: relative; }
 
 .slider-control {
   width: 20px;
@@ -904,10 +902,6 @@ button {
   font-weight: 300;
   color: #0d0d0d; }
 
-.team__container {
-  justify-content: center;
-  align-items: center; }
-
 .team__titles {
   margin-bottom: 6.81%; }
 
@@ -997,5 +991,93 @@ button {
   font-weight: 300;
   color: #666;
   transition: 0.4s ease-in; }
+
+.form__container {
+  background: url("../img/form/pattern.png"); }
+
+.form-block {
+  color: #0f5a47; }
+
+.form__titles {
+  margin-bottom: 5.32%;
+  color: #0f5a47; }
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.form__adress-block {
+  width: 48.94%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.form-titles {
+  font-size: 1.125em; }
+
+.form-label {
+  width: 100%; }
+
+.form__name, .form__phone {
+  width: 47.83%; }
+
+.form__home, .form__build, .form__flat, .form__floor {
+  width: 21.74%; }
+
+.form-input {
+  width: 100%;
+  height: 59px;
+  padding-left: 2.4%; }
+
+.form__name-input, .form__phone-input {
+  padding-left: 5%; }
+
+.form__home-input, .form__build-input, .form__flat-input, .form__floor-input {
+  padding-left: 11%; }
+
+.form__pay-block {
+  width: 48.94%; }
+
+.form__comments {
+  width: 100%; }
+
+.form__comments-textarea {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 4.35%;
+  resize: none; }
+
+.form__radio-block {
+  display: flex; }
+
+.form__change, .form__card {
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .form__change::before, .form__card::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    border-radius: 50%;
+    background: #fff; }
+
+.form__change {
+  margin-right: 12.4%; }
+
+.form-radio {
+  width: 66px;
+  height: 66px;
+  margin-right: 9px; }
+
+.checked-block {
+  width: 26px;
+  height: 26px;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=main.css.map */
