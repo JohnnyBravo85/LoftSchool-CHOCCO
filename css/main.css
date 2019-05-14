@@ -874,6 +874,7 @@ button {
 
 .team-list__post {
   height: 0;
+  overflow: hidden;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -882,6 +883,7 @@ button {
 
 .team-list__slider-text {
   height: 0;
+  overflow: hidden;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -895,6 +897,7 @@ button {
   justify-content: space-between;
   opacity: .8;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
+  background-size: cover;
   color: #fff; }
   .menu::before {
     content: "";
@@ -956,6 +959,7 @@ button {
 
 .accordion__pic {
   width: 100px;
+  height: 100%;
   object-fit: cover;
   opacity: .4; }
 
