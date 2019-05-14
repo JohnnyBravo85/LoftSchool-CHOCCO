@@ -17,16 +17,6 @@
     background: #000;
     opacity: .75;
   }
-  &::after {
-    content: "";
-    width: 104px;
-    height: 114px;
-    position: absolute;
-    top: -11%;
-    left: 4%;
-    display: block;
-    background:  url("../img/menu/raspberries-decor.png") no-repeat;
-  }
 }
 
 .menu__title {
@@ -63,7 +53,7 @@
     left: 0;
     right: 0;
     background: #000;
-    opacity: .75;
+    // opacity: .75;
     transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
   }
 }

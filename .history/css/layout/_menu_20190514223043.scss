@@ -1,40 +1,13 @@
 .menu {
-  position: relative;
   display: flex;
   justify-content: space-between;
   opacity: .8;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
   color: $colwhite;
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: .75;
-  }
-  &::after {
-    content: "";
-    width: 104px;
-    height: 114px;
-    position: absolute;
-    top: -11%;
-    left: 4%;
-    display: block;
-    background:  url("../img/menu/raspberries-decor.png") no-repeat;
-  }
 }
 
 .menu__title {
-  position: relative;
-  padding-left: 7.28%;
-  padding-top: 9.46%;
   color: inherit;
-  z-index: 10;
 }
 
 .accordion{

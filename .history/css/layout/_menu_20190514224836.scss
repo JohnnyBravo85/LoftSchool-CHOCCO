@@ -17,16 +17,6 @@
     background: #000;
     opacity: .75;
   }
-  &::after {
-    content: "";
-    width: 104px;
-    height: 114px;
-    position: absolute;
-    top: -11%;
-    left: 4%;
-    display: block;
-    background:  url("../img/menu/raspberries-decor.png") no-repeat;
-  }
 }
 
 .menu__title {
@@ -75,7 +65,7 @@
 .accordion__pic {
   width: 100px;
   object-fit: cover;
-  opacity: .4;
+  opacity: .7;
 }
 
 .accordion__text {

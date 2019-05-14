@@ -322,6 +322,7 @@ body {
   overflow: hidden; }
 
 .section {
+  height: 100vh;
   min-height: 650px;
   display: flex; }
 
@@ -840,12 +841,12 @@ button {
     border-left-color: transparent;
     border-right-color: transparent; }
   .team-list__name:hover ~ div.team-list__post {
-    width: 100%;
+    height: 16px;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in; }
   .team-list__name:hover ~ p.team-list__slider-text {
-    width: 100%;
+    height: 38px;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in; }
@@ -872,6 +873,7 @@ button {
   border-right-color: transparent; }
 
 .team-list__post {
+  height: 0;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -879,7 +881,7 @@ button {
   transition: 0.4s ease-in; }
 
 .team-list__slider-text {
-  width: 0;
+  height: 0;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -888,9 +890,39 @@ button {
   transition: 0.4s ease-in; }
 
 .menu {
-  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  opacity: .8;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
-  opacity: .8; }
+  color: #fff; }
+  .menu::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .75; }
+  .menu::after {
+    content: "";
+    width: 104px;
+    height: 114px;
+    position: absolute;
+    top: -11%;
+    left: 4%;
+    display: block;
+    background: url("../img/menu/raspberries-decor.png") no-repeat; }
+
+.menu__title {
+  position: relative;
+  padding-left: 7.28%;
+  padding-top: 9.46%;
+  color: inherit;
+  z-index: 10; }
 
 .accordion {
   display: flex;

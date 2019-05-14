@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  opacity: .8;
+  opacity: 1;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
   color: $colwhite;
   &::before {
@@ -16,16 +16,6 @@
     right: 0;
     background: #000;
     opacity: .75;
-  }
-  &::after {
-    content: "";
-    width: 104px;
-    height: 114px;
-    position: absolute;
-    top: -11%;
-    left: 4%;
-    display: block;
-    background:  url("../img/menu/raspberries-decor.png") no-repeat;
   }
 }
 

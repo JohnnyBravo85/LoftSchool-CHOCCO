@@ -55,13 +55,13 @@
     border-right-color: transparent;
   }
   &:hover ~ div.team-list__post {
-    height: 16px;
+    width: 95%;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in;
   }
   &:hover ~ p.team-list__slider-text {
-    height: 38px;
+    width: 95%;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in;
@@ -92,7 +92,6 @@
 }
 
 .team-list__post {
-  height: 0;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -101,7 +100,7 @@
 }
 
 .team-list__slider-text {
-  height: 0;
+  width: 0;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
