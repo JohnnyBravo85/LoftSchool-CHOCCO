@@ -368,9 +368,6 @@ button {
   background: transparent;
   outline: none; }
 
-input {
-  outline: none; }
-
 .fixed-nav {
   position: fixed;
   top: 30%;
@@ -582,16 +579,21 @@ input {
 
 .button {
   padding: 22px 35px;
+  position: relative;
   font-size: 1.19em;
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 25%/50%;
   color: #fff;
-  background: #0f5a47; }
+  background: #0f5a47;
+  z-index: 30; }
 
 .presentation__button {
   color: #0f5a47;
   background: #fff; }
+
+.form__button {
+  margin-right: 6.31%; }
 
 .promotion {
   color: #0d0d0d;
@@ -675,118 +677,6 @@ input {
   font-size: 1.125em;
   text-align: center;
   color: #666; }
-
-.reviews {
-  color: #666;
-  background: #fff; }
-
-.reviews {
-  position: relative; }
-  .reviews::before {
-    content: "";
-    width: 158px;
-    height: 370px;
-    position: absolute;
-    left: 0;
-    bottom: -20%;
-    z-index: 20;
-    display: block;
-    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat; }
-  .reviews::after {
-    content: "";
-    width: 173px;
-    height: 99px;
-    position: absolute;
-    top: 1%;
-    right: 0;
-    z-index: 20;
-    display: block;
-    background: url("../img/reviews/raspberries.png") center no-repeat; }
-
-.reviews__titles {
-  margin-bottom: 6.28%; }
-
-.reviews-block {
-  padding: 4.79%;
-  margin-bottom: 5.33%;
-  position: relative;
-  display: flex;
-  background: url("../img/reviews/review-bg.png") no-repeat right center;
-  background-size: cover; }
-  .reviews-block::before {
-    content: "";
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%); }
-
-.reviews-block__item {
-  display: flex; }
-
-.reviews-block__img {
-  margin-right: 2.13%; }
-
-.reviews-block__pic {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  max-height: 260px;
-  max-width: 254px; }
-
-.reviews-block__review {
-  width: 46.07%; }
-
-.reviews-block__title {
-  margin-bottom: 6.68%;
-  font-size: 1.875em;
-  font-weight: 500;
-  text-align: left;
-  color: #323232; }
-
-.reviews-block__text {
-  margin-bottom: 7.39%;
-  font-size: 1.125em; }
-
-.reviews-block__user {
-  font-size: 1.125em;
-  font-weight: 500; }
-
-.carousel {
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-
-.carousel__item {
-  margin-right: 4.48%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.carousel__item--active {
-  position: relative; }
-  .carousel__item--active::before {
-    content: "";
-    width: 92.5px;
-    height: 92.8px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    border: 8px solid #0f5a47;
-    border-radius: 50%; }
-
-.carousel__img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  max-width: 92.5px;
-  max-height: 92.8px;
-  border-radius: 50%; }
 
 .product {
   position: relative;
@@ -992,11 +882,171 @@ input {
   color: #666;
   transition: 0.4s ease-in; }
 
-.form__container {
-  background: url("../img/form/pattern.png"); }
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  height: 656px;
+  background: url("../img/menu/menu-bg.jpg"); }
+
+.accordion {
+  display: flex; }
+
+.accordion-item {
+  position: relative;
+  width: 100px;
+  height: 656px; }
+
+.accordion__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.accordion__text {
+  position: absolute;
+  bottom: 50%;
+  left: -50%;
+  transform: rotate(270deg);
+  color: black; }
+
+.reviews {
+  color: #666;
+  background: #fff; }
+
+.reviews {
+  position: relative; }
+  .reviews::before {
+    content: "";
+    width: 158px;
+    height: 370px;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat; }
+  .reviews::after {
+    content: "";
+    width: 173px;
+    height: 99px;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    z-index: 20;
+    display: block;
+    background: url("../img/reviews/raspberries.png") center no-repeat; }
+
+.reviews__titles {
+  margin-bottom: 6.28%; }
+
+.reviews-block {
+  padding: 4.79%;
+  margin-bottom: 5.33%;
+  position: relative;
+  display: flex;
+  background: url("../img/reviews/review-bg.png") no-repeat right center;
+  background-size: cover; }
+  .reviews-block::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.reviews-block__item {
+  display: flex; }
+
+.reviews-block__img {
+  margin-right: 2.13%; }
+
+.reviews-block__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 260px;
+  max-width: 254px; }
+
+.reviews-block__review {
+  width: 46.07%; }
+
+.reviews-block__title {
+  margin-bottom: 6.68%;
+  font-size: 1.875em;
+  font-weight: 500;
+  text-align: left;
+  color: #323232; }
+
+.reviews-block__text {
+  margin-bottom: 7.39%;
+  font-size: 1.125em; }
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500; }
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.carousel__item {
+  margin-right: 4.48%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.carousel__item--active {
+  position: relative; }
+  .carousel__item--active::before {
+    content: "";
+    width: 92.5px;
+    height: 92.8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 8px solid #0f5a47;
+    border-radius: 50%; }
+
+.carousel__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 92.5px;
+  max-height: 92.8px;
+  border-radius: 50%; }
 
 .form-block {
+  position: relative;
+  background: #cfdeda;
   color: #0f5a47; }
+  .form-block::before {
+    content: "";
+    width: 197px;
+    height: 264px;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/form/leaves-form-decor.png"); }
+
+.form__container {
+  position: relative;
+  background: url("../img/form/pattern.png"); }
+  .form__container::before {
+    content: "";
+    width: 1085px;
+    height: 239px;
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    display: block;
+    background: url("../img/form/blueberry-form-decor.png") no-repeat; }
 
 .form__titles {
   margin-bottom: 5.32%;
@@ -1004,14 +1054,23 @@ input {
 
 .form {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end; }
+
+.form__client {
+  margin-bottom: 4.26%;
+  position: relative;
+  display: flex;
   justify-content: space-between;
-  width: 100%; }
+  z-index: 20; }
 
 .form__adress-block {
   width: 48.94%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: stretch; }
 
 .form-titles {
   font-size: 1.125em; }
@@ -1023,6 +1082,7 @@ input {
   width: 47.83%; }
 
 .form__home, .form__build, .form__flat, .form__floor {
+  align-self: flex-end;
   width: 21.74%; }
 
 .form-input {
@@ -1037,7 +1097,10 @@ input {
   padding-left: 11%; }
 
 .form__pay-block {
-  width: 48.94%; }
+  width: 48.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .form__comments {
   width: 100%; }
@@ -1049,35 +1112,85 @@ input {
   resize: none; }
 
 .form__radio-block {
-  display: flex; }
+  display: flex;
+  margin-bottom: 1.74%; }
 
 .form__change, .form__card {
   display: flex;
-  align-items: center;
-  position: relative; }
-  .form__change::before, .form__card::before {
-    content: "";
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: block;
-    border-radius: 50%;
-    background: #fff; }
+  align-items: center; }
 
 .form__change {
   margin-right: 12.4%; }
 
 .form-radio {
-  width: 66px;
-  height: 66px;
-  margin-right: 9px; }
+  display: none; }
 
-.checked-block {
+.form__change-div, .form__card-div {
   width: 26px;
   height: 26px;
-  border: 1px solid black; }
+  margin-right: 9px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff; }
+
+.form__change-input:checked + .form__change-div::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  border: 7px solid #0f5a47;
+  border-radius: 50%; }
+
+.form__card-input:checked + .form__card-div::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  border: 7px solid #0f5a47;
+  border-radius: 50%; }
+
+.form-checkbox {
+  display: none; }
+
+.form__call {
+  display: flex;
+  align-items: center; }
+
+.form__call-div {
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  background-color: #fff;
+  position: relative; }
+
+.form__call-input:checked + div.form__call-div::before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  bottom: 50%;
+  left: 25%;
+  transform: rotate(-50deg) skew(-5deg);
+  display: block;
+  border: 3px solid #0f5a47;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  z-index: 20; }
+
+.form__button-block {
+  width: 48.94%;
+  position: relative;
+  z-index: 20; }
+
+.form__refresh {
+  color: inherit; }
 
 /*# sourceMappingURL=main.css.map */
