@@ -1,7 +1,6 @@
 .menu {
   color: $colwhite;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
-  opacity: .8;
 }
 
 .accordion{
@@ -17,7 +16,6 @@
   &:hover .accordion__description {
     width: 430px;
     padding: 56px 26px;
-    opacity: 1;
     transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
   }
   &:hover::before {

@@ -840,11 +840,15 @@ button {
     border-left-color: transparent;
     border-right-color: transparent; }
   .team-list__name:hover ~ div.team-list__post {
+    width: 100%;
     display: block;
-    opacity: 1; }
+    opacity: 1;
+    transition: 0.4s ease-in; }
   .team-list__name:hover ~ p.team-list__slider-text {
+    width: 100%;
     display: block;
-    opacity: 1; }
+    opacity: 1;
+    transition: 0.4s ease-in; }
   .team-list__name::before {
     content: "";
     width: 20px;
@@ -875,6 +879,7 @@ button {
   transition: 0.4s ease-in; }
 
 .team-list__slider-text {
+  width: 0;
   cursor: default;
   opacity: 0;
   font-size: 1.125em;
@@ -883,30 +888,64 @@ button {
   transition: 0.4s ease-in; }
 
 .menu {
-  display: flex;
-  justify-content: flex-end;
-  height: 656px;
-  background: url("../img/menu/menu-bg.jpg"); }
+  color: #fff;
+  background: url("../img/menu/menu-bg.jpg") no-repeat;
+  opacity: .8; }
 
 .accordion {
-  display: flex; }
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  color: inherit; }
 
 .accordion-item {
   position: relative;
-  width: 100px;
-  height: 656px; }
+  display: flex; }
+  .accordion-item:hover .accordion__description {
+    width: 430px;
+    padding: 56px 26px;
+    opacity: 1;
+    transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s; }
+  .accordion-item:hover::before {
+    content: "";
+    width: 630px;
+    height: 660px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .75;
+    transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s; }
+
+.accordion__img {
+  position: relative; }
 
 .accordion__pic {
+  width: 100px;
   object-fit: cover;
-  width: 100%;
-  height: 100%; }
+  opacity: .4; }
 
 .accordion__text {
   position: absolute;
-  bottom: 50%;
-  left: -50%;
-  transform: rotate(270deg);
-  color: black; }
+  bottom: 5%;
+  left: 25%;
+  transform: rotate(180deg);
+  font-weight: 500;
+  color: inherit;
+  writing-mode: vertical-rl; }
+
+.accordion__description {
+  position: relative;
+  width: 0;
+  height: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  opacity: 0;
+  color: inherit;
+  transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
+  z-index: 10; }
 
 .reviews {
   color: #666;

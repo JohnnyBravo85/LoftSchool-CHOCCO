@@ -55,13 +55,13 @@
     border-right-color: transparent;
   }
   &:hover ~ div.team-list__post {
-    width: 100%;
+    width: 16px;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in;
   }
   &:hover ~ p.team-list__slider-text {
-    width: 100%;
+    width: 38px;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in;

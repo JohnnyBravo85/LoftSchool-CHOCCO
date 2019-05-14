@@ -1,0 +1,39 @@
+.menu {
+  background: url("../img/menu/menu-bg.jpg") no-repeat;
+}
+
+.accordion{
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  color: $colwhite;
+}
+
+.accordion-item {
+  width: 100px;
+  position: relative;
+  display: flex;
+}
+
+.accordion__pic {
+  object-fit: cover;
+  width: 100px;
+  height: 100%;
+}
+
+.accordion__text {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  transform: rotate(180deg);
+  font-weight: 500;
+  color: $colwhite;
+  writing-mode: vertical-rl;
+}
+
+.accordion__description {
+  width: 430px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: black;
+}

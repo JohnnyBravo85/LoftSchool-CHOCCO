@@ -1,37 +1,24 @@
 .menu {
-  color: $colwhite;
   background: url("../img/menu/menu-bg.jpg") no-repeat;
-  opacity: .8;
 }
 
 .accordion{
   display: flex;
   display: flex;
   justify-content: flex-end;
-  color: inherit;
+  color: $colwhite;
 }
 
 .accordion-item {
-  position: relative;
   display: flex;
   &:hover .accordion__description {
     width: 430px;
-    padding: 56px 26px;
-    opacity: 1;
+    padding-top: 56px;
+    padding-left: 26px;
+    font-size: 1em;
+    line-height: 1.5;
     transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  }
-  &:hover::before {
-    content: "";
-    width: 630px;
-    height: 660px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: .75;
-    transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+    color: #fff;
   }
 }
 
@@ -42,7 +29,7 @@
 .accordion__pic {
   width: 100px;
   object-fit: cover;
-  opacity: .4;
+  // opacity: .4;
 }
 
 .accordion__text {
@@ -51,18 +38,12 @@
   left: 25%;
   transform: rotate(180deg);
   font-weight: 500;
-  color: inherit;
+  color: $colwhite;
   writing-mode: vertical-rl;
 }
 
 .accordion__description {
-  position: relative;
   width: 0;
   height: 0;
-  font-size: 1em;
-  line-height: 1.5;
-  opacity: 0;
-  color: inherit;
   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  z-index: 10;
 }
