@@ -380,7 +380,7 @@ button {
     align-items: center; }
 
 .fixed-nav__item {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   display: flex; }
   .fixed-nav__item:last-child {
     margin-bottom: 0; }
@@ -402,8 +402,8 @@ button {
 
 .fixed-nav__link--active.fixed-nav__link::after {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -415,8 +415,8 @@ button {
 
 .fixed-nav__item:hover .fixed-nav__link::after {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -433,8 +433,8 @@ button {
   position: relative; }
   .welcome::before {
     content: "";
-    width: 512px;
-    height: 548px;
+    width: 32rem;
+    height: 34.25rem;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -448,8 +448,8 @@ button {
   justify-content: space-between; }
   .welcome__container::before {
     content: "";
-    width: 1056px;
-    height: 353px;
+    width: 66rem;
+    height: 22.0625rem;
     position: absolute;
     right: 0;
     bottom: -7.5%;
@@ -459,9 +459,11 @@ button {
 
 .header {
   padding-top: 2.66%;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 40; }
 
 .logo {
   width: 5.64%;
@@ -499,8 +501,8 @@ button {
   position: relative; }
   .phone__number::before {
     content: "";
-    width: 12px;
-    height: 11px;
+    width: 0.75rem;
+    height: 0.6875rem;
     position: absolute;
     left: -10%;
     top: 50%;
@@ -509,8 +511,8 @@ button {
     background: url("../img/welcome/phone.png"); }
   .phone__number::after {
     content: "";
-    width: 15px;
-    height: 12px;
+    width: 0.9375rem;
+    height: 0.75rem;
     position: absolute;
     left: -7.5%;
     top: 50%;
@@ -527,9 +529,11 @@ button {
 .presentation__block {
   width: 52.03%;
   height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 40; }
 
 .presentation__marketing-block {
   padding-top: 21.46%; }
@@ -558,6 +562,22 @@ button {
 .marketing-list__img {
   margin-right: 0.58125rem; }
 
+.marketing-list__pic {
+  fill: transparent;
+  stroke: #b0f7ff; }
+
+.marketing-list__leaves-icon {
+  width: 2.75rem;
+  height: 2.5625rem; }
+
+.marketing-list__car-icon {
+  width: 3.125rem;
+  height: 2.5rem; }
+
+.marketing-list__meter-icon {
+  width: 2.625rem;
+  height: 2.625rem; }
+
 .marketing-list__text {
   max-width: 54.66%;
   font-size: 1em; }
@@ -573,13 +593,13 @@ button {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-width: 503px;
-  max-height: 523px;
+  max-width: 31.4375rem;
+  max-height: 32.6875rem;
   position: relative;
   z-index: 20; }
 
 .button {
-  padding: 22px 35px;
+  padding: 1.375rem 2.1875rem;
   position: relative;
   font-size: 1.19em;
   font-weight: 800;
@@ -587,7 +607,7 @@ button {
   border-radius: 25%/50%;
   color: #fff;
   background: #0f5a47;
-  z-index: 30; }
+  z-index: 40; }
 
 .presentation__button {
   color: #0f5a47;
@@ -597,15 +617,14 @@ button {
   margin-right: 6.31%; }
 
 .promotion {
+  position: relative;
   color: #0d0d0d;
-  background: url("../img/promotion/promo-pattern.png") left center no-repeat; }
-
-.promotion {
-  position: relative; }
+  background: url("../img/promotion/promo-pattern.png") left center no-repeat;
+  z-index: 40; }
   .promotion::before {
     content: "";
-    width: 161px;
-    height: 292px;
+    width: 10.0625rem;
+    height: 18.25rem;
     display: block;
     position: absolute;
     left: 0;
@@ -657,14 +676,31 @@ button {
   background: #f2f5f4; }
   .promo-list__pic::after {
     content: "";
-    width: 67px;
-    height: 21px;
+    width: 4.1875rem;
+    height: 1.3125rem;
     position: absolute;
     right: -100%;
     top: 50%;
     transform: translateY(-50%);
     display: block;
     background: url("../img/promotion/three-points.png"); }
+
+.promo-list__svg {
+  fill: transparent;
+  stroke: #2a2a29;
+  stroke-width: .75; }
+
+.promo-list__man-icon {
+  width: 52.8%;
+  height: 55.2%; }
+
+.promo-list__smile-icon {
+  width: 56%;
+  height: 55.2%; }
+
+.promo-list__strength-icon {
+  width: 60%;
+  height: 51.2%; }
 
 .promo-list__item:last-child .promo-list__pic::after {
   content: none; }
@@ -684,8 +720,8 @@ button {
   background: #f8faf9; }
   .product::before {
     content: "";
-    width: 196px;
-    height: 578px;
+    width: 12.25rem;
+    height: 36.125rem;
     position: absolute;
     right: 0;
     bottom: -53%;
@@ -696,8 +732,8 @@ button {
   position: relative; }
 
 .slider-control {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -722,13 +758,13 @@ button {
   width: 50%; }
 
 .product-list__img-inner {
-  max-width: 392px;
-  max-height: 395px;
+  max-width: 24.5rem;
+  max-height: 24.6875rem;
   position: relative; }
   .product-list__img-inner::before {
     content: "";
-    width: 461px;
-    height: 326px;
+    width: 28.8125rem;
+    height: 20.375rem;
     position: absolute;
     bottom: 0;
     left: -11%;
@@ -738,8 +774,8 @@ button {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-width: 392px;
-  max-height: 395px; }
+  max-width: 24.5rem;
+  max-height: 24.6875rem; }
 
 .product-list__block {
   width: 50%;
@@ -841,19 +877,19 @@ button {
     border-left-color: transparent;
     border-right-color: transparent; }
   .team-list__name:hover ~ div.team-list__post {
-    height: 16px;
+    height: 1rem;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in; }
   .team-list__name:hover ~ p.team-list__slider-text {
-    height: 38px;
+    height: 2.375rem;
     display: block;
     opacity: 1;
     transition: 0.4s ease-in; }
   .team-list__name::before {
     content: "";
-    width: 20px;
-    height: 10px;
+    width: 1.25rem;
+    height: 0.625rem;
     position: absolute;
     top: 50%;
     right: -11%;
@@ -912,8 +948,8 @@ button {
     opacity: .75; }
   .menu::after {
     content: "";
-    width: 104px;
-    height: 114px;
+    width: 6.5rem;
+    height: 7.125rem;
     position: absolute;
     top: -11%;
     left: 4%;
@@ -937,14 +973,14 @@ button {
   position: relative;
   display: flex; }
   .accordion-item:hover .accordion__description {
-    width: 430px;
-    padding: 56px 26px;
+    width: 26.875rem;
+    padding: 3.5rem 1.625rem;
     opacity: 1;
     transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s; }
   .accordion-item:hover::before {
     content: "";
-    width: 630px;
-    height: 660px;
+    width: 39.375rem;
+    height: 100%;
     display: block;
     position: absolute;
     top: 0;
@@ -958,7 +994,7 @@ button {
   position: relative; }
 
 .accordion__pic {
-  width: 100px;
+  width: 6.25rem;
   height: 100%;
   object-fit: cover;
   opacity: .4; }
@@ -991,8 +1027,8 @@ button {
   position: relative; }
   .reviews::before {
     content: "";
-    width: 158px;
-    height: 370px;
+    width: 9.875rem;
+    height: 23.125rem;
     position: absolute;
     left: 0;
     bottom: -20%;
@@ -1001,8 +1037,8 @@ button {
     background: url("../img/reviews/dec+pat-reviews.png") center no-repeat; }
   .reviews::after {
     content: "";
-    width: 173px;
-    height: 99px;
+    width: 10.8125rem;
+    height: 6.1875rem;
     position: absolute;
     top: 1%;
     right: 0;
@@ -1022,8 +1058,8 @@ button {
   background-size: cover; }
   .reviews-block::before {
     content: "";
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
     border-radius: 50%;
     background: #fff;
     position: absolute;
@@ -1041,8 +1077,8 @@ button {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-height: 260px;
-  max-width: 254px; }
+  max-height: 16.25rem;
+  max-width: 15.875rem; }
 
 .reviews-block__review {
   width: 46.07%; }
@@ -1077,8 +1113,8 @@ button {
   position: relative; }
   .carousel__item--active::before {
     content: "";
-    width: 92.5px;
-    height: 92.8px;
+    width: 5.78125rem;
+    height: 5.8rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1091,8 +1127,8 @@ button {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-width: 92.5px;
-  max-height: 92.8px;
+  max-width: 5.78125rem;
+  max-height: 5.8rem;
   border-radius: 50%; }
 
 .form-block {
@@ -1101,8 +1137,8 @@ button {
   color: #0f5a47; }
   .form-block::before {
     content: "";
-    width: 197px;
-    height: 264px;
+    width: 12.3125rem;
+    height: 16.5rem;
     position: absolute;
     top: -20%;
     right: 0;
@@ -1115,8 +1151,8 @@ button {
   background: url("../img/form/pattern.png"); }
   .form__container::before {
     content: "";
-    width: 1085px;
-    height: 239px;
+    width: 67.8125rem;
+    height: 14.9375rem;
     position: absolute;
     right: 0;
     bottom: 3%;
@@ -1125,13 +1161,17 @@ button {
 
 .form__titles {
   margin-bottom: 5.32%;
-  color: #0f5a47; }
+  position: relative;
+  color: #0f5a47;
+  z-index: 40; }
 
 .form {
+  width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: flex-end; }
+  align-items: flex-end;
+  z-index: 40; }
 
 .form__client {
   margin-bottom: 4.26%;
@@ -1162,7 +1202,7 @@ button {
 
 .form-input {
   width: 100%;
-  height: 59px;
+  height: 3.6875rem;
   padding-left: 2.4%; }
 
 .form__name-input, .form__phone-input {
@@ -1182,7 +1222,7 @@ button {
 
 .form__comments-textarea {
   width: 100%;
-  height: 180px;
+  height: 11.25rem;
   margin-bottom: 4.35%;
   resize: none; }
 
@@ -1201,9 +1241,9 @@ button {
   display: none; }
 
 .form__change-div, .form__card-div {
-  width: 26px;
-  height: 26px;
-  margin-right: 9px;
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-right: 0.5625rem;
   position: relative;
   border-radius: 50%;
   background: #fff; }
@@ -1240,16 +1280,16 @@ button {
   align-items: center; }
 
 .form__call-div {
-  width: 26px;
-  height: 26px;
-  margin-right: 9px;
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-right: 0.5625rem;
   background-color: #fff;
   position: relative; }
 
 .form__call-input:checked + div.form__call-div::before {
   content: "";
-  width: 8px;
-  height: 2px;
+  width: 0.5rem;
+  height: 0.125rem;
   position: absolute;
   bottom: 50%;
   left: 25%;
@@ -1286,19 +1326,46 @@ button {
 .address__phone-block {
   display: flex; }
 
+.address__img {
+  width: 0.75rem;
+  height: 0.6875rem;
+  fill: #0f5a47; }
+
 .address__pic {
-  margin-right: 7px; }
+  margin-right: 0.4375rem; }
 
 .address__phone {
   font-size: 1.313em;
   color: #0f5a47; }
 
 .social-list {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
-.social-list__item--margin {
-  margin-right: 20px; }
-  .social-list__item--margin:last-child {
+.social-list__item--active {
+  margin-right: 1.25rem; }
+  .social-list__item--active:last-child {
     margin-right: 0; }
+  .social-list__item--active:hover .social-list__pic {
+    fill: #000000; }
+
+.social-list__pic {
+  fill: #b2b2b2; }
+
+.social-list__vk-icon {
+  width: 1.4375rem;
+  height: 0.8125rem; }
+
+.social-list__fb-icon {
+  width: 1.25rem;
+  height: 1.25rem; }
+
+.social-list__inst-icon {
+  width: 1.25rem;
+  height: 1.25rem; }
+
+.social-list__twitt-icon {
+  width: 1.25rem;
+  height: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
