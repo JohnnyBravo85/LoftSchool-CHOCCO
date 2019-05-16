@@ -308,7 +308,8 @@ template {
   box-sizing: border-box; }
 
 html, body {
-  height: 100%; }
+  height: 100%;
+  font-size: 16px; }
 
 body {
   font-family: 'Alegreya Sans', Arial, sans-serif;
@@ -327,7 +328,8 @@ body {
   display: flex; }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
+  width: auto;
   margin: 0 auto;
   padding: 0 7.28%;
   display: flex;
@@ -335,6 +337,10 @@ body {
   align-items: center;
   justify-content: center; }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 460px;
+    padding: 0; } }
 body, ul, li, p {
   margin: 0;
   padding: 0; }
@@ -425,6 +431,20 @@ button {
   border-radius: 50%;
   border: 2px solid #fff; }
 
+.button {
+  padding: 1.375rem 2.1875rem;
+  position: relative;
+  font-size: 1.19em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 25%/50%;
+  color: #fff;
+  background: #0f5a47;
+  z-index: 40; }
+
+.form__button {
+  margin-right: 6.31%; }
+
 .welcome {
   color: #fff;
   background: #61c4d9; }
@@ -457,6 +477,15 @@ button {
     display: block;
     background: url("../img/welcome/welcome-decor.png") no-repeat; }
 
+@media screen and (max-width: 768px) {
+  .welcome::before {
+    top: 0; }
+
+  .welcome__container::before {
+    content: none; }
+
+  .welcome__container {
+    max-width: 100%; } }
 .header {
   padding-top: 2.66%;
   position: relative;
@@ -497,29 +526,23 @@ button {
   align-items: center;
   color: inherit; }
 
-.phone__number {
-  position: relative; }
-  .phone__number::before {
-    content: "";
-    width: 0.75rem;
-    height: 0.6875rem;
-    position: absolute;
-    left: -10%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    background: url("../img/welcome/phone.png"); }
-  .phone__number::after {
-    content: "";
-    width: 0.9375rem;
-    height: 0.75rem;
-    position: absolute;
-    left: -7.5%;
-    top: 50%;
-    display: block;
-    transform: translateY(-50%);
-    color: transparent; }
+.phone__img {
+  width: 0.75rem;
+  height: 0.6875rem;
+  margin-right: 0.4375rem;
+  fill: currentColor; }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 3.26%;
+    padding-left: 3.39%;
+    padding-right: 3.39%; }
+
+  .nav {
+    display: none; }
+
+  .welcome__phone {
+    display: none; } }
 .presentation {
   height: 100%;
   padding-bottom: 2.875rem;
@@ -549,6 +572,10 @@ button {
   width: 72.55%;
   margin-bottom: 6.88%;
   font-size: 1.32em; }
+
+.presentation__button {
+  color: #0f5a47;
+  background: #fff; }
 
 .marketing-list {
   width: 100%;
@@ -585,6 +612,7 @@ button {
 .presentation__candy-bars {
   width: 56.2%;
   margin-right: -7.79%;
+  position: relative;
   display: flex;
   justify-content: end;
   align-items: flex-start; }
@@ -598,24 +626,54 @@ button {
   position: relative;
   z-index: 20; }
 
-.button {
-  padding: 1.375rem 2.1875rem;
-  position: relative;
-  font-size: 1.19em;
-  font-weight: 800;
-  text-transform: uppercase;
-  border-radius: 25%/50%;
-  color: #fff;
-  background: #0f5a47;
-  z-index: 40; }
+@media screen and (max-width: 768px) {
+  .presentation {
+    padding-left: 14.59%;
+    padding-right: 14.59%;
+    padding-bottom: 8.86%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
 
-.presentation__button {
-  color: #0f5a47;
-  background: #fff; }
+  .presentation__block {
+    width: 100%;
+    height: auto; }
 
-.form__button {
-  margin-right: 6.31%; }
+  .presentation__marketing-block {
+    padding-top: 0;
+    margin-bottom: 9.56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
 
+  .main-title {
+    margin-bottom: 4.23%; }
+
+  .presentation__description {
+    align-self: center; }
+
+  .presentation__button {
+    align-self: center; }
+
+  .marketing-list__item {
+    width: 100%; }
+
+  .presentation__candy-bars {
+    width: 25.1875rem;
+    height: 26.1875rem;
+    margin-right: 0;
+    order: -10; }
+    .presentation__candy-bars::before {
+      content: "";
+      width: 27.125rem;
+      height: 17.5rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      z-index: 30;
+      background: url("../img/welcome/tablets-leaves.png") no-repeat center center; } }
 .promotion {
   position: relative;
   color: #0d0d0d;
@@ -833,14 +891,13 @@ button {
   margin-bottom: 6.81%; }
 
 .team-list {
+  margin-right: -1rem;
   display: flex; }
 
 .team-list__item {
-  width: 25%;
+  width: calc(100%/4 - rem(16px));
   margin-right: 1.7%;
   position: relative; }
-  .team-list__item:last-child {
-    margin-right: 0; }
   .team-list__item:nth-child(even) {
     margin-top: 6.07%; }
 
@@ -1108,6 +1165,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .carousel__item:last-child {
+    margin-right: 0; }
 
 .carousel__item--active {
   position: relative; }
@@ -1203,7 +1262,8 @@ button {
 .form-input {
   width: 100%;
   height: 3.6875rem;
-  padding-left: 2.4%; }
+  padding-left: 2.4%;
+  border: 3px solid #dde3bd; }
 
 .form__name-input, .form__phone-input {
   padding-left: 5%; }
@@ -1224,6 +1284,7 @@ button {
   width: 100%;
   height: 11.25rem;
   margin-bottom: 4.35%;
+  border: 3px solid #dde3bd;
   resize: none; }
 
 .form__radio-block {
@@ -1318,25 +1379,16 @@ button {
   flex-direction: row;
   justify-content: space-between; }
 
+.address {
+  color: #0f5a47; }
+
 .address__company {
   margin-bottom: 1.28%;
   font-size: 1.313em;
   color: #010101; }
 
-.address__phone-block {
-  display: flex; }
-
-.address__img {
-  width: 0.75rem;
-  height: 0.6875rem;
-  fill: #0f5a47; }
-
-.address__pic {
-  margin-right: 0.4375rem; }
-
-.address__phone {
-  font-size: 1.313em;
-  color: #0f5a47; }
+.phone__number--font-size {
+  font-size: .875em; }
 
 .social-list {
   display: flex;

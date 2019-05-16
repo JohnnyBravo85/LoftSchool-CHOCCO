@@ -1,0 +1,19 @@
+<svg>
+   <symbol viewBox="0 0 70 25" width="67" height="21">
+    <circle
+       cx="62.744049"
+       cy="17.675594"
+       style="stroke-width:0.26458332;fill:#f2f5f4;fill-opacity:1"
+       r="11" />
+    <circle
+       cx="31.372025"
+       cy="17.675594"
+       style="stroke-width:0.26458332;fill:#f2f5f4;fill-opacity:1"
+       r="8" />
+    <circle
+       cx="94.116066"
+       cy="17.675594"
+       style="stroke-width:0.26458332;fill:#f2f5f4;fill-opacity:1"
+       r="8" />
+  </g>
+</svg>
