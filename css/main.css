@@ -532,6 +532,9 @@ button {
   margin-right: 0.4375rem;
   fill: currentColor; }
 
+.burger-menu {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   .header {
     padding-top: 3.26%;
@@ -542,7 +545,35 @@ button {
     display: none; }
 
   .welcome__phone {
-    display: none; } }
+    display: none; }
+
+  .burger-menu {
+    width: 24px;
+    height: 6px;
+    position: relative;
+    display: block;
+    border-radius: 10px/10px;
+    background: #fff; }
+    .burger-menu::before {
+      content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff; }
+    .burger-menu::after {
+      content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff; } }
 .presentation {
   height: 100%;
   padding-bottom: 2.875rem;

@@ -80,27 +80,11 @@
     display: block;
     border-radius: 10px/10px;
     background: #fff;
-    &::before {
-      content: "";
-      width: 24px;
-      height: 6px;
-      position: absolute;
-      top: -10px;
-      left: 0;
-      display: block;
-      border-radius: 10px/10px;
-      background: #fff;
-    }
-    &::after {
-      content: "";
-      width: 24px;
-      height: 6px;
-      position: absolute;
-      top: 10px;
-      left: 0;
-      display: block;
-      border-radius: 10px/10px;
-      background: #fff;
-    }
+  }
+  &::before {
+    content: "";
+    width: 24px;
+    height: 6px;
+    position: absolute;
   }
 }
