@@ -7,8 +7,8 @@
   position: relative;
   &::before {
     content: "";
-    width: 512px;
-    height: 548px;
+    width: rem(512px);
+    height: rem(548px);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -27,8 +27,8 @@
   justify-content: space-between;
   &::before {
     content: "";
-    width: 1056px;
-    height: 353px;
+    width: rem(1056px);
+    height: rem(353px);
     position: absolute;
     right: 3.5%;
     bottom: -8.5%;

@@ -5,23 +5,14 @@
   z-index: 40;
   &::before {
     content: "";
-    width: 161px;
-    height: 292px;
+    width: rem(161px);
+    height: rem(292px);
     display: block;
     position: absolute;
     left: 0;
     bottom: -14.5%;
     z-index: 20;
     background: url("../img/promotion/raspberries-bars.png") center no-repeat;
-  }
-  @include tablets {
-    background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat;
-  }
-}
-
-.promotion__container {
-  @include tablets {
-    max-width: 460px;
   }
 }
 
@@ -31,9 +22,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include tablets {
-    margin-bottom: 3%;
-  }
 }
 
 .titles {
@@ -41,9 +29,6 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $colblack;
-  @include tablets {
-    font-size: 2.5rem;
-  }
 }
 
 .promotion__titles {
@@ -55,9 +40,6 @@
   font-size: 1.125em;
   text-align: center;
   color: $colgrey;
-  @include tablets {
-    width: 100%;
-  }
 }
 
 .promo-list {
@@ -65,11 +47,6 @@
   display: flex;
   justify-content: space-between;
   z-index: 20;
-  @include tablets {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
 }
 
 .promo-list__item {
@@ -77,9 +54,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include tablets {
-      width: 100%;
-    }
 }
 
 .promo-list__pic {
@@ -94,8 +68,8 @@
   background: $bglightestgrey;
   &::after {
     content: "";
-    width: 67px;
-    height: 21px;
+    width: rem(67px);
+    height: rem(21px);
     position: absolute;
     right: -100%;
     top: 50%;
@@ -139,9 +113,6 @@
 .promo-list__item h4 {
   margin-bottom: 9.68%;
   font-size: 1.69em;
-  @include tablets {
-    margin-bottom: 3%;
-  }
 }
 
 .promo-list__item p {
@@ -149,7 +120,34 @@
   font-size: 1.125em;
   text-align: center;
   color: $colgrey;
-  @include tablets {
+}
+
+@media screen and (max-width: 768px) {
+
+  .promotion {
+    background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat;
+  }
+
+  .promotion__text {
+    width: 100%;
+  }
+
+  .promo-list {
+    margin-bottom: 9.79%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .promo-list__item {
+    width: 100%;
+  }
+
+  .promo-list__item h4 {
+    margin-bottom: 6.53%;
+  }
+
+  .promo-list__item p {
     width: 60.22%;
   }
 }

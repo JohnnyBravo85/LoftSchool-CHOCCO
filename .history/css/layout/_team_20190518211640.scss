@@ -73,13 +73,15 @@
     border-right-color: transparent;
   }
   &:hover ~ div.team-list__post {
-    height: 20px;
+    height: rem(16px);
     display: block;
+    opacity: 1;
     transition: 0.4s ease-in;
   }
   &:hover ~ p.team-list__slider-text {
-    height: 50px;
+    height: rem(38px);
     display: block;
+    opacity: 1;
     transition: 0.4s ease-in;
   }
   &::before {
@@ -112,6 +114,7 @@
   min-height: rem(25px);
   overflow: hidden;
   cursor: default;
+  opacity: 0;
   font-size: 1.125em;
   color: #281e1e;
   transition: 0.4s ease-in;
@@ -122,15 +125,14 @@
 
 .team-list__slider-text {
   height: 0;
-  position: relative;
   min-height: rem(100px);
   overflow: hidden;
   cursor: default;
+  opacity: 0;
   font-size: 1.125em;
   font-weight: 300;
   color: $colgrey;
   transition: 0.4s ease-in;
-  z-index: 10;
   @include tablets {
     min-height: 0;
   }

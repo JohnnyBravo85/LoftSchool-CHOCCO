@@ -30,9 +30,9 @@
     bottom: 3%;
     display: block;
     background: url("../img/form/blueberry-form-decor.png") no-repeat;
-    @include tablets {
-      content: none;
-    }
+  }
+  @include tablets {
+    content: none;
   }
 }
 
@@ -77,9 +77,6 @@
 .form__row {
   display: flex;
   justify-content: space-between;
-  @include tablets {
-    margin-bottom: 3%;
-  }
 }
 
 .form-titles {
@@ -118,19 +115,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @include tablets {
-    width: 100%;
-  }
 }
 
 .form__comments {
   width: 100%;
-  margin-bottom: 4.35%;
 }
 
 .form__comments-textarea {
   width: 100%;
   height: rem(180px);
+  margin-bottom: 4.35%;
   border: 3px solid #dde3bd;
   resize: none;
 }
@@ -138,10 +132,6 @@
 .form__radio-block {
   display: flex;
   margin-bottom: 1.74%;
-  @include tablets {
-    margin-bottom: 3%;
-    justify-content: center;
-  }
 }
 
 .form__change, .form__card {
@@ -192,12 +182,6 @@
   border-radius: 50%;
 }
 
-.form__check-block {
-  @include tablets {
-    display: flex;
-    justify-content: center;
-  }
-}
 .form-checkbox {
   display: none;
 }
@@ -234,14 +218,40 @@
   width: 48.94%;
   position: relative;
   z-index: 20;
-  @include tablets {
+}
+
+.form__refresh {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+
+  .form-label {
+    margin-bottom: 4.35%;
+  }
+
+  .form__pay-block {
+    width: 100%;
+  }
+
+  .form__comments {
+    margin-bottom: 10.87%;
+  }
+
+  .form__radio-block {
+    margin-bottom: 6.09%;
+    justify-content: center;
+  }
+
+  .form__check-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__button-block {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
-
-.form__refresh {
-  color: inherit;
 }

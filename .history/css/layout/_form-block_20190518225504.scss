@@ -30,9 +30,9 @@
     bottom: 3%;
     display: block;
     background: url("../img/form/blueberry-form-decor.png") no-repeat;
-    @include tablets {
-      content: none;
-    }
+  }
+  @include tablets {
+    content: none;
   }
 }
 
@@ -234,14 +234,17 @@
   width: 48.94%;
   position: relative;
   z-index: 20;
-  @include tablets {
+}
+
+.form__refresh {
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .form__button-block {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
-
-.form__refresh {
-  color: inherit;
 }

@@ -119,9 +119,6 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $colblack;
-  @include tablets {
-    margin-bottom: 4.35%;
-  }
 }
 
 .product-list__specification {
@@ -147,10 +144,6 @@
   display: flex;
   font-size: 1.125em;
   color: $collighterblack;
-  @include tablets {
-    width: 100%;
-    justify-content: center;
-  }
 }
 
 .specification-list__item {
@@ -166,9 +159,6 @@
 
 .product-list__order-price {
   display: flex;
-  @include tablets {
-    justify-content: center;
-  }
 }
 
 .price {
@@ -176,4 +166,20 @@
   font-size: 3.75em;
   font-weight: 300;
   color: #0d0d0d;
+}
+
+@media screen and (max-width: 768px) {
+
+  .product-list__title {
+    margin-bottom: 4.35%;
+    font-size: 1.875em;
+  }
+  .specification-list {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-list__order-price {
+    justify-content: center;
+  }
 }

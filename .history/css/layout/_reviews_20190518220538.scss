@@ -89,11 +89,12 @@
 
 .reviews-block__img {
   margin-right: 2.13%;
-  position: relative;
-  z-index: 10;
+  max-height: rem(260px);
+  max-width: rem(254px);
   @include tablets {
     margin-bottom: 3%;
     margin-right: 0;
+    max-height: 50%;
   }
 }
 
@@ -133,9 +134,7 @@
 .carousel {
   width: 100%;
   display: flex;
-  position: relative;
   justify-content: center;
-  z-index: 20;
 }
 
 .carousel__item {

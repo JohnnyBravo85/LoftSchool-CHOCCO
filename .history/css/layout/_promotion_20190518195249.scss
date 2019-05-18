@@ -5,8 +5,8 @@
   z-index: 40;
   &::before {
     content: "";
-    width: 161px;
-    height: 292px;
+    width: rem(161px);
+    height: rem(292px);
     display: block;
     position: absolute;
     left: 0;
@@ -16,12 +16,6 @@
   }
   @include tablets {
     background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat;
-  }
-}
-
-.promotion__container {
-  @include tablets {
-    max-width: 460px;
   }
 }
 
@@ -41,9 +35,6 @@
   text-transform: uppercase;
   font-weight: 700;
   color: $colblack;
-  @include tablets {
-    font-size: 2.5rem;
-  }
 }
 
 .promotion__titles {
@@ -55,9 +46,6 @@
   font-size: 1.125em;
   text-align: center;
   color: $colgrey;
-  @include tablets {
-    width: 100%;
-  }
 }
 
 .promo-list {
@@ -65,11 +53,6 @@
   display: flex;
   justify-content: space-between;
   z-index: 20;
-  @include tablets {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
 }
 
 .promo-list__item {
@@ -77,9 +60,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include tablets {
-      width: 100%;
-    }
 }
 
 .promo-list__pic {
@@ -94,8 +74,8 @@
   background: $bglightestgrey;
   &::after {
     content: "";
-    width: 67px;
-    height: 21px;
+    width: rem(67px);
+    height: rem(21px);
     position: absolute;
     right: -100%;
     top: 50%;
@@ -149,7 +129,27 @@
   font-size: 1.125em;
   text-align: center;
   color: $colgrey;
-  @include tablets {
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .promotion__text {
+    width: 100%;
+  }
+
+  .promo-list {
+    margin-bottom: 9.79%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .promo-list__item {
+    width: 100%;
+  }
+
+  .promo-list__item p {
     width: 60.22%;
   }
 }

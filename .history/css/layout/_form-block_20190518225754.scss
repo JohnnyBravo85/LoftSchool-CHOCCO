@@ -30,9 +30,9 @@
     bottom: 3%;
     display: block;
     background: url("../img/form/blueberry-form-decor.png") no-repeat;
-    @include tablets {
-      content: none;
-    }
+  }
+  @include tablets {
+    content: none;
   }
 }
 
