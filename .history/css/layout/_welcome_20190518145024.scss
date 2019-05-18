@@ -15,7 +15,10 @@
     z-index: 10;
     display: block;
     background: url("../img/welcome/welcome-pattern.png") no-repeat;
-    @include tablets {
+  }
+
+  @include tablets {
+    .welcome::before {
       top: 0;
     }
   }
@@ -35,8 +38,16 @@
     z-index: 30;
     display: block;
     background: url("../img/welcome/welcome-decor.png") no-repeat;
-    @include  tablets {
-      content: none;
-    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .welcome__container::before {
+    content: none;
+  }
+
+  .welcome__container {
+    max-width: 100%;
   }
 }

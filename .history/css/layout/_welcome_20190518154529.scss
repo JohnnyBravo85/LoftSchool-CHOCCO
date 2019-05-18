@@ -25,6 +25,9 @@
   position: relative;
   align-items: stretch;
   justify-content: space-between;
+  @include tablets {
+    padding: 0 14ю.3%;
+  }
   &::before {
     content: "";
     width: rem(1056px);

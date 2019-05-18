@@ -25,6 +25,10 @@
   position: relative;
   align-items: stretch;
   justify-content: space-between;
+  @include tablets {
+    max-width: 548px;
+    padding: 0;
+  }
   &::before {
     content: "";
     width: rem(1056px);

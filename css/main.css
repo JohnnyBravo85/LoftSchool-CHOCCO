@@ -307,9 +307,14 @@ template {
 * {
   box-sizing: border-box; }
 
-html, body {
-  height: 100%;
+html {
   font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px; } }
+
+html, body {
+  height: 100%; }
 
 body {
   font-family: 'Alegreya Sans', Arial, sans-serif;
@@ -336,11 +341,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0; } }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: rem(460px);
-    padding: 0; } }
 body, ul, li, p {
   margin: 0;
   padding: 0; }
@@ -461,6 +466,9 @@ button {
     z-index: 10;
     display: block;
     background: url("../img/welcome/welcome-pattern.png") no-repeat; }
+    @media screen and (max-width: 768px) {
+      .welcome::before {
+        top: 0; } }
 
 .welcome__container {
   position: relative;
@@ -476,16 +484,10 @@ button {
     z-index: 30;
     display: block;
     background: url("../img/welcome/welcome-decor.png") no-repeat; }
+    @media screen and (max-width: 768px) {
+      .welcome__container::before {
+        content: none; } }
 
-@media screen and (max-width: 768px) {
-  .welcome::before {
-    top: 0; }
-
-  .welcome__container::before {
-    content: none; }
-
-  .welcome__container {
-    max-width: 100%; } }
 .header {
   padding-top: 2.66%;
   position: relative;
@@ -493,6 +495,11 @@ button {
   justify-content: space-between;
   align-items: center;
   z-index: 40; }
+  @media screen and (max-width: 768px) {
+    .header {
+      padding-top: 4.57%;
+      padding-left: 3.39%;
+      padding-right: 3.39%; } }
 
 .logo {
   width: 5.64%;
@@ -536,11 +543,6 @@ button {
   display: none; }
 
 @media screen and (max-width: 768px) {
-  .header {
-    padding-top: 3.26%;
-    padding-left: 3.39%;
-    padding-right: 3.39%; }
-
   .nav {
     display: none; }
 
@@ -576,8 +578,13 @@ button {
       background: #fff; } }
 .presentation {
   height: 100%;
+  padding: 0 14.33%;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .presentation {
+      flex-direction: column;
+      align-items: center; } }
 
 .presentation__block {
   width: 50%;
@@ -587,6 +594,18 @@ button {
   flex-direction: column;
   justify-content: space-around;
   z-index: 40; }
+  @media screen and (max-width: 768px) {
+    .presentation__block {
+      width: 100%; } }
+
+.presentation__marketing-block {
+  padding-top: 10.64%; }
+  @media screen and (max-width: 768px) {
+    .presentation__marketing-block {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
 
 .main-title {
   margin-bottom: 4.73%;
@@ -594,15 +613,25 @@ button {
   font-size: 3.75em;
   font-weight: 700;
   text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .main-title {
+      font-size: 3.42em;
+      margin-bottom: 2.23%; } }
 
 .presentation__description {
   width: 80%;
   margin-bottom: 6.88%;
   font-size: 1.32em; }
+  @media screen and (max-width: 768px) {
+    .presentation__description {
+      align-self: center; } }
 
 .presentation__button {
   color: #0f5a47;
   background: #fff; }
+  @media screen and (max-width: 768px) {
+    .presentation__button {
+      align-self: center; } }
 
 .marketing-list {
   width: 100%;
@@ -612,6 +641,9 @@ button {
 .marketing-list__item {
   width: 33%;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .marketing-list__item {
+      width: 100%; } }
 
 .marketing-list__img {
   margin-right: 0.58125rem; }
@@ -637,7 +669,27 @@ button {
   font-size: 1em; }
 
 .presentation__candy-bars {
-  width: 50%; }
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .presentation__candy-bars {
+      width: 25.1875rem;
+      height: 26.1875rem;
+      margin-right: 0;
+      order: -10; }
+      .presentation__candy-bars::before {
+        content: "";
+        width: 27.125rem;
+        height: 17.5rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        z-index: 30;
+        background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
+        background-size: cover; } }
 
 .presentation__pic {
   object-fit: contain;
@@ -646,54 +698,6 @@ button {
   position: relative;
   z-index: 20; }
 
-@media screen and (max-width: 768px) {
-  .presentation {
-    padding-left: 14.59%;
-    padding-right: 14.59%;
-    padding-bottom: 8.86%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; }
-
-  .presentation__block {
-    width: 100%;
-    height: auto; }
-
-  .presentation__marketing-block {
-    padding-top: 0;
-    margin-bottom: 9.56%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
-
-  .main-title {
-    margin-bottom: 4.23%; }
-
-  .presentation__description {
-    align-self: center; }
-
-  .presentation__button {
-    align-self: center; }
-
-  .marketing-list__item {
-    width: 100%; }
-
-  .presentation__candy-bars {
-    width: 25.1875rem;
-    height: 26.1875rem;
-    margin-right: 0;
-    order: -10; }
-    .presentation__candy-bars::before {
-      content: "";
-      width: 27.125rem;
-      height: 17.5rem;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      display: block;
-      z-index: 30;
-      background: url("../img/welcome/tablets-leaves.png") no-repeat center center; } }
 .promotion {
   position: relative;
   color: #0d0d0d;

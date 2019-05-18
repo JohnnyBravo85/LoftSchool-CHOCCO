@@ -24,12 +24,6 @@
 
 .presentation__marketing-block {
   padding-top: 10.64%;
-  @include tablets {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 .main-title {
@@ -40,7 +34,7 @@
   text-transform: uppercase;
   @include tablets {
     font-size: 3.42em;
-    margin-bottom: 2.23%;
+    margin-bottom: 4.23%;
   }
 }
 
@@ -48,17 +42,11 @@
   width: 80%;
   margin-bottom: 6.88%;
   font-size: 1.32em;
-  @include tablets {
-    align-self: center;
-  }
 }
 
 .presentation__button {
   color: $butgreen;
   background: $butwhite;
-  @include tablets {
-    align-self: center;
-  }
 }
 
 .marketing-list {
@@ -70,9 +58,6 @@
 .marketing-list__item {
   width: 33%;
   display: flex;
-  @include tablets {
-    width: 100%;
-  }
 }
 
 .marketing-list__img {
@@ -106,10 +91,43 @@
 
 .presentation__candy-bars {
   width: 50%;
-  position: relative;
   display: flex;
   align-items: center;
-  @include tablets {
+}
+
+.presentation__pic {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .presentation__marketing-block {
+    padding-top: 0;
+    margin-bottom: 9.56%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .presentation__description {
+    align-self: center;
+  }
+
+  .presentation__button {
+    align-self: center;
+  }
+
+  .marketing-list__item {
+    width: 100%;
+  }
+
+  .presentation__candy-bars {
     width: rem(403px);
     height: rem(419px);
     margin-right: 0;
@@ -124,15 +142,6 @@
       display: block;
       z-index: 30;
       background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
-      background-size: cover;
     }
   }
-}
-
-.presentation__pic {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 20;
 }

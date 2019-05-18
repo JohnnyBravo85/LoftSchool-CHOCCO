@@ -106,7 +106,6 @@
 
 .presentation__candy-bars {
   width: 50%;
-  position: relative;
   display: flex;
   align-items: center;
   @include tablets {
@@ -124,7 +123,6 @@
       display: block;
       z-index: 30;
       background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
-      background-size: cover;
     }
   }
 }

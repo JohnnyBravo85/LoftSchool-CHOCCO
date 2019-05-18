@@ -7,8 +7,6 @@
   z-index: 40;
   @include tablets {
     padding-top: 4.57%;
-    padding-left: 3.39%;
-    padding-right: 3.39%;
   }
 }
 
@@ -63,6 +61,12 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .header {
+    // padding-top: 3.26%;
+    // padding-left: 3.39%;
+    // padding-right: 3.39%;
+  }
 
   .nav {
     display: none;
