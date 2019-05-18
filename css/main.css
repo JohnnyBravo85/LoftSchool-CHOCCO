@@ -339,7 +339,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 460px;
+    max-width: rem(460px);
     padding: 0; } }
 body, ul, li, p {
   margin: 0;
@@ -471,8 +471,8 @@ button {
     width: 66rem;
     height: 22.0625rem;
     position: absolute;
-    right: 0;
-    bottom: -7.5%;
+    right: 3.5%;
+    bottom: -8.5%;
     z-index: 30;
     display: block;
     background: url("../img/welcome/welcome-decor.png") no-repeat; }
@@ -576,21 +576,17 @@ button {
       background: #fff; } }
 .presentation {
   height: 100%;
-  padding-bottom: 2.875rem;
   display: flex;
   justify-content: space-between; }
 
 .presentation__block {
-  width: 52.03%;
+  width: 50%;
   height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 40; }
-
-.presentation__marketing-block {
-  padding-top: 21.46%; }
 
 .main-title {
   margin-bottom: 4.73%;
@@ -600,7 +596,7 @@ button {
   text-transform: uppercase; }
 
 .presentation__description {
-  width: 72.55%;
+  width: 80%;
   margin-bottom: 6.88%;
   font-size: 1.32em; }
 
@@ -641,19 +637,12 @@ button {
   font-size: 1em; }
 
 .presentation__candy-bars {
-  width: 56.2%;
-  margin-right: -7.79%;
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: flex-start; }
+  width: 50%; }
 
 .presentation__pic {
-  object-fit: cover;
-  height: 100%;
+  object-fit: contain;
   width: 100%;
-  max-width: 31.4375rem;
-  max-height: 32.6875rem;
+  height: 100%;
   position: relative;
   z-index: 20; }
 
@@ -744,8 +733,10 @@ button {
   color: #666; }
 
 .promo-list {
+  position: relative;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 20; }
 
 .promo-list__item {
   width: 33%;
@@ -804,6 +795,32 @@ button {
   text-align: center;
   color: #666; }
 
+@media screen and (max-width: 768px) {
+  .promotion {
+    background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat; }
+
+  .promotion__text {
+    width: 100%; }
+
+  .promo-list {
+    margin-bottom: 9.79%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+
+  .promo-list__item {
+    width: 100%; }
+
+  .promo-list__pic {
+    margin-bottom: 7.61%; }
+    .promo-list__pic::after {
+      content: none; }
+
+  .promo-list__item h4 {
+    margin-bottom: 6.53%; }
+
+  .promo-list__item p {
+    width: 60.22%; } }
 .product {
   position: relative;
   background: #f8faf9; }
@@ -848,7 +865,6 @@ button {
 
 .product-list__img-inner {
   max-width: 24.5rem;
-  max-height: 24.6875rem;
   position: relative; }
   .product-list__img-inner::before {
     content: "";
@@ -862,14 +878,14 @@ button {
 .product-list__pic {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  max-width: 24.5rem;
-  max-height: 24.6875rem; }
+  height: 100%; }
 
 .product-list__block {
   width: 50%;
+  position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 10; }
 
 .product-list__text-block {
   margin-bottom: 7.45%;
@@ -918,6 +934,56 @@ button {
   font-weight: 300;
   color: #0d0d0d; }
 
+@media screen and (max-width: 768px) {
+  .slider-control {
+    top: 30%; }
+
+  .product-list__item {
+    flex-direction: column;
+    align-items: center; }
+
+  .product-list__img {
+    width: 100%;
+    margin-bottom: 13.26%;
+    display: flex;
+    justify-content: center; }
+
+  .product-list__img-inner {
+    max-width: 19.0625rem;
+    max-height: 19.3125rem; }
+
+  .product-list__block {
+    width: 100%;
+    text-align: center; }
+
+  .product-list__text-block {
+    margin-bottom: 9.79%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .product-list__description-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .product-list__title {
+    margin-bottom: 4.35%;
+    font-size: 1.875em; }
+
+  .product-list__specification {
+    margin-bottom: 5.66%; }
+
+  .product-list__description {
+    width: 100%;
+    font-size: 1.125em; }
+
+  .specification-list {
+    width: 100%;
+    justify-content: center; }
+
+  .product-list__order-price {
+    justify-content: center; } }
 .team__titles {
   margin-bottom: 6.81%; }
 
@@ -998,6 +1064,7 @@ button {
 
 .team-list__post {
   height: 0;
+  min-height: 1.5625rem;
   overflow: hidden;
   cursor: default;
   opacity: 0;
@@ -1007,6 +1074,7 @@ button {
 
 .team-list__slider-text {
   height: 0;
+  min-height: 6.25rem;
   overflow: hidden;
   cursor: default;
   opacity: 0;
@@ -1015,6 +1083,19 @@ button {
   color: #666;
   transition: 0.4s ease-in; }
 
+@media screen and (max-width: 768px) {
+  .team-list {
+    margin-right: 20px;
+    flex-wrap: wrap; }
+
+  .team-list__item {
+    width: calc(100%/2 - 20px);
+    margin-right: 4.35%; }
+    .team-list__item:nth-child(even) {
+      margin-top: 0; }
+
+  .team-list__img {
+    height: 80%; } }
 .menu {
   position: relative;
   display: flex;
@@ -1107,6 +1188,9 @@ button {
   transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
   z-index: 10; }
 
+@media screen and (max-width: 768px) {
+  .menu::after {
+    top: -7%; } }
 .reviews {
   color: #666;
   background: #fff; }
@@ -1135,7 +1219,9 @@ button {
     background: url("../img/reviews/raspberries.png") center no-repeat; }
 
 .reviews__titles {
-  margin-bottom: 6.28%; }
+  margin-bottom: 6.28%;
+  position: relative;
+  z-index: 10; }
 
 .reviews-block {
   padding: 4.79%;
@@ -1159,23 +1245,23 @@ button {
   display: flex; }
 
 .reviews-block__img {
-  margin-right: 2.13%; }
+  margin-right: 2.13%;
+  max-height: 16.25rem;
+  max-width: 15.875rem; }
 
 .reviews-block__pic {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  max-height: 16.25rem;
-  max-width: 15.875rem; }
+  height: 100%; }
 
 .reviews-block__review {
-  width: 46.07%; }
+  width: 46.07%;
+  text-align: left; }
 
 .reviews-block__title {
   margin-bottom: 6.68%;
   font-size: 1.875em;
   font-weight: 500;
-  text-align: left;
   color: #323232; }
 
 .reviews-block__text {
@@ -1221,6 +1307,44 @@ button {
   max-height: 5.8rem;
   border-radius: 50%; }
 
+@media screen and (max-width: 768px) {
+  .reviews__titles {
+    margin-bottom: 13.92%;
+    position: relative;
+    z-index: 10; }
+
+  .reviews-block {
+    margin-bottom: 9.78%;
+    padding-top: 14.57%;
+    background: #f8faf9; }
+    .reviews-block::before {
+      top: -12%; }
+    .reviews-block::after {
+      content: "";
+      width: 7.25rem;
+      height: 10rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      background: url("../img/reviews/pattern.png"); }
+
+  .reviews-block__item {
+    flex-direction: column;
+    align-items: center; }
+
+  .reviews-block__img {
+    margin-bottom: 6.31%;
+    margin-right: 0;
+    max-height: 12.96875rem;
+    max-width: 12.65625rem; }
+
+  .reviews-block__pic {
+    max-height: 12.9375rem; }
+
+  .reviews-block__review {
+    width: 100%;
+    text-align: center; } }
 .form-block {
   position: relative;
   background: #cfdeda;
@@ -1273,9 +1397,12 @@ button {
 .form__adress-block {
   width: 48.94%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch; }
+  flex-direction: column;
+  justify-content: space-between; }
+
+.form__row {
+  display: flex;
+  justify-content: space-between; }
 
 .form-titles {
   font-size: 1.125em; }
@@ -1287,7 +1414,6 @@ button {
   width: 47.83%; }
 
 .form__home, .form__build, .form__flat, .form__floor {
-  align-self: flex-end;
   width: 21.74%; }
 
 .form-input {
@@ -1400,10 +1526,50 @@ button {
 .form__refresh {
   color: inherit; }
 
+@media screen and (max-width: 768px) {
+  .form-block::before {
+    top: -14%; }
+
+  .form__container::before {
+    content: none; }
+
+  .form__titles {
+    white-space: pre; }
+
+  .form__client {
+    margin-bottom: 9.79%;
+    flex-direction: column; }
+
+  .form__adress-block {
+    width: 100%; }
+
+  .form-label {
+    margin-bottom: 4.35%; }
+
+  .form__pay-block {
+    width: 100%; }
+
+  .form__comments {
+    margin-bottom: 10.87%; }
+
+  .form__radio-block {
+    margin-bottom: 6.09%;
+    justify-content: center; }
+
+  .form__check-block {
+    display: flex;
+    justify-content: center; }
+
+  .form__button-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 .map__pic {
   object-fit: cover;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  max-width: 100%; }
 
 .footer__container {
   padding: 2.19% 0;
@@ -1450,5 +1616,11 @@ button {
 .social-list__twitt-icon {
   width: 1.25rem;
   height: 1rem; }
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=main.css.map */
