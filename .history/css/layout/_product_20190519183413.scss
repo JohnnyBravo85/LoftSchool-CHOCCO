@@ -70,8 +70,7 @@
 .product-list__img-inner {
   max-width: 392px;
   position: relative;
-  background: url("../img/product/leaves-product.png") no-repeat;
-  background-position: center 10px bottom 10px;
+  background: url("../img/product/leaves-product.png") center 10px bottom 10px no-repeat;
   background-size: cover;
   &::before {
     content: "";

@@ -156,6 +156,7 @@
 
 .form__change {
   margin-right: 12.4%;
+  flex-shrink: 0;
 }
 
 .form-radio {
@@ -169,7 +170,6 @@
   position: relative;
   border-radius: 50%;
   background: #fff;
-  flex-shrink: 0;
 }
 
 .form__change-input:checked + .form__change-div::before {

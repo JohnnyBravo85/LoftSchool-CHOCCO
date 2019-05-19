@@ -309,6 +309,9 @@ template {
 
 html {
   font-size: 16px; }
+  @media screen and (max-width: 992px) {
+    html {
+      font-size: 14px; } }
   @media screen and (max-width: 768px) {
     html {
       font-size: 14px; } }
@@ -997,7 +1000,10 @@ button {
 
 .product-list__img-inner {
   max-width: 392px;
-  position: relative; }
+  position: relative;
+  background: url("../img/product/leaves-product.png") no-repeat;
+  background-position: center 10px bottom 10px;
+  background-size: cover; }
   .product-list__img-inner::before {
     content: "";
     width: 28.8125rem;
@@ -1653,7 +1659,8 @@ button {
   margin-right: 0.5625rem;
   position: relative;
   border-radius: 50%;
-  background: #fff; }
+  background: #fff;
+  flex-shrink: 0; }
 
 .form__change-input:checked + .form__change-div::before {
   content: "";

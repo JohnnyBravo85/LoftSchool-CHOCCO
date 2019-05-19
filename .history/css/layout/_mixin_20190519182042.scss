@@ -3,8 +3,8 @@
     @content;
   }
 }
-  
-@mixin laptop {
+
+@include laptop {
   @media screen and (max-width: 992px) {
     @content;
   }

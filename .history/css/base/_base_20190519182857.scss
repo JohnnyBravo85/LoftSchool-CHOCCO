@@ -5,7 +5,7 @@ box-sizing: border-box;
 html {
   font-size: 16px;
   @include laptop {
-    font-size: 14px;
+    font-size: 15px;
   }
   @include tablets {
     font-size: 14px;
