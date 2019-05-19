@@ -1000,10 +1000,7 @@ button {
 
 .product-list__img-inner {
   max-width: 392px;
-  position: relative;
-  background: url("../img/product/leaves-product.png") no-repeat;
-  background-position: center 10px bottom 10px;
-  background-size: cover; }
+  position: relative; }
   .product-list__img-inner::before {
     content: "";
     width: 28.8125rem;
@@ -1011,6 +1008,7 @@ button {
     position: absolute;
     bottom: 0;
     left: -11%;
+    background: url("../img/product/leaves-product.png") bottom center no-repeat;
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .product-list__img-inner::before {
