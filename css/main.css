@@ -1745,9 +1745,18 @@ button {
   @media screen and (max-width: 768px) {
     .footer__container {
       justify-content: space-around; } }
+  @media screen and (max-width: 480px) {
+    .footer__container {
+      flex-direction: column; } }
 
 .address {
   color: #0f5a47; }
+  @media screen and (max-width: 480px) {
+    .address {
+      margin-bottom: 1.28%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .address__company {
   margin-bottom: 1.28%;
