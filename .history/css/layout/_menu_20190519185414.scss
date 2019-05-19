@@ -58,6 +58,9 @@
     padding: rem(56px) rem(26px);
     opacity: 1;
     transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+    @include phones {
+      // width: 100%;
+    }
   }
   &:hover::before {
     content: "";

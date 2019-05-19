@@ -1283,6 +1283,9 @@ button {
     display: block;
     background: url("../img/menu/raspberries-decor.png") no-repeat;
     background-size: cover; }
+    @media screen and (max-width: 768px) {
+      .menu::after {
+        top: -7%; } }
 
 .menu__title {
   position: relative;
@@ -1347,9 +1350,6 @@ button {
   transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s;
   z-index: 10; }
 
-@media screen and (max-width: 768px) {
-  .menu::after {
-    top: -7%; } }
 .reviews {
   position: relative;
   color: #666;
