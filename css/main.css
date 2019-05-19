@@ -312,6 +312,9 @@ html {
   @media screen and (max-width: 768px) {
     html {
       font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 10px; } }
 
 html, body {
   height: 100%; }
@@ -331,6 +334,9 @@ body {
   height: 100vh;
   min-height: 650px;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-height: 100%; } }
 
 .container {
   max-width: 1100px;
@@ -345,6 +351,9 @@ body {
     .container {
       max-width: 768px;
       padding: 0; } }
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 480px; } }
 
 body, ul, li, p {
   margin: 0;
@@ -458,17 +467,22 @@ button {
   position: relative; }
   .welcome::before {
     content: "";
-    width: 512px;
-    height: 548px;
+    width: 32rem;
+    height: 34.25rem;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 10;
     display: block;
-    background: url("../img/welcome/welcome-pattern.png") no-repeat; }
+    background: url("../img/welcome/welcome-pattern.png") no-repeat;
+    background-size: cover; }
     @media screen and (max-width: 768px) {
       .welcome::before {
         top: 8%; } }
+    @media screen and (max-width: 480px) {
+      .welcome::before {
+        width: 20rem;
+        height: 30rem; } }
 
 .welcome__container {
   position: relative;
@@ -476,14 +490,15 @@ button {
   justify-content: space-between; }
   .welcome__container::before {
     content: "";
-    width: 1056px;
-    height: 353px;
+    width: 66rem;
+    height: 22.0625rem;
     position: absolute;
     right: 3.5%;
     bottom: -8.5%;
     z-index: 30;
     display: block;
-    background: url("../img/welcome/welcome-decor.png") no-repeat; }
+    background: url("../img/welcome/welcome-decor.png") no-repeat;
+    background-size: cover; }
     @media screen and (max-width: 768px) {
       .welcome__container::before {
         content: none; } }
@@ -514,6 +529,9 @@ button {
   display: flex;
   flex: 1;
   padding: 0 4.79%; }
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none; } }
 
 .сompany-list {
   display: flex;
@@ -541,50 +559,64 @@ button {
 
 .burger-menu {
   display: none; }
-
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none; }
-
-  .welcome__phone {
-    display: none; }
-
-  .burger-menu {
-    width: 24px;
-    height: 6px;
-    position: relative;
-    display: block;
-    border-radius: 10px/10px;
-    background: #fff; }
-    .burger-menu::before {
-      content: "";
+  @media screen and (max-width: 768px) {
+    .burger-menu {
       width: 24px;
       height: 6px;
-      position: absolute;
-      top: -10px;
-      left: 0;
-      display: block;
-      border-radius: 10px/10px;
-      background: #fff; }
-    .burger-menu::after {
-      content: "";
-      width: 24px;
-      height: 6px;
-      position: absolute;
-      top: 10px;
-      left: 0;
+      position: relative;
       display: block;
       border-radius: 10px/10px;
       background: #fff; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .burger-menu {
+      width: 12px;
+      height: 3px; } }
+  @media screen and (max-width: 768px) {
+      .burger-menu::before {
+        content: "";
+        width: 24px;
+        height: 6px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        display: block;
+        border-radius: 10px/10px;
+        background: #fff; } }
+    @media screen and (max-width: 768px) and (max-width: 480px) {
+      .burger-menu::before {
+        width: 12px;
+        height: 3px;
+        top: -5px; } }
+  @media screen and (max-width: 768px) {
+      .burger-menu::after {
+        content: "";
+        width: 24px;
+        height: 6px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: block;
+        border-radius: 10px/10px;
+        background: #fff; } }
+    @media screen and (max-width: 768px) and (max-width: 480px) {
+      .burger-menu::after {
+        width: 12px;
+        height: 3px;
+        top: 5px; } }
+
 .presentation {
   height: 100%;
   display: flex;
   justify-content: space-between; }
   @media screen and (max-width: 768px) {
     .presentation {
-      padding: 0 14.33%;
+      padding: 0 12%;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .presentation {
+      padding: 0 5%; } }
 
 .presentation__block {
   width: 50%;
@@ -592,21 +624,26 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   z-index: 40; }
   @media screen and (max-width: 768px) {
     .presentation__block {
       width: 100%;
-      height: auto; } }
+      height: auto;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .presentation__block {
+      align-items: center; } }
 
 .presentation__marketing-block {
-  padding-top: 10.64%; }
+  padding-top: 10.64%;
+  margin-bottom: 15%; }
   @media screen and (max-width: 768px) {
     .presentation__marketing-block {
       padding-top: 0;
       display: flex;
       flex-direction: column;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 3%; } }
 
 .main-title {
   margin-bottom: 4.73%;
@@ -618,6 +655,9 @@ button {
     .main-title {
       font-size: 3.42em;
       margin-bottom: 2.23%; } }
+  @media screen and (max-width: 480px) {
+    .main-title {
+      font-size: 2.5em; } }
 
 .presentation__description {
   width: 80%;
@@ -638,6 +678,9 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 480px) {
+    .marketing-list {
+      width: auto; } }
 
 .marketing-list__item {
   width: 33%;
@@ -645,6 +688,9 @@ button {
   @media screen and (max-width: 768px) {
     .marketing-list__item {
       width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .marketing-list__item {
+      width: auto; } }
 
 .marketing-list__img {
   margin-right: 0.58125rem; }
@@ -673,17 +719,18 @@ button {
   width: 50%;
   position: relative;
   display: flex;
-  align-items: center; }
+  align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .presentation__candy-bars {
       width: 25.1875rem;
       height: 26.1875rem;
       margin-right: 0;
+      margin-bottom: 4%;
       order: -10; }
       .presentation__candy-bars::before {
         content: "";
-        width: 434px;
-        height: 280px;
+        width: 27.125rem;
+        height: 17.5rem;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -691,11 +738,20 @@ button {
         z-index: 30;
         background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
         background-size: cover; } }
+    @media screen and (max-width: 768px) and (max-width: 480px) {
+      .presentation__candy-bars::before {
+        width: 100%;
+        height: 64%;
+        background-size: cover; } }
+
+  @media screen and (max-width: 480px) {
+    .presentation__candy-bars {
+      width: 17rem;
+      height: 17rem; } }
 
 .presentation__pic {
   object-fit: contain;
   width: 100%;
-  height: 100%;
   position: relative;
   z-index: 20; }
 
@@ -706,21 +762,39 @@ button {
   z-index: 40; }
   .promotion::before {
     content: "";
-    width: 161px;
-    height: 292px;
+    width: 10.0625rem;
+    height: 18.25rem;
     display: block;
     position: absolute;
     left: 0;
     bottom: -14.5%;
     z-index: 20;
-    background: url("../img/promotion/raspberries-bars.png") center no-repeat; }
+    background: url("../img/promotion/raspberries-bars.png") center no-repeat;
+    background-size: cover; }
   @media screen and (max-width: 768px) {
     .promotion {
       background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat; } }
+  @media screen and (max-width: 480px) {
+    .promotion {
+      background: #fff; }
+      .promotion::after {
+        content: "";
+        width: 8rem;
+        height: 23rem;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 32%;
+        z-index: 20;
+        background: url("../img/promotion/promo-pattern.png") center no-repeat;
+        background-size: cover; } }
 
 @media screen and (max-width: 768px) {
   .promotion__container {
     max-width: 460px; } }
+@media screen and (max-width: 480px) {
+  .promotion__container {
+    padding: 0 20%; } }
 
 .promotion__promo {
   width: 100%;
@@ -740,6 +814,9 @@ button {
   @media screen and (max-width: 768px) {
     .titles {
       font-size: 2.5rem; } }
+  @media screen and (max-width: 480px) {
+    .titles {
+      font-size: 2.2rem; } }
 
 .promotion__titles {
   margin-bottom: 2.45%; }
@@ -752,6 +829,9 @@ button {
   @media screen and (max-width: 768px) {
     .promotion__text {
       width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .promotion__text {
+      max-width: 100%; } }
 
 .promo-list {
   position: relative;
@@ -772,6 +852,9 @@ button {
   @media screen and (max-width: 768px) {
     .promo-list__item {
       width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .promo-list__item {
+      margin-bottom: 4%; } }
 
 .promo-list__pic {
   margin-bottom: 11.29%;
@@ -785,24 +868,25 @@ button {
   background: #f2f5f4; }
   .promo-list__pic::after {
     content: "";
-    width: 67px;
-    height: 21px;
+    width: 4.1875rem;
+    height: 1.3125rem;
     position: absolute;
     right: -100%;
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    background: url("../img/promotion/three-points.png"); }
+    background: url("../img/promotion/three-points.png");
+    background-size: cover; }
   @media screen and (max-width: 768px) {
     .promo-list__pic {
       margin-bottom: 3%; }
       .promo-list__pic::after {
         content: none; } }
-
-.promo-list__svg {
-  fill: transparent;
-  stroke: #2a2a29;
-  stroke-width: .75; }
+  @media screen and (max-width: 480px) {
+    .promo-list__pic {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-bottom: 2%; } }
 
 .promo-list__man-icon {
   width: 52.8%;
@@ -816,6 +900,15 @@ button {
   width: 60%;
   height: 51.2%; }
 
+.promo-list__svg {
+  fill: transparent;
+  stroke: #2a2a29;
+  stroke-width: .75; }
+  @media screen and (max-width: 480px) {
+    .promo-list__svg {
+      width: 50%;
+      height: 40%; } }
+
 .promo-list__item:last-child .promo-list__pic::after {
   content: none; }
 
@@ -825,6 +918,9 @@ button {
   @media screen and (max-width: 768px) {
     .promo-list__item h4 {
       margin-bottom: 3%; } }
+  @media screen and (max-width: 480px) {
+    .promo-list__item h4 {
+      margin-bottom: 1%; } }
 
 .promo-list__item p {
   max-width: 88.98%;
@@ -834,25 +930,32 @@ button {
   @media screen and (max-width: 768px) {
     .promo-list__item p {
       width: 60.22%; } }
+  @media screen and (max-width: 768px) {
+    .promo-list__item p {
+      width: 80%; } }
 
 .product {
   position: relative;
   background: #f8faf9; }
   .product::before {
     content: "";
-    width: 196px;
-    height: 578px;
+    width: 12.25rem;
+    height: 36.125rem;
     position: absolute;
     right: 0;
     bottom: -53%;
     display: block;
-    background: url("../img/product/dec+pat-product.png") center no-repeat; }
+    background: url("../img/product/dec+pat-product.png") center no-repeat;
+    background-size: cover; }
 
 .product__container {
   position: relative; }
   @media screen and (max-width: 768px) {
     .product__container {
       max-width: 460px; } }
+  @media screen and (max-width: 480px) {
+    .product__container {
+      padding: 0 20%; } }
 
 .slider-control {
   width: 1.25rem;
@@ -897,12 +1000,24 @@ button {
   position: relative; }
   .product-list__img-inner::before {
     content: "";
-    width: 461px;
-    height: 326px;
+    width: 28.8125rem;
+    height: 20.375rem;
     position: absolute;
     bottom: 0;
     left: -11%;
-    background: url("../img/product/leaves-product.png") bottom center no-repeat; }
+    background-size: cover; }
+    @media screen and (max-width: 768px) {
+      .product-list__img-inner::before {
+        left: -20%; } }
+    @media screen and (max-width: 480px) {
+      .product-list__img-inner::before {
+        left: -6%; } }
+    @media screen and (max-width: 375px) {
+      .product-list__img-inner::before {
+        left: -22%; } }
+  @media screen and (max-width: 768px) {
+    .product-list__img-inner {
+      max-width: 305px; } }
 
 .product-list__pic {
   object-fit: cover;
@@ -995,6 +1110,9 @@ button {
 @media screen and (max-width: 768px) {
   .team__container {
     max-width: 460px; } }
+@media screen and (max-width: 480px) {
+  .team__container {
+    padding: 0 20%; } }
 
 .team__titles {
   margin-bottom: 6.81%; }
@@ -1004,8 +1122,9 @@ button {
   display: flex; }
   @media screen and (max-width: 768px) {
     .team-list {
-      margin-right: 20px;
-      flex-wrap: wrap; } }
+      margin-right: 0;
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .team-list__item {
   width: calc(100%/4 - rem(16px));
@@ -1018,7 +1137,11 @@ button {
       width: calc(100%/2 - 20px);
       margin-right: 20px; }
       .team-list__item:nth-child(even) {
-        margin-top: 0; } }
+        margin-top: 0;
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .team-list__item {
+      margin-right: 10px; } }
 
 .team-list__img {
   width: 100%;
@@ -1055,12 +1178,15 @@ button {
     border-top: none;
     border-left-color: transparent;
     border-right-color: transparent; }
+    @media screen and (max-width: 480px) {
+      .team-list__name:hover .team-list__slider-control {
+        border-width: 3px; } }
   .team-list__name:hover ~ div.team-list__post {
-    height: 20px;
+    height: 1.25rem;
     display: block;
     transition: 0.4s ease-in; }
   .team-list__name:hover ~ p.team-list__slider-text {
-    height: 50px;
+    height: 3.125rem;
     display: block;
     transition: 0.4s ease-in; }
   .team-list__name::before {
@@ -1071,6 +1197,9 @@ button {
     top: 50%;
     right: -11%;
     transform: translateY(-50%); }
+  @media screen and (max-width: 480px) {
+    .team-list__name {
+      font-size: 1em; } }
 
 .team-list__slider-control {
   width: 0;
@@ -1084,6 +1213,9 @@ button {
   border-bottom: none;
   border-left-color: transparent;
   border-right-color: transparent; }
+  @media screen and (max-width: 480px) {
+    .team-list__slider-control {
+      border-width: 3px; } }
 
 .team-list__post {
   height: 0;
@@ -1096,6 +1228,9 @@ button {
   @media screen and (max-width: 768px) {
     .team-list__post {
       min-height: 0; } }
+  @media screen and (max-width: 480px) {
+    .team-list__post {
+      font-size: 0.9em; } }
 
 .team-list__slider-text {
   height: 0;
@@ -1111,6 +1246,9 @@ button {
   @media screen and (max-width: 768px) {
     .team-list__slider-text {
       min-height: 0; } }
+  @media screen and (max-width: 480px) {
+    .team-list__slider-text {
+      font-size: 0.8em; } }
 
 .menu {
   position: relative;
@@ -1133,13 +1271,14 @@ button {
     opacity: .75; }
   .menu::after {
     content: "";
-    width: 104px;
-    height: 114px;
+    width: 6.5rem;
+    height: 7.125rem;
     position: absolute;
     top: -11%;
     left: 4%;
     display: block;
-    background: url("../img/menu/raspberries-decor.png") no-repeat; }
+    background: url("../img/menu/raspberries-decor.png") no-repeat;
+    background-size: cover; }
 
 .menu__title {
   position: relative;
@@ -1213,28 +1352,33 @@ button {
   background: #fff; }
   .reviews::before {
     content: "";
-    width: 158px;
-    height: 370px;
+    width: 9.875rem;
+    height: 23.125rem;
     position: absolute;
     left: 0;
     bottom: -20%;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat; }
+    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat;
+    background-size: cover; }
   .reviews::after {
     content: "";
-    width: 173px;
-    height: 99px;
+    width: 10.8125rem;
+    height: 6.1875rem;
     position: absolute;
     top: 1%;
     right: 0;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/raspberries.png") center no-repeat; }
+    background: url("../img/reviews/raspberries.png") center no-repeat;
+    background-size: cover; }
 
 @media screen and (max-width: 768px) {
   .reviews__container {
     max-width: 460px; } }
+@media screen and (max-width: 480px) {
+  .reviews__container {
+    padding: 0 20%; } }
 
 .reviews__titles {
   margin-bottom: 6.28%;
@@ -1243,6 +1387,9 @@ button {
   @media screen and (max-width: 768px) {
     .reviews__titles {
       margin-bottom: 10%; } }
+  @media screen and (max-width: 480px) {
+    .reviews__titles {
+      margin-bottom: 5%; } }
 
 .reviews-block {
   padding: 4.79%;
@@ -1270,13 +1417,14 @@ button {
         top: -8%; }
       .reviews-block::after {
         content: "";
-        width: 116px;
-        height: 160px;
+        width: 7.25rem;
+        height: 10rem;
         position: absolute;
         top: 0;
         right: 0;
         display: block;
-        background: url("../img/reviews/pattern.png"); } }
+        background: url("../img/reviews/pattern.png");
+        background-size: cover; } }
 
 .reviews-block__item {
   display: flex; }
@@ -1364,14 +1512,15 @@ button {
   color: #0f5a47; }
   .form-block::before {
     content: "";
-    width: 197px;
-    height: 264px;
+    width: 12.3125rem;
+    height: 16.5rem;
     position: absolute;
     top: -20%;
     right: 0;
     z-index: 10;
     display: block;
-    background: url("../img/form/leaves-form-decor.png"); }
+    background: url("../img/form/leaves-form-decor.png");
+    background-size: cover; }
   @media screen and (max-width: 768px) {
     .form-block {
       top: -18%; } }
@@ -1381,16 +1530,20 @@ button {
   background: url("../img/form/pattern.png"); }
   .form__container::before {
     content: "";
-    width: 1085px;
-    height: 239px;
+    width: 67.8125rem;
+    height: 14.9375rem;
     position: absolute;
     right: 0;
     bottom: 3%;
     display: block;
-    background: url("../img/form/blueberry-form-decor.png") no-repeat; }
+    background: url("../img/form/blueberry-form-decor.png") no-repeat;
+    background-size: cover; }
     @media screen and (max-width: 768px) {
       .form__container::before {
         content: none; } }
+  @media screen and (max-width: 480px) {
+    .form__container {
+      padding: 0 3%; } }
 
 .form__titles {
   margin-bottom: 5.32%;
@@ -1513,6 +1666,9 @@ button {
   transform: translate(-50%, -50%);
   border: 7px solid #0f5a47;
   border-radius: 50%; }
+  @media screen and (max-width: 480px) {
+    .form__change-input:checked + .form__change-div::before {
+      border-width: 4px; } }
 
 .form__card-input:checked + .form__card-div::before {
   content: "";
@@ -1525,6 +1681,9 @@ button {
   transform: translate(-50%, -50%);
   border: 7px solid #0f5a47;
   border-radius: 50%; }
+  @media screen and (max-width: 480px) {
+    .form__card-input:checked + .form__card-div::before {
+      border-width: 4px; } }
 
 @media screen and (max-width: 768px) {
   .form__check-block {
@@ -1597,6 +1756,10 @@ button {
 
 .phone__number--font-size {
   font-size: .875em; }
+
+@media screen and (max-width: 768px) {
+  .welcome__phone {
+    display: none; } }
 
 .social-list {
   display: flex;

@@ -1,0 +1,46 @@
+.welcome {
+  color: $colwhite;
+  background: $bgskyblue;
+}
+
+.welcome {
+  position: relative;
+  &::before {
+    content: "";
+    width: 512px;
+    height: 548px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/welcome/welcome-pattern.png") no-repeat;
+    @include tablets {
+      top: 8%;
+    }
+    @include phones {
+    width: 320px;
+    height: 480px;
+    }
+  }
+}
+
+.welcome__container {
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  &::before {
+    content: "";
+    width: 1056px;
+    height: 353px;
+    position: absolute;
+    right: 3.5%;
+    bottom: -8.5%;
+    z-index: 30;
+    display: block;
+    background: url("../img/welcome/welcome-decor.png") no-repeat;
+    @include  tablets {
+      content: none;
+    }
+  }
+}
