@@ -1,0 +1,77 @@
+.footer__container {
+  padding: 2.19% 0;
+  flex-direction: row;
+  justify-content: space-between;
+  @include tablets {
+    justify-content: space-around;
+  }
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.address {
+  color: #0f5a47;
+  @include phones {
+    margin-bottom: 1.28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.address__company {
+  margin-bottom: 1.28%;
+  font-size: 1.313em;
+  color: #010101;
+}
+
+.phone__number--font-size {
+  font-size: .875em;
+}
+
+.welcome__phone {
+  @include tablets {
+    display: none;
+  }
+}
+
+
+.social-list {
+  display: flex;
+  align-items: center;
+}
+
+.social-list__item--active {
+  margin-right: rem(20px);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover .social-list__pic {
+    fill: #000000;
+  }
+}
+
+.social-list__pic {
+  fill: #b2b2b2;
+}
+
+.social-list__vk-icon {
+  width: rem(23px);
+  height: rem(13px);
+}
+
+.social-list__fb-icon {
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.social-list__inst-icon {
+  width: rem(20px);
+  height: rem(20px);
+}
+
+.social-list__twitt-icon {
+  width: rem(20px);
+  height: rem(16px);
+}

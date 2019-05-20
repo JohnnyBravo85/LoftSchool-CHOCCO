@@ -1,0 +1,42 @@
+.welcome {
+  color: $colwhite;
+  background: $bgskyblue;
+}
+
+.welcome {
+  position: relative;
+  &::before {
+    content: "";
+    width: rem(512px);
+    height: rem(548px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/welcome/welcome-pattern.png") no-repeat;
+  }
+}
+
+.welcome__container {
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  &::before {
+    content: "";
+    width: rem(1056px);
+    height: rem(353px);
+    position: absolute;
+    right: 0;
+    bottom: -7.5%;
+    z-index: 30;
+    display: block;
+    background: url("../img/welcome/welcome-decor.png") no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome__container {
+    max-width: 100%;
+  }
+}

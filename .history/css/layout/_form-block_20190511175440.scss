@@ -1,0 +1,142 @@
+.form__container {
+  background: url("../img/form/pattern.png");
+}
+
+.form-block {
+  color: $colgreen;
+}
+
+.form__titles {
+  margin-bottom: 5.32%;
+  color: $colgreen;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form__adress-block {
+  width: 48.94%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-titles {
+  font-size: 1.125em;
+}
+
+.form-label {
+  width: 100%;
+}
+
+.form__name, .form__phone {
+  width: 47.83%;
+}
+
+.form__home, .form__build, .form__flat, .form__floor {
+  width: 21.74%;
+}
+
+.form-input {
+  width: 100%;
+  height: 59px;
+  padding-left: 2.4%;
+}
+
+.form__name-input, .form__phone-input {
+  padding-left: 5%;
+}
+
+.form__home-input, .form__build-input, .form__flat-input, .form__floor-input {
+  padding-left: 11%;
+}
+
+.form__pay-block {
+  width: 48.94%;
+}
+
+.form__comments {
+  width: 100%;
+}
+
+.form__comments-textarea {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 4.35%;
+  resize: none;
+}
+
+.form__radio-block {
+  display: flex;
+}
+
+.form__change, .form__card {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form__change {
+  margin-right: 12.4%;
+}
+
+.form-radio {
+  visibility: hidden;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+}
+
+.checked-block {
+  width: 26px;
+  height: 26px;
+  border: 1px solid black;
+}
+
+
+.form__change-title {
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    border-radius: 50%;
+    border: 1px solid black
+    // background: #fff;
+  }
+}
+
+.form__change-input:checked + h5.form__change-title::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left:6.5px;;
+  transform: translate(-50%, 50%);
+  display: block;
+  border-radius: 50%;
+  border: 7px solid $colgreen;
+}
+
+.form__card-title {
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+  }
+}

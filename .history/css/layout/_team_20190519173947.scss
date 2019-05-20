@@ -1,0 +1,160 @@
+.team__container {
+  @include tablets {
+    max-width: 460px;
+  }
+  @include phones {
+    padding: 0 20%;
+  }
+}
+
+.team__titles {
+  margin-bottom: 6.81%;
+}
+
+.team-list {
+  margin-right: rem(-16px);
+  display: flex;
+  @include tablets {
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.team-list__item {
+  width: calc(100%/4 - rem(16px));
+  margin-right: 1.7%;
+  position: relative;
+  &:nth-child(even) {
+    margin-top: 6.07%;
+  }
+  @include tablets {
+    width: calc(100%/2 - 20px);
+    margin-right: 20px;
+    &:nth-child(even) {
+      margin-top:0;
+      margin-right: 0;
+    }
+  }
+  @include phones {
+    margin-right: 10px;
+  }
+}
+
+.team-list__img {
+  width: 100%;
+  height: 65%;
+  margin-bottom: 10.64%;
+  @include tablets {
+    height: 80%;
+  }
+}
+
+.team-list__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.team-list__description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team-list__name {
+  position: relative;
+  font-size: 1.313em;
+  font-weight: 500;
+  align-self: center;
+  color: $collightblack;
+  &:hover .team-list__slider-control {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: -11%;
+    transform: translateY(-50%);
+    border: 6px solid #0f5a47;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    @include phones {
+      border-width: 3px;
+    }
+  }
+  &:hover ~ div.team-list__post {
+    height: rem(20px);
+    display: block;
+    transition: 0.4s ease-in;
+  }
+  &:hover ~ p.team-list__slider-text {
+    height: rem(50px);
+    display: block;
+    transition: 0.4s ease-in;
+  }
+  &::before {
+    content: "";
+    width: rem(20px);
+    height: rem(10px);
+    position: absolute;
+    top: 50%;
+    right: -11%;
+    transform: translateY(-50%);
+  }
+  @include phones {
+    font-size: 1em;
+  }
+}
+
+.team-list__slider-control {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: -11%;
+  transform: translateY(-50%);
+  transition: 0.4s ease-in;
+  border: 6px solid #0f5a47;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  @include phones {
+    border-width: 3px;
+  }
+}
+
+.team-list__post {
+  height: 0;
+  min-height: rem(25px);
+  overflow: hidden;
+  cursor: default;
+  font-size: 1.125em;
+  color: #281e1e;
+  transition: 0.4s ease-in;
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+    font-size: 0.9em;
+  }
+}
+
+.team-list__slider-text {
+  height: 0;
+  position: relative;
+  min-height: rem(100px);
+  overflow: hidden;
+  cursor: default;
+  font-size: 1.125em;
+  font-weight: 300;
+  color: $colgrey;
+  transition: 0.4s ease-in;
+  z-index: 10;
+  @include tablets {
+    min-height: 0;
+  }
+  @include phones {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  padding: rem(22px) rem(35px);
+  position: relative;
+  font-size: 1.19em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 25%/50%;
+  color: $butwhite;
+  background: $butgreen;
+  z-index: 40;
+}
+
+.form__button {
+  margin-right: 6.31%;
+}

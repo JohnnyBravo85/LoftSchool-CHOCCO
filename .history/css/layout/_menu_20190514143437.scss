@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  height: 700px;
+  border: 1px solid black;
+  align-items: flex-start;
+
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  transform: rotate(270deg);
+}

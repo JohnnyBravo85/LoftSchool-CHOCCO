@@ -1,0 +1,23 @@
+.footer__container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.address__company {
+  margin-bottom: 1.28%;
+  font-size: 1.313em;
+  color: #010101;
+}
+
+.address__pic {
+  margin-right: 7px;
+}
+
+.address__phone {
+  font-size: 1.313em;
+  color: #010101;
+}
+
+.social-list {
+  display: flex;
+}

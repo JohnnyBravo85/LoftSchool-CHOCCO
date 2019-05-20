@@ -1,0 +1,50 @@
+.menu {
+  background: url("../img/menu/menu-bg.jpg") no-repeat;
+}
+
+.accordion{
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  color: $colwhite;
+}
+
+.accordion-item {
+  display: flex;
+  &:hover .accordion__description {
+    width: 430px;
+    padding-top: 56px;
+    padding-left: 26px;
+    font-size: 1em;
+    line-height: 1.5;
+    transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+    color: #fff;
+  }
+}
+
+.accordion__img {
+  position: relative;
+}
+
+.accordion__pic {
+  width: 100px;
+  object-fit: cover;
+  opacity: .4;
+}
+
+.accordion__text {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  transform: rotate(180deg);
+  font-weight: 500;
+  color: $colwhite;
+  writing-mode: vertical-rl;
+  z-index: 10;
+}
+
+.accordion__description {
+  width: 0;
+  height: 0;
+  transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+}

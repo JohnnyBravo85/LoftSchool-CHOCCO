@@ -1,0 +1,110 @@
+.header {
+  padding-top: 2.66%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 40;
+  @include tablets {
+    padding-top: 4.57%;
+    padding-left: 3.39%;
+    padding-right: 3.39%;
+  }
+}
+
+.logo {
+  width: 5.64%;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.logo__link {
+  color: inherit;
+}
+
+.nav {
+  display: flex;
+  flex: 1;
+  padding: 0 4.79%;
+  @include tablets {
+    display: none;
+  }
+}
+
+.сompany-list {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 1.125em;
+}
+
+.сompany-list__link {
+  color: inherit;
+}
+
+.phone {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.phone__link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.phone__img {
+  width: rem(12px);
+  height: rem(11px);
+  margin-right: rem(7px);
+  fill: currentColor;
+}
+
+.burger-menu {
+  display: none;
+  @include tablets {
+    width: 24px;
+    height: 6px;
+    position: relative;
+    display: block;
+    border-radius: 10px/10px;
+    background: #fff;
+    @include phones {
+      width: 12px;
+      height: 3px;
+    }
+    &::before {
+      content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff;
+      @include phones {
+        width: 12px;
+        height: 3px;
+        top: -5px;
+      }
+    }
+    &::after {
+      content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff;
+      @include phones {
+        width: 12px;
+        height: 3px;
+        top: 5px;
+      }
+    }
+  }
+}

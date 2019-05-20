@@ -1,0 +1,45 @@
+.welcome {
+  color: $colwhite;
+  background: $bgskyblue;
+}
+
+.welcome {
+  position: relative;
+  &::before {
+    content: "";
+    width: rem(512px);
+    height: rem(548px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/welcome/welcome-pattern.png") no-repeat;
+    @include tablets {
+      top: 0;
+    }
+  }
+}
+
+.welcome__container {
+  position: relative;
+  align-items: stretch;
+  justify-content: space-between;
+  @include tablets {
+    max-
+  }
+  &::before {
+    content: "";
+    width: rem(1056px);
+    height: rem(353px);
+    position: absolute;
+    right: 3.5%;
+    bottom: -8.5%;
+    z-index: 30;
+    display: block;
+    background: url("../img/welcome/welcome-decor.png") no-repeat;
+    @include  tablets {
+      content: none;
+    }
+  }
+}

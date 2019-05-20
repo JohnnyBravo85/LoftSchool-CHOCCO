@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  height: 656px;
+  background: url("../img")
+}
+
+.accordion{
+  display: flex;
+  // transform: rotate(270deg);
+}
+
+.accordion__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
