@@ -140,8 +140,8 @@
     order: -10;
     &::before {
       content: "";
-      width: 23.2rem;
-      height: 15.5rem;
+      width: rem(434px);
+      height: rem(280px);
       position: absolute;
       bottom: 0;
       right: 0;

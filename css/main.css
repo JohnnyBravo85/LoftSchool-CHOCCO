@@ -627,6 +627,7 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   z-index: 40; }
   @media screen and (max-width: 768px) {
     .presentation__block {
@@ -638,8 +639,7 @@ button {
       align-items: center; } }
 
 .presentation__marketing-block {
-  padding-top: 10.64%;
-  margin-bottom: 15%; }
+  padding-top: 10.64%; }
   @media screen and (max-width: 768px) {
     .presentation__marketing-block {
       padding-top: 0;
@@ -680,7 +680,11 @@ button {
 .marketing-list {
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 10%; }
+  @media screen and (max-width: 768px) {
+    .marketing-list {
+      margin-bottom: 0; } }
   @media screen and (max-width: 480px) {
     .marketing-list {
       width: auto; } }
@@ -725,15 +729,15 @@ button {
   align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .presentation__candy-bars {
-      width: 25.1875rem;
-      height: 26.1875rem;
+      width: 22.2rem;
+      height: 23.2rem;
       margin-right: 0;
       margin-bottom: 4%;
       order: -10; }
       .presentation__candy-bars::before {
         content: "";
-        width: 27.125rem;
-        height: 17.5rem;
+        width: 23.2rem;
+        height: 15.5rem;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -1418,7 +1422,11 @@ button {
       padding-top: 10%;
       background: #f8faf9; }
       .reviews-block::before {
-        top: -8%; }
+        top: -10%; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .reviews-block::before {
+      top: -11%; } }
+  @media screen and (max-width: 768px) {
       .reviews-block::after {
         content: "";
         width: 7.25rem;

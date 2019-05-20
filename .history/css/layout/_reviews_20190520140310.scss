@@ -74,11 +74,6 @@
     &::before {
       top: -10%;
     }
-  @include phones {
-    &::before {
-      top: -11%;
-    }
-  }
     &::after {
       content: "";
       width: rem(116px);

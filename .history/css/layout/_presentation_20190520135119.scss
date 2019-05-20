@@ -19,7 +19,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   z-index: 40;
   @include tablets {
     width: 100%;
@@ -33,6 +32,7 @@
 
 .presentation__marketing-block {
   padding-top: 10.64%;
+  margin-bottom: 15%;
   @include tablets {
     padding-top: 0;
     display: flex;
@@ -79,9 +79,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10%;
-  @include tablets {
-    margin-bottom: 0;
-  }
   @include phones {
     width: auto;
   }
@@ -133,15 +130,15 @@
   display: flex;
   align-items: flex-start;
   @include tablets {
-    width: 22.2rem;
-    height: 23.2rem;
+    width: rem(403px);
+    height: rem(419px);
     margin-right: 0;
     margin-bottom: 4%;
     order: -10;
     &::before {
       content: "";
-      width: 23.2rem;
-      height: 15.5rem;
+      width: rem(434px);
+      height: rem(280px);
       position: absolute;
       bottom: 0;
       right: 0;
