@@ -1017,11 +1017,12 @@ input, textarea {
   transform: rotate(225deg); }
 
 .product-list__item {
+  display: none; }
+
+.product-list__item--active {
   display: flex; }
-  .product-list__item:nth-child(n+2) {
-    display: none; }
   @media screen and (max-width: 768px) {
-    .product-list__item {
+    .product-list__item--active {
       flex-direction: column; } }
 
 .product-list__img {
@@ -1485,11 +1486,12 @@ input, textarea {
         background-size: cover; } }
 
 .reviews-block__item {
+  display: none; }
+
+.reviews-block__item--active {
   display: flex; }
-  .reviews-block__item:nth-child(n+2) {
-    display: none; }
   @media screen and (max-width: 768px) {
-    .reviews-block__item {
+    .reviews-block__item--active {
       flex-direction: column;
       align-items: center; } }
 
