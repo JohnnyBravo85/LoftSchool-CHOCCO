@@ -51,9 +51,6 @@
   display: flex;
   justify-content: flex-end;
   color: inherit;
-  @include phones {
-    width: 100%;
-  }
 }
 
 .accordion-item {

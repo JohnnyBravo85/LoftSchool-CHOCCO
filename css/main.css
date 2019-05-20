@@ -560,6 +560,10 @@ button {
   margin-right: 0.4375rem;
   fill: currentColor; }
 
+@media screen and (max-width: 768px) {
+  .welcome__phone {
+    display: none; } }
+
 .burger-menu {
   display: none; }
   @media screen and (max-width: 768px) {
@@ -1297,12 +1301,18 @@ button {
   padding-top: 9.46%;
   color: inherit;
   z-index: 10; }
+  @media screen and (max-width: 480px) {
+    .menu__title {
+      display: none; } }
 
 .accordion {
   display: flex;
   display: flex;
   justify-content: flex-end;
   color: inherit; }
+  @media screen and (max-width: 480px) {
+    .accordion {
+      width: 100%; } }
 
 .accordion-item {
   position: relative;
@@ -1312,6 +1322,9 @@ button {
     padding: 3.5rem 1.625rem;
     opacity: 1;
     transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s; }
+    @media screen and (max-width: 768px) {
+      .accordion-item:hover .accordion__description {
+        width: 18rem; } }
   .accordion-item:hover::before {
     content: "";
     width: 39.375rem;
@@ -1778,10 +1791,6 @@ button {
 
 .phone__number--font-size {
   font-size: .875em; }
-
-@media screen and (max-width: 768px) {
-  .welcome__phone {
-    display: none; } }
 
 .social-list {
   display: flex;

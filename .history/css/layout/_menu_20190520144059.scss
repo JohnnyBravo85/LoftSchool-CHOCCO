@@ -41,9 +41,6 @@
   padding-top: 9.46%;
   color: inherit;
   z-index: 10;
-  @include phones {
-    display: none;
-  }
 }
 
 .accordion{
@@ -51,9 +48,6 @@
   display: flex;
   justify-content: flex-end;
   color: inherit;
-  @include phones {
-    width: 100%;
-  }
 }
 
 .accordion-item {
