@@ -141,9 +141,6 @@
   height: rem(180px);
   border: none;
   resize: none;
-  &:focus {
-    border: 3px solid #dde3bd;
-  }
 }
 
 .form__radio-block {
