@@ -1571,6 +1571,7 @@ input, textarea {
   position: relative;
   background: #cfdeda;
   color: #0f5a47;
+  min-height: 480px;
   background: url("../img/form/pattern.png"); }
   .form-block::before {
     content: "";
