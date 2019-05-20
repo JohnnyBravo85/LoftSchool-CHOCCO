@@ -27,15 +27,10 @@
 }
 
 .welcome__container {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding: 0 4%;
   position: relative;
   align-items: stretch;
   justify-content: space-between;
-  @include tablets {
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
   &::before {
     content: "";
     width: rem(1056px);

@@ -32,10 +32,6 @@
   position: relative;
   align-items: stretch;
   justify-content: space-between;
-  @include tablets {
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
   &::before {
     content: "";
     width: rem(1056px);
@@ -49,6 +45,8 @@
     background-size: cover;
     @include  tablets {
       content: none;
+      padding-top: 3%;
+      padding-bottom: 3%;
     }
   }
 }

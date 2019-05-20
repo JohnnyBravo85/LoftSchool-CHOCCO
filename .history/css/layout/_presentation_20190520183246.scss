@@ -1,5 +1,7 @@
 .presentation {
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   @include tablets {
     padding: 0 12%;
     flex-direction: column;
@@ -61,7 +63,6 @@
   font-size: 1.32em;
   @include tablets {
     align-self: center;
-    width: 50%;
   }
 }
 
@@ -74,14 +75,12 @@
 }
 
 .marketing-list {
-  width: 50%;
+  width: 100%;
   position: relative;
   display: flex;
   z-index: 30;
   @include tablets {
-    width: 100%;
     margin-bottom: 0;
-    justify-content: center;
   }
   @include phones {
     width: auto;
@@ -89,7 +88,11 @@
 }
 
 .marketing-list__item {
+  width: 33%;
   display: flex;
+  @include tablets {
+    width: 100%;
+  }
   @include phones {
     width: auto;
   }

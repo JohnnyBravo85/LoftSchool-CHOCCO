@@ -488,9 +488,15 @@ button {
         height: 30rem; } }
 
 .welcome__container {
+  padding-top: 4%;
+  padding-bottom: 4%;
   position: relative;
   align-items: stretch;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .welcome__container {
+      padding-top: 3%;
+      padding-bottom: 3%; } }
   .welcome__container::before {
     content: "";
     width: 66rem;
@@ -507,7 +513,6 @@ button {
         content: none; } }
 
 .header {
-  padding-top: 2.66%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -515,9 +520,7 @@ button {
   z-index: 40; }
   @media screen and (max-width: 768px) {
     .header {
-      padding-top: 4.57%;
-      padding-left: 3.39%;
-      padding-right: 3.39%; } }
+      padding: 0 3.39%; } }
 
 .logo {
   width: 5.64%;
@@ -541,6 +544,9 @@ button {
   flex: 1;
   justify-content: space-between;
   font-size: 1.125em; }
+  @media screen and (max-width: 992px) {
+    .сompany-list {
+      font-size: 1em; } }
 
 .сompany-list__link {
   color: inherit; }
@@ -612,9 +618,7 @@ button {
         top: 5px; } }
 
 .presentation {
-  height: 100%;
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   @media screen and (max-width: 768px) {
     .presentation {
       padding: 0 12%;
@@ -672,7 +676,8 @@ button {
   font-size: 1.32em; }
   @media screen and (max-width: 768px) {
     .presentation__description {
-      align-self: center; } }
+      align-self: center;
+      width: 50%; } }
 
 .presentation__button {
   color: #0f5a47;
@@ -682,23 +687,21 @@ button {
       align-self: center; } }
 
 .marketing-list {
-  width: 100%;
+  width: 50%;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10%; }
+  z-index: 30; }
   @media screen and (max-width: 768px) {
     .marketing-list {
-      margin-bottom: 0; } }
+      width: 100%;
+      margin-bottom: 0;
+      justify-content: center; } }
   @media screen and (max-width: 480px) {
     .marketing-list {
       width: auto; } }
 
 .marketing-list__item {
-  width: 33%;
   display: flex; }
-  @media screen and (max-width: 768px) {
-    .marketing-list__item {
-      width: 100%; } }
   @media screen and (max-width: 480px) {
     .marketing-list__item {
       width: auto; } }
@@ -1371,9 +1374,6 @@ button {
   position: relative;
   color: #666;
   background: #fff; }
-  @media screen and (max-width: 480px) {
-    .reviews {
-      height: 100%; } }
   .reviews::before {
     content: "";
     width: 9.875rem;
@@ -1552,9 +1552,6 @@ button {
   @media screen and (max-width: 768px) {
     .form-block {
       top: -18%; } }
-  @media screen and (max-width: 480px) {
-    .form-block {
-      height: 100%; } }
 
 .form__container {
   position: relative;

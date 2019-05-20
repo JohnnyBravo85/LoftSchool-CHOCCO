@@ -5,7 +5,9 @@
   align-items: center;
   z-index: 40;
   @include tablets {
-    padding: 0 3.39%;
+    padding-top: 4.57%;
+    padding-left: 3.39%;
+    padding-right: 3.39%;
   }
 }
 
@@ -24,6 +26,9 @@
   display: flex;
   flex: 1;
   padding: 0 4.79%;
+  @include laptop {
+    font-size: 1em;
+  }
   @include tablets {
     display: none;
   }
@@ -34,9 +39,6 @@
   flex: 1;
   justify-content: space-between;
   font-size: 1.125em;
-  @include laptop {
-    font-size: 1em;
-  }
 }
 
 .сompany-list__link {

@@ -61,7 +61,6 @@
   font-size: 1.32em;
   @include tablets {
     align-self: center;
-    width: 50%;
   }
 }
 
@@ -79,9 +78,7 @@
   display: flex;
   z-index: 30;
   @include tablets {
-    width: 100%;
     margin-bottom: 0;
-    justify-content: center;
   }
   @include phones {
     width: auto;
@@ -90,6 +87,9 @@
 
 .marketing-list__item {
   display: flex;
+  @include tablets {
+    width: 100%;
+  }
   @include phones {
     width: auto;
   }
