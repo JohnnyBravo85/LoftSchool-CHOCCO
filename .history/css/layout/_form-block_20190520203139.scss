@@ -2,8 +2,6 @@
   position: relative;
   background: $bggrey-green;
   color: $colgreen;
-  background: url("../img/form/blueberry-form-decor.png") no-repeat;
-  background-size: cover;
   &::before {
     content: "";
     width: rem(197px);
@@ -32,6 +30,8 @@
     right: 0;
     bottom: 3%;
     display: block;
+    background: url("../img/form/blueberry-form-decor.png") no-repeat;
+    background-size: cover;
     @include tablets {
       content: none;
     }
@@ -136,7 +136,7 @@
 .form__comments-textarea {
   width: 100%;
   height: rem(180px);
-  border: 3px solid #dde3bd;
+  outline: 3px solid #dde3bd;
   resize: none;
 }
 
@@ -256,9 +256,4 @@
 
 .form__refresh {
   color: inherit;
-  transition: .3s ease-in-out;
-  &:hover {
-    opacity: .7;
-    transition: .3s ease-in-out;
-  }
 }

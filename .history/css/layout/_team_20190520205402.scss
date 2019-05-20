@@ -22,7 +22,7 @@
 }
 
 .team-list__item {
-  width: calc(100%/4 - 16px);
+  width: calc(100%/4 - rem(16px));
   margin-right: 1.7%;
   position: relative;
   &:last-child {

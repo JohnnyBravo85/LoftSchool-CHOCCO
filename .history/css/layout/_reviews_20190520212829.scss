@@ -95,9 +95,7 @@
 
 .reviews-block__item {
   display: flex;
-  &:nth-child(n+2) {
-    display: none;
-  }
+  &:nth-child()
   @include tablets {
     flex-direction: column;
     align-items: center;

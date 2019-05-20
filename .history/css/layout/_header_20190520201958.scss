@@ -14,10 +14,8 @@
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
-  transition: .3s ease-in-out;
   &:hover {
     opacity: .7;
-    transition: .3s ease-in-out;
   }
 }
 
@@ -45,10 +43,8 @@
 }
 
 .сompany-list__item {
-  transition: .3s ease-in-out;
   &:hover {
     opacity: .7;
-    transition: .3s ease-in-out;
   }
 }
 
@@ -65,10 +61,8 @@
   display: flex;
   align-items: center;
   color: inherit;
-  transition: .3s ease-in-out;
   &:hover {
     opacity: .7;
-    transition: .3s ease-in-out;
   }
 }
 

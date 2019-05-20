@@ -31,11 +31,12 @@
   top: 50%;
   transform: translateY(-50%);
   display: block;
+  cursor: pointer;
   border: 2px solid #0d0d0d;
   border-radius: 3px;
   border-top-color: transparent;
   border-right-color: transparent;
-  z-index: 20;
+
   @include tablets {
     top: 30%;
   }
@@ -53,9 +54,6 @@
 
 .product-list__item {
   display: flex;
-  &:nth-child(n+2) {
-    display: none;
-  }
   @include tablets {
     flex-direction: column;
   }

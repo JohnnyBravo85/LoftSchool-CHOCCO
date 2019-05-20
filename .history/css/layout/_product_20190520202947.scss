@@ -53,9 +53,6 @@
 
 .product-list__item {
   display: flex;
-  &:nth-child(n+2) {
-    display: none;
-  }
   @include tablets {
     flex-direction: column;
   }

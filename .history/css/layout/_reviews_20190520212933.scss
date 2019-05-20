@@ -95,7 +95,7 @@
 
 .reviews-block__item {
   display: flex;
-  &:nth-child(n+2) {
+  &:nth-child(an+b) {
     display: none;
   }
   @include tablets {
