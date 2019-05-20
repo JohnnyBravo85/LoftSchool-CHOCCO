@@ -1371,6 +1371,9 @@ button {
   position: relative;
   color: #666;
   background: #fff; }
+  @media screen and (max-width: 480px) {
+    .reviews {
+      height: 100%; } }
   .reviews::before {
     content: "";
     width: 9.875rem;
@@ -1549,6 +1552,9 @@ button {
   @media screen and (max-width: 768px) {
     .form-block {
       top: -18%; } }
+  @media screen and (max-width: 480px) {
+    .form-block {
+      height: 100%; } }
 
 .form__container {
   position: relative;
