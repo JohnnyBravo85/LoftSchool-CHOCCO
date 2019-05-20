@@ -2,7 +2,6 @@
   position: relative;
   background: $bggrey-green;
   color: $colgreen;
-  background: url("../img/form/pattern.png");
   &::before {
     content: "";
     width: rem(197px);
@@ -22,6 +21,7 @@
 
 .form__container {
   position: relative;
+  background: url("../img/form/pattern.png");
   &::before {
     content: "";
     width: rem(1085px);

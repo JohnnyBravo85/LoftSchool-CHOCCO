@@ -1571,8 +1571,7 @@ input, textarea {
   position: relative;
   background: #cfdeda;
   color: #0f5a47;
-  background: url("../img/form/blueberry-form-decor.png") no-repeat;
-  background-size: cover; }
+  background: url("../img/form/pattern.png"); }
   .form-block::before {
     content: "";
     width: 12.3125rem;
@@ -1589,8 +1588,7 @@ input, textarea {
       top: -18%; } }
 
 .form__container {
-  position: relative;
-  background: url("../img/form/pattern.png"); }
+  position: relative; }
   .form__container::before {
     content: "";
     width: 67.8125rem;
@@ -1598,7 +1596,9 @@ input, textarea {
     position: absolute;
     right: 0;
     bottom: 3%;
-    display: block; }
+    display: block;
+    background: url("../img/form/blueberry-form-decor.png") no-repeat;
+    background-size: cover; }
     @media screen and (max-width: 768px) {
       .form__container::before {
         content: none; } }
