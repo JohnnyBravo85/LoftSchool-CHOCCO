@@ -562,8 +562,7 @@ input, textarea {
   display: flex;
   width: 100%;
   height: 100%;
-  background: #2f3234;
-  z-index: 50; }
+  background: #2f3234; }
 
 .сompany-list {
   display: flex;
@@ -578,8 +577,7 @@ input, textarea {
   flex-direction: column;
   font-size: 36px;
   line-height: 2;
-  text-align: center;
-  z-index: 50; }
+  text-align: center; }
 
 .сompany-list__item {
   transition: .3s ease-in-out; }
@@ -661,7 +659,8 @@ input, textarea {
         top: 5px; } }
 
 .burger-menu--active {
-  display: flex; }
+  display: flex;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .burger-menu--active {
       width: 24px;
@@ -698,10 +697,10 @@ input, textarea {
   @media screen and (max-width: 768px) {
       .burger-menu--active::after {
         content: "";
-        width: 24px;
-        height: 6px;
+        width: 34px;
+        height: 50px;
         position: absolute;
-        top: 10px;
+        top: -30px;
         left: 0;
         display: block;
         border-radius: 10px/10px;

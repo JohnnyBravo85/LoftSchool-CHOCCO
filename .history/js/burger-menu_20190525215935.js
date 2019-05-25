@@ -10,7 +10,7 @@ burgerMenu.addEventListener('click', function() {
   document.body.classList.toggle('body-overflow');
 });
 
-сompanyListLink.addEventListener('click', function(){
+сompanyList.addEventListener('click', function(){
   сompanyList.classList.remove('сompany-list-active');
   nav.classList.remove('nav-active');
   document.body.classList.remove('body-overflow');

@@ -1,7 +1,7 @@
 const burgerMenu = document.querySelector('.burger-menu');
 const nav = document.querySelector('.nav');
 const сompanyList = document.querySelector('.сompany-list');
-const сompanyListLink = document.querySelectorAll('.сompany-list__link');
+const сompanyListLink = document.querySelectorAll('сompany-list__link');
 
 burgerMenu.addEventListener('click', function() {
   burgerMenu.classList.toggle('burger-menu--active');
