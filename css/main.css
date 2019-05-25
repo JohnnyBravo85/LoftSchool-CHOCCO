@@ -580,30 +580,6 @@ input, textarea {
   line-height: 2;
   text-align: center;
   z-index: 50; }
-  .сompany-list-active::before {
-    content: "";
-    width: 24px;
-    height: 6px;
-    position: absolute;
-    top: 2%;
-    left: 80%;
-    display: block;
-    border-radius: 10px/10px;
-    background: #fff;
-    transform: rotate(45deg);
-    z-index: 50; }
-  .сompany-list-active::after {
-    content: "";
-    width: 24px;
-    height: 6px;
-    position: absolute;
-    top: 2%;
-    left: 80%;
-    display: block;
-    border-radius: 10px/10px;
-    background: #fff;
-    transform: rotate(-45deg);
-    z-index: 50; }
 
 .сompany-list__item {
   transition: .3s ease-in-out; }
@@ -680,6 +656,59 @@ input, textarea {
         background: #fff; } }
     @media screen and (max-width: 768px) and (max-width: 480px) {
       .burger-menu::after {
+        width: 12px;
+        height: 3px;
+        top: 5px; } }
+
+.burger-menu--active {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .burger-menu--active {
+      width: 24px;
+      height: 6px;
+      position: fixed;
+      top: 5%;
+      left: 80%;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff;
+      transform: rotate(45deg);
+      z-index: 50; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .burger-menu--active {
+      width: 12px;
+      height: 3px; } }
+  @media screen and (max-width: 768px) {
+      .burger-menu--active::before {
+        content: "";
+        width: 24px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        border-radius: 10px/10px;
+        transform: translate(-50%, -50%) rotate(90deg);
+        background: #fff; } }
+    @media screen and (max-width: 768px) and (max-width: 480px) {
+      .burger-menu--active::before {
+        width: 12px;
+        height: 3px;
+        top: -5px; } }
+  @media screen and (max-width: 768px) {
+      .burger-menu--active::after {
+        content: "";
+        width: 24px;
+        height: 6px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: block;
+        border-radius: 10px/10px;
+        background: #fff;
+        opacity: 0; } }
+    @media screen and (max-width: 768px) and (max-width: 480px) {
+      .burger-menu--active::after {
         width: 12px;
         height: 3px;
         top: 5px; } }

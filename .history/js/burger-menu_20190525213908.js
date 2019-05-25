@@ -10,8 +10,8 @@ burgerMenu.addEventListener('click', function() {
   document.body.classList.toggle('body-overflow');
 });
 
-сompanyListItem.addEventListener('click', function(){
-  event.preventDefault();
+  сompanyListItem.addEventListener('click', function(){
+    event.preventDefault();
   сompanyList.classList.remove('сompany-list-active');
   nav.classList.remove('nav-active');
   document.body.classList.remove('body-overflow');

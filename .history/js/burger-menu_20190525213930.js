@@ -11,8 +11,8 @@ burgerMenu.addEventListener('click', function() {
 });
 
 сompanyListItem.addEventListener('click', function(){
-  event.preventDefault();
-  сompanyList.classList.remove('сompany-list-active');
-  nav.classList.remove('nav-active');
-  document.body.classList.remove('body-overflow');
+    event.preventDefault();
+    сompanyList.classList.remove('сompany-list-active');
+    nav.classList.remove('nav-active');
+    document.body.classList.remove('body-overflow');
 })

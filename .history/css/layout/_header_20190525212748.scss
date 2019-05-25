@@ -63,6 +63,32 @@
   line-height: 2;
   text-align: center;
   z-index: 50;
+  &::before {
+    content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: 2%;
+      left: 80%;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff;
+      transform: rotate(45deg);
+      z-index: 50;
+  }
+  &::after {
+    content: "";
+      width: 24px;
+      height: 6px;
+      position: absolute;
+      top: 2%;
+      left: 80%;
+      display: block;
+      border-radius: 10px/10px;
+      background: #fff;
+      transform: rotate(-45deg);
+      z-index: 50;
+  }
 }
 
 .сompany-list__item {
@@ -155,18 +181,17 @@
 }
 
 .burger-menu--active {
+  position: fixed;
+  top: 2%;
+  left: 80%;
   display: flex;
   @include tablets {
     width: 24px;
     height: 6px;
-    position: fixed;
-    top: 5%;
-    left: 80%;
+    position: relative;
     display: block;
     border-radius: 10px/10px;
     background: #fff;
-    transform: rotate(45deg);
-    z-index: 50;
     @include phones {
       width: 12px;
       height: 3px;
@@ -176,11 +201,10 @@
       width: 24px;
       height: 6px;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: -10px;
+      left: 0;
       display: block;
       border-radius: 10px/10px;
-      transform: translate(-50%, -50%) rotate(90deg);
       background: #fff;
       @include phones {
         width: 12px;
@@ -198,7 +222,6 @@
       display: block;
       border-radius: 10px/10px;
       background: #fff;
-      opacity: 0;
       @include phones {
         width: 12px;
         height: 3px;
