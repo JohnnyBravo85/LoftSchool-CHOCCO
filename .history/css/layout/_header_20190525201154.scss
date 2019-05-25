@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 50;
+  z-index: 40;
   @include tablets {
     padding: 0 3.39%;
   }
@@ -68,7 +68,7 @@
       width: 24px;
       height: 6px;
       position: absolute;
-      top: 2%;
+      top: 10%;
       left: 80%;
       display: block;
       border-radius: 10px/10px;
@@ -81,7 +81,7 @@
       width: 24px;
       height: 6px;
       position: absolute;
-      top: 2%;
+      top: 10%;
       left: 80%;
       display: block;
       border-radius: 10px/10px;
