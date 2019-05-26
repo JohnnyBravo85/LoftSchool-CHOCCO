@@ -167,7 +167,7 @@
     transform: rotate(45deg);
     z-index: 50;
     @include phones {
-      width: 12px;
+      width: 12.5px;
       height: 3px;
     }
     &::before {

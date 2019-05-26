@@ -58,7 +58,7 @@
 
 .сompany-list-active {
   flex-direction: column;
-  font-size: 2.25em;
+  font-size: 36px;
   line-height: 2;
   text-align: center;
 }
@@ -159,7 +159,7 @@
     width: 24px;
     height: 6px;
     position: fixed;
-    top: 6%;
+    top: 7%;
     left: 93.5%;
     display: block;
     border-radius: 10px/10px;
@@ -182,9 +182,9 @@
       transform: translate(-50%, -50%) rotate(90deg);
       background: #fff;
       @include phones {
-        width: 12.5px;
+        width: 12px;
         height: 3px;
-        top: 1.3px;
+        top: -5px;
       }
     }
     &::after {
