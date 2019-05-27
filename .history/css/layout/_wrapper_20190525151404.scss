@@ -1,0 +1,9 @@
+.wrapper {
+  position: relative;
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: #2f3234;
+  }
+}
