@@ -71,33 +71,33 @@
   font-weight: 500;
   align-self: center;
   color: $collightblack;
-  // &:hover .team-list__slider-control {
-  //   width: 0;
-  //   height: 0;
-  //   position: absolute;
-  //   top: 50%;
-  //   right: -11%;
-  //   transform: translateY(-50%);
-  //   border: 6px solid #0f5a47;
-  //   border-top: none;
-  //   border-left-color: transparent;
-  //   border-right-color: transparent;
-  //   @include phones {
-  //     border-width: 3px;
-  //   }
-  // }
-  // &:hover ~ div.team-list__post {
-  //   height: rem(20px);
-  //   display: block;
-  //   opacity: 1;
-  //   transition: 0.4s ease-in;
-  // }
-  // &:hover ~ p.team-list__slider-text {
-  //   height: rem(50px);
-  //   display: block;
-  //   opacity: 1;
-  //   transition: 0.4s ease-in;
-  // }
+  &:hover .team-list__slider-control {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: -11%;
+    transform: translateY(-50%);
+    border: 6px solid #0f5a47;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    @include phones {
+      border-width: 3px;
+    }
+  }
+  &:hover ~ div.team-list__post {
+    height: rem(20px);
+    display: block;
+    opacity: 1;
+    transition: 0.4s ease-in;
+  }
+  &:hover ~ p.team-list__slider-text {
+    height: rem(50px);
+    display: block;
+    opacity: 1;
+    transition: 0.4s ease-in;
+  }
   &::before {
     content: "";
     width: rem(20px);
@@ -166,32 +166,20 @@
   }
 }
 
-.team-list__name--active .team-list__slider-control {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 50%;
-  right: -11%;
-  transform: translateY(-50%);
-  border: 6px solid #0f5a47;
-  border-top: none;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  @include phones {
-    border-width: 3px;
+.team-list__name--active {
+  .team-list__slider-control {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: -11%;
+    transform: translateY(-50%);
+    border: 6px solid #0f5a47;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    @include phones {
+      border-width: 3px;
+    }
   }
-}
-
-.team-list__name--active ~ div.team-list__post {
-  height: rem(20px);
-  display: block;
-  opacity: 1;
-  transition: 0.4s ease-in;
-}
-
-.team-list__name--active ~ p.team-list__slider-text {
-  height: rem(50px);
-  display: block;
-  opacity: 1;
-  transition: 0.4s ease-in;
 }
