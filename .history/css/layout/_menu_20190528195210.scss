@@ -59,29 +59,28 @@
 .accordion-item {
   position: relative;
   display: flex;
-  overflow: hidden;
-  // &:hover .accordion__description {
-  //   width: rem(430px);
-  //   padding: rem(56px) rem(26px);
-  //   animation: accordion__description 1s ease-in-out forwards;
-  //   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  //   @include tablets {
-  //     width: 18rem;
-  //   }
-  // }
-  // &:hover::before {
-  //   content: "";
-  //   width: rem(630px);
-  //   height: 100%;
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   background: #000;
-  //   opacity: .75;
-  //   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  // }
+  &:hover .accordion__description {
+    width: rem(430px);
+    padding: rem(56px) rem(26px);
+    animation: accordion__description .8s ease-in-out;
+    transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+    @include tablets {
+      width: 18rem;
+    }
+  }
+  &:hover::before {
+    content: "";
+    width: rem(630px);
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .75;
+    transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+  }
 }
 
 .accordion__img {
@@ -114,35 +113,9 @@
   opacity: 0;
   color: inherit;
   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
+  overflow: hidden;
   z-index: 10;
 }
-
-.accordion-item--active .accordion__description {
-  width: rem(430px);
-  padding: rem(56px) rem(26px);
-  animation: accordion__description 1s ease-in-out forwards;
-  transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  @include tablets {
-    width: 18rem;
-  }
-}
-
-.accordion-item--active {
-  &::before {
-    content: "";
-    width: rem(630px);
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000;
-    opacity: .75;
-    transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
-  }
-}
-
 
 @keyframes accordion__description {
   90% {

@@ -1,6 +1,7 @@
 const burgerMenu = document.querySelector('.burger-menu'),
       nav = document.querySelector('.nav'),
-      сompanyList = document.querySelector('.сompany-list');
+      сompanyList = document.querySelector('.сompany-list'),
+      сompanyListItem = document.querySelectorAll('.сompany-list__item');
 
 burgerMenu.addEventListener('click', function() {
   burgerMenu.classList.toggle('burger-menu--active');
