@@ -669,13 +669,11 @@ input, textarea {
     .burger-menu--active {
       width: 24px;
       height: 6px;
-      position: fixed;
-      top: 6%;
-      left: 93.5%;
       display: block;
       border-radius: 10px/10px;
       background: #fff;
       transform: rotate(45deg);
+      transition: transform 1s ease-in-out;
       z-index: 50; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .burger-menu--active {
@@ -692,6 +690,7 @@ input, textarea {
         display: block;
         border-radius: 10px/10px;
         transform: translate(-50%, -50%) rotate(90deg);
+        transition: transform 1s ease-in-out;
         background: #fff; } }
     @media screen and (max-width: 768px) and (max-width: 480px) {
       .burger-menu--active::before {

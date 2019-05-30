@@ -178,7 +178,6 @@
       display: block;
       border-radius: 10px/10px;
       transform: translate(-50%, -50%) rotate(90deg);
-      transition: transform 1s ease-in-out;
       background: #fff;
       @include phones {
         width: 12.5px;
