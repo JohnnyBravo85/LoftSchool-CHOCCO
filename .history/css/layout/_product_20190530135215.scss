@@ -1,6 +1,8 @@
 .product {
   position: relative;
   background: $bggrey;
+  top:0;
+  left:0;
   &::before {
     content: "";
     width: rem(196px);
@@ -48,16 +50,10 @@
   transform: rotate(225deg);
 }
 
-.product-slider {
-  overflow: hidden;
-}
-
 .product-list {
-  width: 100%;
-  position: relative;
-  top: 0;
-  right: 0;
   display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .product-list__item {

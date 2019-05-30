@@ -48,16 +48,15 @@
   transform: rotate(225deg);
 }
 
-.product-slider {
-  overflow: hidden;
-}
+
 
 .product-list {
   width: 100%;
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
   display: flex;
+  overflow: hidden;
 }
 
 .product-list__item {

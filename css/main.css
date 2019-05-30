@@ -465,13 +465,13 @@ input, textarea {
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 25%/50%;
-  transition: .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
   color: #fff;
   background: #0f5a47;
   z-index: 40; }
   .button:hover {
     opacity: .7;
-    transition: .3s ease-in-out; }
+    transition: opacity .3s ease-in-out; }
 
 .form__button {
   margin-right: 6.31%; }
@@ -1066,9 +1066,6 @@ input, textarea {
   @media screen and (max-width: 768px) {
     .product__container {
       max-width: 460px; } }
-  @media screen and (max-width: 480px) {
-    .product__container {
-      padding: 0 20%; } }
 
 .slider-control {
   width: 1.25rem;
@@ -1094,13 +1091,22 @@ input, textarea {
   right: 4.5%;
   transform: rotate(225deg); }
 
-.product-list__item {
-  display: none; }
+.product-slider {
+  overflow: hidden; }
 
-.product-list__item--active {
+.product-list {
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
   display: flex; }
+
+.product-list__item {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0; }
   @media screen and (max-width: 768px) {
-    .product-list__item--active {
+    .product-list__item {
       flex-direction: column; } }
 
 .product-list__img {
@@ -1115,24 +1121,6 @@ input, textarea {
 .product-list__img-inner {
   max-width: 392px;
   position: relative; }
-  .product-list__img-inner::before {
-    content: "";
-    width: 28.8125rem;
-    height: 20.375rem;
-    position: absolute;
-    bottom: 0;
-    left: -11%;
-    background: url("../img/product/leaves-product.png") bottom center no-repeat;
-    background-size: cover; }
-    @media screen and (max-width: 768px) {
-      .product-list__img-inner::before {
-        left: -20%; } }
-    @media screen and (max-width: 480px) {
-      .product-list__img-inner::before {
-        left: -6%; } }
-    @media screen and (max-width: 375px) {
-      .product-list__img-inner::before {
-        left: -22%; } }
   @media screen and (max-width: 768px) {
     .product-list__img-inner {
       max-width: 305px; } }
@@ -1286,6 +1274,7 @@ input, textarea {
   font-size: 1.313em;
   font-weight: 500;
   align-self: center;
+  cursor: pointer;
   color: #323232; }
   .team-list__name::before {
     content: "";
@@ -1323,7 +1312,7 @@ input, textarea {
   font-size: 1.125em;
   color: #281e1e;
   opacity: 0;
-  transition: 0.4s ease-in; }
+  transition: opacity 0.4s ease-in; }
   @media screen and (max-width: 768px) {
     .team-list__post {
       min-height: 0; } }
@@ -1341,7 +1330,7 @@ input, textarea {
   font-weight: 300;
   color: #666;
   opacity: 0;
-  transition: 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
   z-index: 10; }
   @media screen and (max-width: 768px) {
     .team-list__slider-text {
@@ -1369,13 +1358,13 @@ input, textarea {
   height: 1.25rem;
   display: block;
   opacity: 1;
-  transition: 0.4s ease-in; }
+  transition: opacity 0.4s ease-in; }
 
 .team-list__name--active ~ p.team-list__slider-text {
   height: 3.125rem;
   display: block;
   opacity: 1;
-  transition: 0.4s ease-in; }
+  transition: opacity 0.4s ease-in; }
 
 .menu {
   position: relative;

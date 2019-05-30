@@ -71,6 +71,7 @@
   font-weight: 500;
   align-self: center;
   cursor: pointer;
+  
   color: $collightblack;
   &::before {
     content: "";
@@ -111,7 +112,7 @@
   font-size: 1.125em;
   color: #281e1e;
   opacity: 0;
-  transition: opacity 0.4s ease-in;
+  transition: 0.4s ease-in;
   @include tablets {
     min-height: 0;
   }
@@ -130,7 +131,7 @@
   font-weight: 300;
   color: $colgrey;
   opacity: 0;
-  transition: opacity 0.4s ease-in;
+  transition: 0.4s ease-in;
   z-index: 10;
   @include tablets {
     min-height: 0;
@@ -160,12 +161,12 @@
   height: rem(20px);
   display: block;
   opacity: 1;
-  transition: opacity 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .team-list__name--active ~ p.team-list__slider-text {
   height: rem(50px);
   display: block;
   opacity: 1;
-  transition: opacity 0.4s ease-in;
+  transition: 0.4s ease-in;
 }

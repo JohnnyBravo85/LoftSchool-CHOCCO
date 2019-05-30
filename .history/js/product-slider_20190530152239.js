@@ -5,18 +5,19 @@ const sliderControlLeft = document.querySelector('.slider-control--left'),
 
 sliderControlLeft.addEventListener('click', function(event) {
   event.preventDefault();
-  let left = parseInt( getComputedStyle(productList).right );
-  if(left < 0) {
-    productList.style.rigth = left - 100 + '%';
+  var leftStyle = parseInt( getComputedStyle(productList).left);
+  if(leftStyle > 0) {
+    productList.style.left = leftStyle + 100 + '%';
+    console.log(productList.style.left);
   }
 });
 
 sliderControlRight.addEventListener('click', function(event) {
   event.preventDefault();
-  let rightClick = parseInt( getComputedStyle(productList).right );
-
-  if (rightClick < 100) {
-    productList.style.right = rightClick + 100 + '%';
+  var rightStyle = parseInt( getComputedStyle(productList).left);
+  console.log(rightStyle);
+  if(rightStyle > -100) {
+    productList.style.left = rightStyle - 100 + '%';
+    console.log(productList.style.left);
   }
-  console.log(rightClick);
 });

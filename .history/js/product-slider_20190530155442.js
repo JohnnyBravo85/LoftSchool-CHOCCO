@@ -6,17 +6,18 @@ const sliderControlLeft = document.querySelector('.slider-control--left'),
 sliderControlLeft.addEventListener('click', function(event) {
   event.preventDefault();
   let left = parseInt( getComputedStyle(productList).right );
+  console.log(leftStyle);
   if(left < 0) {
-    productList.style.rigth = left - 100 + '%';
+    productList.style.rigth = leftStyle - 100 + '%';
   }
 });
 
 sliderControlRight.addEventListener('click', function(event) {
   event.preventDefault();
-  let rightClick = parseInt( getComputedStyle(productList).right );
-
-  if (rightClick < 100) {
-    productList.style.right = rightClick + 100 + '%';
+  let right = parseInt( getComputedStyle(productList).right );
+  console.log(rightStyle);
+  if(right < 100) {
+    productList.style.right = rightStyle + 100 + '%';
   }
-  console.log(rightClick);
+  console.log(rightStyle);
 });

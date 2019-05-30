@@ -19,6 +19,9 @@
   @include tablets {
     max-width: 460px;
   }
+  @include phones {
+    padding: 0 20%;
+  }
 }
 
 .slider-control {
@@ -48,16 +51,10 @@
   transform: rotate(225deg);
 }
 
-.product-slider {
-  overflow: hidden;
-}
-
 .product-list {
-  width: 100%;
-  position: relative;
-  top: 0;
-  right: 0;
   display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .product-list__item {
@@ -79,9 +76,9 @@
   }
 }
 
-.product-list__img-inner {
-  max-width: 392px;
-  position: relative;
+// .product-list__img-inner {
+//   max-width: 392px;
+//   position: relative;
 //   &::before {
 //     content: "";
 //     width: rem(461px);
@@ -101,10 +98,10 @@
 //       left: -22%;
 //     }
 //   }
-  @include tablets {
-    max-width: 305px;
-  }
-}
+//   @include tablets {
+//     max-width: 305px;
+//   }
+// }
 
 .product-list__pic {
   object-fit: cover;

@@ -13,10 +13,5 @@ sliderControlLeft.addEventListener('click', function(event) {
 
 sliderControlRight.addEventListener('click', function(event) {
   event.preventDefault();
-  let rightClick = parseInt( getComputedStyle(productList).right );
-
-  if (rightClick < 100) {
-    productList.style.right = rightClick + 100 + '%';
-  }
-  console.log(rightClick);
+  let rightClick = getComputedStyle(productList).right;
 });
