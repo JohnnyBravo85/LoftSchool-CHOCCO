@@ -15,8 +15,6 @@ sliderControlLeft.addEventListener('click', function(e) {
   if (currentRight > 0) {
     productList.style.right = currentRight - 100 + '%';
   }
-
-  console.log(currentRight);
 });
 
 sliderControlRight.addEventListener('click', function (e) {
@@ -31,6 +29,4 @@ sliderControlRight.addEventListener('click', function (e) {
   if (currentRight < 200) {
     productList.style.right = currentRight + 100 + '%';
   }
-
-  console.log(currentRight);
 });
