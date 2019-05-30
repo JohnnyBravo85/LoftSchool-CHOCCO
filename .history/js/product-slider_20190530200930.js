@@ -15,6 +15,7 @@ sliderControlLeft.addEventListener('click', function(e) {
     currentRight -= step;
     productList.style.right = currentRight + '%';
   }
+  console.log(i);
 });
 
 sliderControlRight.addEventListener('click', function (e) {
@@ -24,4 +25,6 @@ sliderControlRight.addEventListener('click', function (e) {
     currentRight += step; 
     productList.style.right = currentRight + '%';
   }
+  console.log(i);
 });
+

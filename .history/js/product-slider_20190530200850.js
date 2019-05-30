@@ -25,3 +25,5 @@ sliderControlRight.addEventListener('click', function (e) {
     productList.style.right = currentRight + '%';
   }
 });
+
+console.log(i);

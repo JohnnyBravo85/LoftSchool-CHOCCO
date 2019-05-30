@@ -11,17 +11,22 @@ var currentRight = 0,
 sliderControlLeft.addEventListener('click', function(e) {
   e.preventDefault();
 
-  for (i; i > 0; --i) {
+  if ( i > productListItemsLength ) {
     currentRight -= step;
     productList.style.right = currentRight + '%';
+    i++;
   }
+
 });
 
 sliderControlRight.addEventListener('click', function (e) {
   e.preventDefault();
 
-  for (i; i < productListItemsLength - 1; ++i) {
+  if (i < productListItemsLength - 1) {
     currentRight += step; 
     productList.style.right = currentRight + '%';
+    i++;
   }
+  console.log(i);
+  console.log(productListItemsLength);
 });

@@ -1,27 +1,29 @@
 const sliderControlLeft = document.querySelector('.slider-control--left'),
       sliderControlRight = document.querySelector('.slider-control--rigth'),
       productList = document.querySelector('.product-list'),
-      productListItems = document.querySelectorAll('.product-list__item'),
-      productListItemsLength = productListItems.length;
+      productListItems = document.querySelectorAll('product-list__item');
+      console.log(productListItems);
 
 var currentRight = 0,
-    step = 100,
-    i = 0;
+    step = 100;
 
 sliderControlLeft.addEventListener('click', function(e) {
   e.preventDefault();
 
-  for (i; i > 0; --i) {
+  if (currentRight > 0) {
     currentRight -= step;
     productList.style.right = currentRight + '%';
   }
+
+  console.log(currentRight);
 });
 
 sliderControlRight.addEventListener('click', function (e) {
   e.preventDefault();
 
-  for (i; i < productListItemsLength - 1; ++i) {
+  if (currentRight < step) {
     currentRight += step; 
     productList.style.right = currentRight + '%';
   }
+  console.log(currentRight);
 });
