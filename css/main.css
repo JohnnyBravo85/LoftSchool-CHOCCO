@@ -401,7 +401,7 @@ input, textarea {
 .fixed-nav {
   position: fixed;
   top: 30%;
-  right: 3.5%;
+  right: 2.5%;
   z-index: 40; }
   @media screen and (max-width: 768px) {
     .fixed-nav {
@@ -1320,7 +1320,6 @@ input, textarea {
       font-size: 0.9em; } }
 
 .team-list__slider-text {
-  height: 0;
   position: relative;
   overflow: hidden;
   cursor: default;
@@ -1353,13 +1352,11 @@ input, textarea {
       border-width: 3px; } }
 
 .team-list__name--active ~ div.team-list__post {
-  height: 1.25rem;
   display: block;
   opacity: 1;
   transition: opacity 0.4s ease-in; }
 
 .team-list__name--active ~ p.team-list__slider-text {
-  height: 3.125rem;
   display: block;
   opacity: 1;
   transition: opacity 0.4s ease-in; }
