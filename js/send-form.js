@@ -2,6 +2,9 @@ const form = document.querySelector('.form'),
       formButton = document.querySelector('.form__button'),
       formPhone = document.querySelector('.form__phone-input'),
       formDigits = document.querySelectorAll('.form__digit'),
+      modal = document.querySelector('.modal'),
+      modalTitle = document.querySelector('.modal__title'),
+      modalClose = document.querySelector('.modal__close'),
       formDigitsLength = formDigits.length;
 
 formPhone.addEventListener('keydown', function(e) {
@@ -91,10 +94,18 @@ formButton.addEventListener('click', function(e) {
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(data);
-    xhr.addEventListener('submit', function(e) {
-      xhr.response.status;
+    xhr.addEventListener('load', function(e) {
+      modal.style.display = 'flex';
+      modalTitle.textContent = xhr.response.message;
     });
   }
+});
+
+modal.addEventListener('click', function(e) {
+  
+  modalClose.addEventListener('click', function(e) {
+    modal.style.display = 'none';
+  });
 });
 
 
