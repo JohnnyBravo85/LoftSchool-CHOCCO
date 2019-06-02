@@ -1504,7 +1504,8 @@ input, textarea {
   display: none; }
 
 .reviews-block__item--active {
-  display: flex; }
+  display: flex;
+  min-height: 18.125rem; }
   @media screen and (max-width: 768px) {
     .reviews-block__item--active {
       flex-direction: column;
