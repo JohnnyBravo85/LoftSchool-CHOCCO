@@ -95,6 +95,7 @@ formButton.addEventListener('click', function(e) {
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(data);
     xhr.addEventListener('load', function(e) {
+      document.body.classList.add('body-overflow');
       modal.style.display = 'flex';
       modalTitle.textContent = xhr.response.message;
     });
@@ -107,28 +108,3 @@ modal.addEventListener('click', function(e) {
     modal.style.display = 'none';
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// formButton.addEventListener('click', () => {
-//   const xhr = new XMLHttpRequest();
-//   xhr.open('POST')
-// });
-

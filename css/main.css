@@ -1686,6 +1686,8 @@ input, textarea {
   border: 3px solid transparent; }
   .form-input:focus {
     border: 3px solid #dde3bd; }
+  .form-input:invalid {
+    border: 3px solid skyblue; }
 
 .form__name-input, .form__phone-input {
   padding-left: 5%; }
@@ -1713,6 +1715,8 @@ input, textarea {
   resize: none; }
   .form__comments-textarea:focus {
     border: 3px solid #dde3bd; }
+  .form__comments-textarea:invalid {
+    border: 3px solid skyblue; }
 
 .form__radio-block {
   display: flex;

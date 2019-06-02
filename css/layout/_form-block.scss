@@ -114,6 +114,9 @@
   &:focus {
     border: 3px solid #dde3bd;
   }
+  &:invalid {
+    border: 3px solid skyblue;
+  }
 } 
 
 .form__name-input, .form__phone-input {
@@ -146,6 +149,9 @@
   resize: none;
   &:focus {
     border: 3px solid #dde3bd
+  }
+  &:invalid {
+    border: 3px solid skyblue;
   }
 }
 
