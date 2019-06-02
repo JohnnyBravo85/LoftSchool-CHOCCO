@@ -1,14 +1,14 @@
-const carousel = document.querySelector('.carousel'),
-      carouselItems = document.querySelectorAll('.carousel__item'),
-      carouselItemsLenth = carouselItems.length;
+let carouselItems = document.querySelectorAll('.carousel__item'),
+    carouselItemsLength = carouselItems.length,
+    reviewsBlockItems = document.querySelectorAll('.reviews-block__item');
 
-for(let i = 0; i < carouselItemsLenth; ++i) {
+for(let i = 0; i < carouselItemsLength; ++i) {
   carouselItems[i].addEventListener('click', function(e) {
-    if( !(carouselItems[i].classList.contains('carousel__item--active')) ) {
-      for(let i = 0; i < carouselItemsLenth; ++i) {
-        carouselItems[i].classList.remove('carousel__item--active');
-      }
-      carouselItems[i].classList.add('carousel__item--active');
-    }
+    for(let j = 0; j < carouselItemsLength; ++j) {
+      carouselItems[j].classList.remove('carousel__item--active');
+      reviewsBlockItems[j].classList.remove('reviews-block__item--active');
+    };
+    e.currentTarget.classList.add('reviews-block__item--active');
+    reviewsBlockItems[i].classList.add('reviews-block__item--active');
   });
 }
