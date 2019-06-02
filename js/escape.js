@@ -7,6 +7,5 @@ document.addEventListener('keyup', function(e) {
     сompanyList.classList.remove('сompany-list-active');
     document.body.classList.remove('body-overflow');
     modal.style.display = 'none';
-    validation.style.display = 'none';
   }
 });
