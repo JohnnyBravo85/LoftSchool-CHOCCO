@@ -5,6 +5,9 @@ const form = document.querySelector('.form'),
       modal = document.querySelector('.modal'),
       modalTitle = document.querySelector('.modal__title'),
       modalClose = document.querySelector('.modal__close'),
+      validation = document.querySelector('.validation'),
+      validationTitle = document.querySelector('.validation__title'),
+      validationClose = document.querySelector('.validation__close'),
       formDigitsLength = formDigits.length;
 
 formPhone.addEventListener('keydown', function(e) {
@@ -48,7 +51,14 @@ for(let i = 0; i < formDigitsLength; ++i) {
 };
 
 function validateField (field) {
-  return field.checkValidity();
+  if( !field.checkValidity() ) {
+    validation.style.display = 'flex';
+    validationTitle.textContent = 'Пожалуйста, заполните выделенные поля!!!';
+    return false;
+  } else {
+    return true;
+  }
+  
 };
 
 function validateForm (siteForm) {
@@ -102,9 +112,12 @@ formButton.addEventListener('click', function(e) {
   }
 });
 
-modal.addEventListener('click', function(e) {
+
   
-  modalClose.addEventListener('click', function(e) {
-    modal.style.display = 'none';
-  });
+modalClose.addEventListener('click', function(e) {
+  modal.style.display = 'none';
+});
+  
+validationClose.addEventListener('click', function(e) {
+  validation.style.display = 'none';
 });
