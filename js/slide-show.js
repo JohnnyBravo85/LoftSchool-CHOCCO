@@ -8,7 +8,7 @@ for(let i = 0; i < carouselItemsLength; ++i) {
       carouselItems[j].classList.remove('carousel__item--active');
       reviewsBlockItems[j].classList.remove('reviews-block__item--active');
     };
-    e.currentTarget.classList.add('reviews-block__item--active');
+    e.currentTarget.classList.add('carousel__item--active');
     reviewsBlockItems[i].classList.add('reviews-block__item--active');
   });
 }
