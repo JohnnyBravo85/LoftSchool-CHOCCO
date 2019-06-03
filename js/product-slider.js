@@ -11,17 +11,27 @@ var currentRight = 0,
 sliderControlLeft.addEventListener('click', function(e) {
   e.preventDefault();
 
-  for (i; i > 0; --i) {
+  if (i > 0) {
     currentRight -= step;
     productList.style.right = currentRight + '%';
+    --i;
+  } else if (i == 0) {
+    currentRight = (productListItemsLength - 1) * step;
+    productList.style.right = currentRight + '%';
+    i = productListItemsLength - 1;
   }
 });
 
 sliderControlRight.addEventListener('click', function (e) {
   e.preventDefault();
 
-  for (i; i < productListItemsLength - 1; ++i) {
-    currentRight += step; 
+  if (i < productListItemsLength - 1) {
+    currentRight += step;
     productList.style.right = currentRight + '%';
+    ++i;
+  } else if (i == productListItemsLength - 1) {
+    currentRight = 0;
+    productList.style.right = currentRight + '%'
+    i = 0;
   }
 });

@@ -72,12 +72,6 @@ function validateForm (siteForm) {
   if( !validateField(siteForm.elements.home) ) {
     valid = false;
   }
-  if( !validateField(siteForm.elements.flat) ) {
-    valid = false;
-  }
-  if ( !validateField(siteForm.elements.floor) ) {
-    valid = false;
-  }
   if ( !validateField(siteForm.elements.comments) ) {
     valid = false;
   }
@@ -104,10 +98,15 @@ formButton.addEventListener('click', function(e) {
       document.body.classList.add('body-overflow');
       modal.style.display = 'flex';
       modalTitle.textContent = xhr.response.message;
+
+      if (xhr.response.status == 1) {
+        form.reset();
+      }
     });
   }
 });
 
 modalClose.addEventListener('click', function(e) {
   modal.style.display = 'none';
+  document.body.classList.remove('body-overflow');
 });
