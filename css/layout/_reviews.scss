@@ -99,6 +99,7 @@
 
 .reviews-block__item--active {
   display: flex;
+  min-height: rem(290px);
   @include tablets {
     flex-direction: column;
     align-items: center;

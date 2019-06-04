@@ -5,13 +5,13 @@
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 25%/50%;
-  transition: .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
   color: $butwhite;
   background: $butgreen;
   z-index: 40;
   &:hover {
     opacity: .7;
-    transition: .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
   }
 }
 

@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CHOCCO</title>
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Pacifico&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -307,7 +308,7 @@
         <ul class="reviews-block">
           <li class="reviews-block__item reviews-block__item--active">
             <div class="reviews-block__img">
-              <img src="./img/reviews/review-s1.jpg" alt="" class="reviews-block__pic">
+              <img src="./img/reviews/review-img.jpg" alt="" class="reviews-block__pic">
             </div>
             <div class="reviews-block__review">
               <h4 class="reviews-block__title">Лучший перекус</h4>
@@ -323,7 +324,7 @@
           </li>
           <li class="reviews-block__item">
             <div class="reviews-block__img">
-              <img src="./img/reviews/review-s2.jpg" alt="" class="reviews-block__pic">
+              <img src="./img/reviews/review-img.jpg" alt="" class="reviews-block__pic">
             </div>
             <div class="reviews-block__review">
               <h4 class="reviews-block__title">Лучшие батончики премиум уровня</h4>
@@ -335,12 +336,16 @@
           </li>
           <li class="reviews-block__item">
             <div class="reviews-block__img">
-              <img src="./img/reviews/review-s3.jpg" alt="" class="reviews-block__pic">
+              <img src="./img/reviews/review-img.jpg" alt="" class="reviews-block__pic">
             </div>
             <div class="reviews-block__review">
               <h4 class="reviews-block__title">Идеально подходят для спортсменов</h4>
-              <p class="reviews-block__text">
-                После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт. 
+              <p class="reviews-block__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В
+                течение дня сижу за компьютером
+                и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой.
+                Это
+                приятно
+                и удобно.
               </p>
               <span class="reviews-block__user">Вадим Грачев</span>
             </div>
@@ -368,42 +373,42 @@
               <div class="form__row">
                 <label class="form__name form-label">
                   <h5 class="form__name-title form-titles">Имя</h5>
-                  <input type="text" class="form__name-input form-input" placeholder="Harry" name="name" required>
+                  <input type="text" class="form__name-input form-input" name="name">
                 </label>
                 <label class="form__phone form-label">
                   <h5 class="form__phone-title form-titles">Телефон</h5>
-                  <input type="tel" class="form__phone-input form-input" placeholder="+7(999)777-77-77" name="phone" required>
+                  <input type="text" class="form__phone-input form-input" name="phone">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__street form-label">
                   <h5 class="form__street-title form-titles">Улица</h5>
-                  <input type="text" class="form__street-input form-input" placeholder="Privet Drive" name="street" required>
+                  <input type="text" class="form__street-input form-input" name="street">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__home form-label">
                   <h5 class="form__home-title form-titles">Дом</h5>
-                  <input type="text" class="form__home-input form__digit form-input" placeholder="4" name="home" required>
+                  <input type="text" class="form__home-input form-input" name="home">
                 </label>
                 <label class="form__build form-label">
                   <h5 class="form__build-title form-titles">Корпус</h5>
-                  <input type="text" class="form__build-input form-input" placeholder="" name="build">
+                  <input type="text" class="form__build-input form-input" name="build">
                 </label>
                 <label class="form__flat form-label">
                   <h5 class="form__flat-title form-titles">Квартира</h5>
-                  <input type="text" class="form__flat-input form__digit form-input" placeholder="" name="flat">
+                  <input type="text" class="form__flat-input form-input" name="flat">
                 </label>
                 <label class="form__floor form-label">
                   <h5 class="form__floor-title form-titles">Этаж</h5>
-                  <input type="text" class="form__floor-input form__digit form-input" placeholder="" name="floor">
+                  <input type="text" class="form__floor-input form-input" name="floor">
                 </label>
               </div>
             </div>
             <div class="form__pay-block">
               <label for="" class="form__comments">
                 <h5 class="form__comments-title form-titles">Комментарий</h5>
-                <textarea id="" class="form__comments-textarea" placeholder="Deliver to platform 9 3/4" name="comments" required></textarea>
+                <textarea name="" id="" class="form__comments-textarea" name="comments"></textarea>
               </label>
               <div class="form__radio-block">
                 <label for="change" class="form__change">
@@ -487,18 +492,11 @@
       <li class="fixed-nav__item"><a href="#footer" class="fixed-nav__link"></a></li>
     </ul>
   </nav>
-  <div class="modal">
-    <h2 class="modal__title"></h2>
-    <div class ="modal__close"></div>
-  </div>
 
   <script src="./js/burger-menu.js"></script>
   <script src="./js/accordion-menu-horizontal.js"></script>
   <script src="./js/accordion-menu-vertical.js"></script>
   <script src="./js/product-slider.js"></script>
-  <script src="./js/slide-show.js"></script>
-  <script src="./js/send-form.js"></script>
-  <script src="js/escape.js"></script>
 </body>
 
 </html>

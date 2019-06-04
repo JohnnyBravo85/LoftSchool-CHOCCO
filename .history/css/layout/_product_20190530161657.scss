@@ -82,6 +82,25 @@
 .product-list__img-inner {
   max-width: 392px;
   position: relative;
+//   &::before {
+//     content: "";
+//     width: rem(461px);
+//     height: rem(326px);
+//     position: absolute;
+//     bottom: 0;
+//     left: -11%;
+//     background: url("../img/product/leaves-product.png") bottom center no-repeat;
+//     background-size: cover;
+//     @include tablets {
+//       left: -20%;
+//     }
+//     @include phones {
+//       left: -6%;
+//     }
+//     @include decor {
+//       left: -22%;
+//     }
+//   }
   @include tablets {
     max-width: 305px;
   }
