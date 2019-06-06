@@ -15,7 +15,7 @@
 
   <div class="wrapper">
     <div class="one-page-scroll">
-      <section id="welcome" class="welcome section">
+      <section id="welcome" class="welcome section" data-scroll="0">
         <div class="welcome__container container">
           <header class="header">
             <div class="logo">
@@ -24,25 +24,25 @@
             <nav class="nav">
               <ul class="сompany-list">
                 <li class="сompany-list__item">
-                  <a href="#promotion" class="сompany-list__link">О нас</a>
+                  <a class="сompany-list__link" data-scroll="1">О нас</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#product" class="сompany-list__link">Батончики</a>
+                  <a class="сompany-list__link" data-scroll="2">Батончики</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#team" class="сompany-list__link">Команда</a>
+                  <a class="сompany-list__link" data-scroll="3">Команда</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#menu" class="сompany-list__link">Меню</a>
+                  <a class="сompany-list__link" data-scroll="4">Меню</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#reviews" class="сompany-list__link">Отзывы</a>
+                  <a class="сompany-list__link" data-scroll="5">Отзывы</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#map" class="сompany-list__link">Как мы работаем</a>
+                  <a class="сompany-list__link" data-scroll="6">Как мы работаем</a>
                 </li>
                 <li class="сompany-list__item">
-                  <a href="#footer" class="сompany-list__link">Контакты</a>
+                  <a class="сompany-list__link" data-scroll="7">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -98,7 +98,7 @@
           </ul>
         </div>
       </section>
-      <section id="promotion" class="promotion section">
+      <section id="promotion" class="promotion section" data-scroll="1">
         <div class="promotion__container container">
           <div class="promotion__promo">
             <h2 class="promotion__titles titles">почему chocco?</h2>
@@ -146,7 +146,7 @@
           </ul>
         </div>
       </section>
-      <section id="product" class="product section">
+      <section id="product" class="product section" data-scroll="2">
         <div class="container product__container">
           <a href="" class="slider-control slider-control--left"></a>
           <div class="product-slider">
@@ -221,7 +221,7 @@
           <a href="" class="slider-control slider-control--rigth"></a>
         </div>
       </section>
-      <section id="team" class="team section">
+      <section id="team" class="team section" data-scroll="3">
         <div class="team__container container">
           <h2 class="team__titles titles">Команда</h2>
           <ul class="team-list">
@@ -276,7 +276,7 @@
           </ul>
         </div>
       </section>
-      <section id="menu" class="menu section">
+      <section id="menu" class="menu section" data-scroll="4">
         <h2 class="menu__title titles">МЕНЮ</h2>
         <ul class="accordion">
           <li class="accordion-item abc">
@@ -302,7 +302,7 @@
           </li>
         </ul>
       </section>
-      <section id="reviews" class="reviews section">
+      <section id="reviews" class="reviews section" data-scroll="5">
         <div class="reviews__container container">
           <h2 class="reviews__titles titles">Отзывы</h2>
           <ul class="reviews-block">
@@ -360,7 +360,7 @@
           </ul>
         </div>
       </section>
-      <section id="form-block" class="form-block section">
+      <section id="form-block" class="form-block section" data-scroll="6">
         <div class="form__container container">
           <h2 class="form__titles titles">Закажите доставку</h2>
           <form action="" method="POST" class="form">
@@ -434,7 +434,7 @@
           </form>
         </div>
       </section>
-      <section id="map" class="map section">
+      <section id="map" class="map section" data-scroll="7">
           <img src="./img/map/map.jpg" alt="" class="map__pic">
           <footer id="footer">
             <div class="footer__container container">
@@ -478,15 +478,14 @@
   </div>
   <nav class="fixed-nav">
     <ul class="fixed-nav__block">
-      <li class="fixed-nav__item"><a href="#welcome" class="fixed-nav__link fixed-nav__link--active"></a></li>
-      <li class="fixed-nav__item"><a href="#promotion" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#product" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#team" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#menu" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#reviews" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#form-block" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#map" class="fixed-nav__link"></a></li>
-      <li class="fixed-nav__item"><a href="#footer" class="fixed-nav__link"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="0"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="1"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="2"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="3"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="4"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="5"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="6"></a></li>
+      <li class="fixed-nav__item"><a class="fixed-nav__link" data-scroll="7"></a></li>
     </ul>
   </nav>
   <div class="modal">
@@ -502,7 +501,7 @@
   <script src="./js/send-form.js"></script>
   <script src="js/escape.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/one-page-scroll.js"></script>
+  <!-- <script src="./js/one-page-scroll.js"></script> -->
 </body>
 
 </html>

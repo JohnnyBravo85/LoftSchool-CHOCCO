@@ -35,7 +35,7 @@
     transform: translate(-50%, -50%);
     display: block;
     border-radius: 50%;
-    border: 3px solid $menuwhite;
+    border: 3px solid $menucolor;
   }
 }
 
@@ -50,7 +50,7 @@
   display: block;
   border-radius: 50%;
   transition: 0.4s;
-  border: 2px solid $menuwhite;
+  border: 2px solid $menucolor;
 }
 
 .fixed-nav__item:hover .fixed-nav__link::after {
@@ -63,5 +63,5 @@
   transform: translate(-50%, -50%);
   display: block;
   border-radius: 50%;
-  border: 2px solid $menuwhite;
+  border: 2px solid $menucolor;
 }
