@@ -22,7 +22,7 @@
   }
 }
 
-.fixed-nav__link {
+.fixed-nav__item {
   position: relative;
   display: block;
   &::before {
@@ -39,7 +39,8 @@
   }
 }
 
-.fixed-nav__link--active.fixed-nav__link::after {
+.fixed-nav__item--active {
+  &::after {
   content: "";
   width: rem(16px);
   height: rem(16px);
@@ -51,17 +52,5 @@
   border-radius: 50%;
   transition: 0.4s;
   border: 2px solid $menucolor;
-}
-
-.fixed-nav__item:hover .fixed-nav__link::after {
-  content: "";
-  width: rem(16px);
-  height: rem(16px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  border-radius: 50%;
-  border: 2px solid $menucolor;
+  }
 }
