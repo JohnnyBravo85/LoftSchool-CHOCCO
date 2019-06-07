@@ -14,9 +14,9 @@
     display: block;
     background: url("../img/form/leaves-form-decor.png");
     background-size: cover;
-  }
-  @include tablets {
-    top: -18%;
+    @include tablets {
+      top: -18%;
+    }
   }
   @include phones {
     min-height: 480px;
