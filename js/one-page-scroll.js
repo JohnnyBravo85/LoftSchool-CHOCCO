@@ -2,7 +2,7 @@ let checkMobile = () => {
 	let isMobile = false;
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Opera Mobile|Kindle|Windows Phone|PSP|AvantGo|Atomic Web Browser|Blazer|Chrome Mobile|Dolphin|Dolfin|Doris|GO Browser|Jasmine|MicroB|Mobile Firefox|Mobile Safari|Mobile Silk|Motorola Internet Browser|NetFront|NineSky|Nokia Web Browser|Obigo|Openwave Mobile Browser|Palm Pre web browser|Polaris|PS Vita browser|Puffin|QQbrowser|SEMC Browser|Skyfire|Tear|TeaShark|UC Browser|uZard Web|wOSBrowser|Yandex.Browser mobile/i.test(navigator.userAgent)) isMobile = true;
 	return isMobile;
-};  
+};
 
 let OnePageScroll = options => {
 	let currentSection = 0;
@@ -13,39 +13,39 @@ let OnePageScroll = options => {
 
 	let swipeDetected = element => {
 		let startX,
-				startY,
-				distX,
-				distY,
-				deviation = 200, //deviation from main direction
-				threshold = 150, //min range for swipe
-				allowedTime = 1000, //max time for range
-				elapsedTime, //runtime
-				startTime;
-	
+			startY,
+			distX,
+			distY,
+			deviation = 200, //deviation from main direction
+			threshold = 150, //min range for swipe
+			allowedTime = 1000, //max time for range
+			elapsedTime, //runtime
+			startTime;
+
 		element.addEventListener('touchstart', e => {
-				let touchobj = e.changedTouches[0];
-				startX = touchobj.pageX;
-				startY = touchobj.pageY;
-				startTime = new Date().getTime(); //time touch with sensor
+			let touchobj = e.changedTouches[0];
+			startX = touchobj.pageX;
+			startY = touchobj.pageY;
+			startTime = new Date().getTime(); //time touch with sensor
 		});
-	
+
 	//disable touchmove
 		element.addEventListener('touchmove', e => e.preventDefault());
-	
+
 		element.addEventListener('touchend', e => {
-				let touchobj = e.changedTouches[0];
-				distX = touchobj.pageX - startX; //get horizontal move
-				distY = touchobj.pageY - startY; //get vertical move
-				elapsedTime = new Date().getTime() - startTime;
-				if (elapsedTime <= allowedTime) {
-						if (Math.abs(distY) >= threshold && Math.abs(distX) <= deviation) { //vertical swipe
-								swipedir = (distY < 0) ? slideToSection(currentSection + 1) : slideToSection(currentSection - 1)
-						}
+			let touchobj = e.changedTouches[0];
+			distX = touchobj.pageX - startX; //get horizontal move
+			distY = touchobj.pageY - startY; //get vertical move
+			elapsedTime = new Date().getTime() - startTime;
+			if (elapsedTime <= allowedTime) {
+				if (Math.abs(distY) >= threshold && Math.abs(distX) <= deviation) { //vertical swipe
+					swipedir = (distY < 0) ? slideToSection(currentSection + 1) : slideToSection(currentSection - 1)
 				}
+			}
 		});
 	};
 
-	let _slideToSection = (indexSection) => {
+	let slideToSection = (indexSection) => {
 		if (!scroll) {
 			if (indexSection >= 0 && indexSection < countSections) {
 				currentSection = indexSection;
@@ -75,10 +75,10 @@ let OnePageScroll = options => {
 	document.addEventListener('keydown', e => {
 		switch (e.keyCode) {
 			case 40: 
-				_slideToSection(currentSection + 1);
+				slideToSection(currentSection + 1);
 				break;
 			case 38: 
-				_slideToSection(currentSection - 1);
+				slideToSection(currentSection - 1);
 				break;
 		}
 	});
@@ -90,7 +90,7 @@ let OnePageScroll = options => {
 			if (!(index >= 0)) {
 				index = parseInt((e.currentTarget).getAttribute(options.attribute));
 			}
-			_slideToSection(index);
+			slideToSection(index);
 		});
 	});
 
@@ -99,12 +99,13 @@ let OnePageScroll = options => {
 		console.log(deltaY);
 		let index = deltaY > 0 ? currentSection + 1 : currentSection - 1;
 
-		_slideToSection(index);
+		slideToSection(index);
 	});
 
+	//handlers for swipe
 	if (checkMobile) {
 		swipeDetected(content);
-}
+	}
 };
   
 OnePageScroll({
