@@ -42,6 +42,9 @@ body {
   right: 0;
   transition: transform .7s;
   will-change: transform;
+  @include phones{
+   min-height: initial;
+ }
 }
 
 .section {

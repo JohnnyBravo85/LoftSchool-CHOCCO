@@ -342,6 +342,9 @@ body {
   right: 0;
   transition: transform .7s;
   will-change: transform; }
+  @media screen and (max-width: 480px) {
+    .one-page-scroll {
+      min-height: initial; } }
 
 .section {
   height: 100vh;
