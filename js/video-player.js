@@ -71,6 +71,9 @@ window.onload = function () {
 
   function setVideoDuration() {
     if (video.pause()) {
+      if(videoPlayButton.classList.contains('video__play--active')) {
+        videoPlayButton.classList.remove('video__play--active');
+      }
       video.play();
     } else {
       video.pause();

@@ -1929,6 +1929,10 @@ input, textarea {
   display: flex;
   flex-direction: column; }
 
+.yandex-map {
+  width: 100%;
+  height: 80%; }
+
 .map__pic {
   object-fit: cover;
   width: 100%;

@@ -306,7 +306,7 @@
         <div class="container">
           <div class="video__player">
             <video id="video" class="video__poster" poster="./img/menu/menu-bg.jpg">
-              <source src="./img/video/How Snickers Bars Are Really Made _ The Follow _ TODAY.mp4" type="video/mp4">
+              <source src="./img/video/snickersbars-made.mp4" type="video/mp4">
             </video>
             <svg class="video__play play">
               <use xlink:href="./img/svg/sprite.svg#play-video"></use>
@@ -462,8 +462,8 @@
           </form>
         </div>
       </section>
-      <section id="map" class="map section" data-scroll="7">
-          <img src="./img/map/map.jpg" alt="" class="map__pic">
+      <section id="map-api" class="map section" data-scroll="7">
+          <div id="map" class="yandex-map"></div>
           <footer id="footer">
             <div class="footer__container container">
               <address class="address">
@@ -528,8 +528,11 @@
   <script src="./js/send-form.js"></script>
   <script src="js/escape.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/video-player.js"></script>
+  <script src="./js/video-player1.js"></script>
   <!-- <script src="./js/one-page-scroll.js"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=890ecb2c-7d4c-46bb-98ff-8037aa07ce4a&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/map.js"></script>
 </body>
 
 </html>
