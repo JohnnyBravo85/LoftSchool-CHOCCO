@@ -1,16 +1,64 @@
-// Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.750565, 37.609083],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 15
-        });
-    }
+ymaps.ready(init);
+
+let markers = [
+  {
+    latitude: 55.749971,
+    longitude: 37.608280,
+    hintContent: 'Click Me!!!',
+    balloonContent: 'Why you click Me?'
+  },
+  {
+    latitude: 55.744771,
+    longitude: 37.580956,
+    hintContent: 'Click Me!!!',
+    balloonContent: 'Why you click Me?'
+  },
+  {
+    latitude: 55.758226,
+    longitude: 37.575001,
+    hintContent: 'Click Me!!!',
+    balloonContent: 'Why you click Me?'
+  },
+  {
+    latitude: 55.757772,
+    longitude: 37.629526,
+    hintContent: 'Click Me!!!',
+    balloonContent: 'Why you click Me?'
+  }
+];
+
+let geoObjects = [];
+
+function init () {
+
+  let map = new ymaps.Map('map', {
+    center: [55.750565, 37.609083],
+    zoom: 14,
+    controls: ['zoomControl', 'searchControl', 'rulerControl'],
+    behaviors: ['drag', 'dblClickZoom', 'multiTouch']
+  });
+
+  for(let i = 0; i < markers.length; ++i)  {
+    geoObjects[i] = new ymaps.Placemark([markers[i].latitude, markers[i].longitude], 
+    {
+      hintContent: markers[i].hintContent,
+      balloonContent: markers[i].balloonContent
+    },
+    {
+      iconLayout: 'default#image', //Тип макета
+      iconImageHref: '../img/map/marker.png', //Путь до картинки, которая меняет метку
+    });
+  };
+  
+  let clusterers = new ymaps.Clusterer({
+    // clusterIcons: [
+    //   {
+    //     href: '../img/map/marker.png'
+    //   }
+    // ],
+    // clusterIconContentLayout: null
+  });
+
+  map.geoObjects.add(clusterers);
+  clusterers.add(geoObjects);
+};
