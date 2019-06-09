@@ -302,6 +302,34 @@
           </li>
         </ul>
       </section>
+      <section class="video section">
+        <div class="container">
+          <div class="video__player">
+            <video id="video" class="video__poster" poster="./img/menu/menu-bg.jpg">
+              <source src="./img/video/How Snickers Bars Are Really Made _ The Follow _ TODAY.mp4" type="video/mp4">
+            </video>
+            <svg class="video__play play">
+              <use xlink:href="./img/svg/sprite.svg#play-video"></use>
+            </svg>
+          </div>
+          <div class="video__toolbar">
+            <div class="video__duration">
+              <svg class="video__toolbar-play play">
+                <use xlink:href="./img/svg/sprite.svg#play-video"></use>
+              </svg>
+              <div id="timer" class="video__timer">
+              </div>
+              <input type="range" id="duration-time" class="video__length">
+            </div>
+            <div class="video__volume">
+              <svg class="video__volume-icon">
+                <use xlink:href="./img/svg/sprite.svg#play-volume"></use>
+              </svg>
+              <input type="range" id="volume-level" class="video__volume-level" min="0" max="10">
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="reviews" class="reviews section" data-scroll="5">
         <div class="reviews__container container">
           <h2 class="reviews__titles titles">Отзывы</h2>
@@ -349,7 +377,7 @@
           </ul>
           <ul class="carousel">
             <li class="carousel__item carousel__item--active">
-              <img src="./img/reviews/carousel-item1-origin.jpg" alt="" class="carousel__img">
+              <img src="./img/reviews/review-s1.jpg" alt="" class="carousel__img">
             </li>
             <li class="carousel__item">
               <img src="./img/reviews/carousel-item2-origin.jpg" alt="" class="carousel__img">
@@ -500,7 +528,8 @@
   <script src="./js/send-form.js"></script>
   <script src="js/escape.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/one-page-scroll.js"></script>
+  <script src="./js/video-player.js"></script>
+  <!-- <script src="./js/one-page-scroll.js"></script> -->
 </body>
 
 </html>

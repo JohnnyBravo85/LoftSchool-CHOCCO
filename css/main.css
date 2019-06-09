@@ -332,11 +332,9 @@ body {
   overflow: hidden; }
 
 .wrapper {
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 .one-page-scroll {
-  height: 100%;
   position: relative;
   bottom: 0;
   right: 0;
@@ -1595,6 +1593,95 @@ input, textarea {
   max-width: 5.78125rem;
   max-height: 5.8rem;
   border-radius: 50%; }
+
+.video__player {
+  position: relative;
+  width: 70.22%; }
+
+.video__poster {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.video__play {
+  width: 15.375rem;
+  height: 22.125rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  fill: #fff; }
+
+.video__play--active {
+  display: none; }
+
+.video__toolbar {
+  width: 70.22%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3e3e3e; }
+
+.video__duration, .video__volume {
+  display: flex;
+  align-items: center; }
+
+.video__duration {
+  display: flex;
+  align-items: center;
+  flex: 1; }
+
+.video__toolbar-play {
+  width: 1.5rem;
+  height: 2.0625rem;
+  cursor: pointer;
+  fill: #626262; }
+
+.video__length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none; }
+  .video__length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; }
+
+.video__volume {
+  display: flex;
+  align-items: center;
+  margin-right: 0.9375rem; }
+
+.video__volume-icon {
+  width: 1.5rem;
+  height: 2.0625rem;
+  fill: #626262; }
+
+.video__volume-level {
+  width: 3.625rem;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1px;
+  background-color: #626262;
+  outline: none; }
+  .video__volume-level::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; }
 
 .form-block {
   position: relative;
