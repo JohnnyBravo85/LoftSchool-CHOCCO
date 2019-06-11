@@ -1,309 +1,4 @@
 @charset "UTF-8";
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0; }
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent; }
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none; }
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em; }
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline; }
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto; }
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block; }
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item; }
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none; }
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none; }
-
 * {
   box-sizing: border-box; }
 
@@ -332,9 +27,11 @@ body {
   overflow: hidden; }
 
 .wrapper {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .one-page-scroll {
+  height: 100%;
   position: relative;
   bottom: 0;
   right: 0;
@@ -345,7 +42,7 @@ body {
       min-height: initial; } }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 650px;
   display: flex; }
   @media screen and (max-width: 480px) {
@@ -407,7 +104,7 @@ input, textarea {
   outline: none; }
 
 .button {
-  padding: 1.375rem 2.1875rem;
+  padding: 22px 35px;
   position: relative;
   font-size: 1.19em;
   font-weight: 800;
@@ -432,22 +129,22 @@ input, textarea {
   position: relative; }
   .welcome::before {
     content: "";
-    width: 32rem;
-    height: 34.25rem;
+    width: 512px;
+    height: 548px;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 10;
     display: block;
-    background: url("../img/welcome/welcome-pattern.png") no-repeat;
+    background: url("../img/png/welcome-pattern.png") no-repeat;
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .welcome::before {
         top: 8%; } }
     @media screen and (max-width: 480px) {
       .welcome::before {
-        width: 20rem;
-        height: 30rem; } }
+        width: 320px;
+        height: 480px; } }
 
 .welcome__container {
   padding-top: 4%;
@@ -461,14 +158,14 @@ input, textarea {
       padding-bottom: 3%; } }
   .welcome__container::before {
     content: "";
-    width: 66rem;
-    height: 22.0625rem;
+    width: 1056px;
+    height: 353px;
     position: absolute;
     right: 3.5%;
     bottom: -8.5%;
     z-index: 30;
     display: block;
-    background: url("../img/welcome/welcome-decor.png") no-repeat;
+    background: url("../img/png/welcome-decor.png") no-repeat;
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .welcome__container::before {
@@ -554,9 +251,9 @@ input, textarea {
     transition: .3s ease-in-out; }
 
 .phone__img {
-  width: 0.75rem;
-  height: 0.6875rem;
-  margin-right: 0.4375rem;
+  width: 12px;
+  height: 11px;
+  margin-right: 7px;
   fill: currentColor; }
 
 @media screen and (max-width: 768px) {
@@ -753,23 +450,23 @@ input, textarea {
       width: auto; } }
 
 .marketing-list__img {
-  margin-right: 0.58125rem; }
+  margin-right: 9.3px; }
 
 .marketing-list__pic {
   fill: transparent;
   stroke: #b0f7ff; }
 
 .marketing-list__leaves-icon {
-  width: 2.75rem;
-  height: 2.5625rem; }
+  width: 44px;
+  height: 41px; }
 
 .marketing-list__car-icon {
-  width: 3.125rem;
-  height: 2.5rem; }
+  width: 50px;
+  height: 40px; }
 
 .marketing-list__meter-icon {
-  width: 2.625rem;
-  height: 2.625rem; }
+  width: 42px;
+  height: 42px; }
 
 .marketing-list__text {
   max-width: 54.66%;
@@ -782,21 +479,21 @@ input, textarea {
   align-items: flex-start; }
   @media screen and (max-width: 768px) {
     .presentation__candy-bars {
-      width: 22.2rem;
-      height: 23.2rem;
+      width: 325px;
+      height: 325px;
       margin-right: 0;
       margin-bottom: 4%;
       order: -10; }
       .presentation__candy-bars::before {
         content: "";
-        width: 23.2rem;
-        height: 15.5rem;
+        width: 325px;
+        height: 217px;
         position: absolute;
         bottom: 0;
         right: 0;
         display: block;
         z-index: 30;
-        background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
+        background: url("../img/png/welcome-tablets-berries.png") no-repeat center center;
         background-size: cover; } }
     @media screen and (max-width: 768px) and (max-width: 480px) {
       .presentation__candy-bars::before {
@@ -806,8 +503,8 @@ input, textarea {
 
   @media screen and (max-width: 480px) {
     .presentation__candy-bars {
-      width: 17rem;
-      height: 17rem; } }
+      width: 170px;
+      height: 170px; } }
 
 .presentation__pic {
   object-fit: contain;
@@ -818,35 +515,35 @@ input, textarea {
 .promotion {
   position: relative;
   color: #0d0d0d;
-  background: url("../img/promotion/promo-pattern.png") left center no-repeat;
+  background: url("../img/png/promo-pattern.png") left center no-repeat;
   z-index: 40; }
   .promotion::before {
     content: "";
-    width: 10.0625rem;
-    height: 18.25rem;
+    width: 161px;
+    height: 292px;
     display: block;
     position: absolute;
     left: 0;
     bottom: -14.5%;
     z-index: 20;
-    background: url("../img/promotion/raspberries-bars.png") center no-repeat;
+    background: url("../img/png/promo-raspberries.png") center no-repeat;
     background-size: cover; }
   @media screen and (max-width: 768px) {
     .promotion {
-      background: url("../img/promotion/promo-pattern.png") left top 30% no-repeat; } }
+      background: url("../img/png/promo-pattern.png") left top 30% no-repeat; } }
   @media screen and (max-width: 480px) {
     .promotion {
       background: #fff; }
       .promotion::after {
         content: "";
-        width: 8rem;
-        height: 23rem;
+        width: 80px;
+        height: 230px;
         display: block;
         position: absolute;
         left: 0;
         bottom: 32%;
         z-index: 20;
-        background: url("../img/promotion/promo-pattern.png") center no-repeat;
+        background: url("../img/png/promo-pattern.png") center no-repeat;
         background-size: cover; } }
 
 @media screen and (max-width: 768px) {
@@ -873,10 +570,10 @@ input, textarea {
   color: #0d0d0d; }
   @media screen and (max-width: 768px) {
     .titles {
-      font-size: 2.5rem; } }
+      font-size: 2.5em; } }
   @media screen and (max-width: 480px) {
     .titles {
-      font-size: 2.2rem; } }
+      font-size: 2.2em; } }
 
 .promotion__titles {
   margin-bottom: 2.45%; }
@@ -918,8 +615,8 @@ input, textarea {
 
 .promo-list__pic {
   margin-bottom: 11.29%;
-  width: 7.8125rem;
-  height: 7.8125rem;
+  width: 125px;
+  height: 125px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -928,14 +625,14 @@ input, textarea {
   background: #f2f5f4; }
   .promo-list__pic::after {
     content: "";
-    width: 4.1875rem;
-    height: 1.3125rem;
+    width: 67px;
+    height: 21px;
     position: absolute;
     right: -100%;
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    background: url("../img/promotion/three-points.png");
+    background: url("../img/png/promo-points.png");
     background-size: cover; }
   @media screen and (max-width: 768px) {
     .promo-list__pic {
@@ -944,8 +641,8 @@ input, textarea {
         content: none; } }
   @media screen and (max-width: 480px) {
     .promo-list__pic {
-      width: 4.5rem;
-      height: 4.5rem;
+      width: 45px;
+      height: 45px;
       margin-bottom: 2%; } }
 
 .promo-list__man-icon {
@@ -999,13 +696,13 @@ input, textarea {
   background: #f8faf9; }
   .product::before {
     content: "";
-    width: 12.25rem;
-    height: 36.125rem;
+    width: 196px;
+    height: 578px;
     position: absolute;
     right: 0;
     bottom: -53%;
     display: block;
-    background: url("../img/product/dec+pat-product.png") center no-repeat;
+    background: url("../png/product/product-blueberry.png") center no-repeat;
     background-size: cover; }
 
 .product__container {
@@ -1015,8 +712,8 @@ input, textarea {
       max-width: 460px; } }
 
 .slider-control {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1171,7 +868,7 @@ input, textarea {
   margin-bottom: 6.81%; }
 
 .team-list {
-  margin-right: -1rem;
+  margin-right: -16px;
   display: flex; }
   @media screen and (max-width: 768px) {
     .team-list {
@@ -1225,8 +922,8 @@ input, textarea {
   color: #323232; }
   .team-list__name::before {
     content: "";
-    width: 1.25rem;
-    height: 0.625rem;
+    width: 20px;
+    height: 10px;
     position: absolute;
     top: 50%;
     right: -11%;
@@ -1253,7 +950,7 @@ input, textarea {
 
 .team-list__post {
   height: 0;
-  min-height: 1.5625rem;
+  min-height: 25px;
   overflow: hidden;
   cursor: default;
   font-size: 1.125em;
@@ -1314,7 +1011,7 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   opacity: .8;
-  background: url("../img/menu/menu-bg.jpg") no-repeat;
+  background: url("../img/jpeg/menu-bg.jpg") no-repeat;
   background-size: cover;
   color: #fff; }
   .menu::before {
@@ -1330,13 +1027,13 @@ input, textarea {
     opacity: .75; }
   .menu::after {
     content: "";
-    width: 6.5rem;
-    height: 7.125rem;
+    width: 104px;
+    height: 114px;
     position: absolute;
     top: -11%;
     left: 4%;
     display: block;
-    background: url("../img/menu/raspberries-decor.png") no-repeat;
+    background: url("../img/png/menu-raspberries.png") no-repeat;
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .menu::after {
@@ -1371,7 +1068,7 @@ input, textarea {
   position: relative; }
 
 .accordion__pic {
-  width: 6.25rem;
+  width: 100px;
   height: 100%;
   object-fit: cover;
   opacity: .4; }
@@ -1397,17 +1094,17 @@ input, textarea {
   z-index: 10; }
 
 .accordion-item--active .accordion__description {
-  width: 26.875rem;
-  padding: 3.5rem 1.625rem;
+  width: 430px;
+  padding: 56px 26px;
   animation: accordion__description 1s ease-in-out forwards;
   transition: width cubic-bezier(0.16, 0.14, 0.8, 1.55) 1s; }
   @media screen and (max-width: 768px) {
     .accordion-item--active .accordion__description {
-      width: 18rem; } }
+      width: 250px; } }
 
 .accordion-item--active::before {
   content: "";
-  width: 39.375rem;
+  width: 630px;
   height: 100%;
   display: block;
   position: absolute;
@@ -1425,31 +1122,120 @@ input, textarea {
     opacity: .75; }
   100% {
     opacity: 1; } }
+.video__player {
+  position: relative;
+  width: 70.22%; }
+
+.video__poster {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.video__play {
+  width: 246px;
+  height: 354px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  fill: #fff; }
+
+.video__play--active {
+  display: none; }
+
+.video__toolbar {
+  width: 70.22%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3e3e3e; }
+
+.video__duration, .video__volume {
+  display: flex;
+  align-items: center; }
+
+.video__duration {
+  display: flex;
+  align-items: center;
+  flex: 1; }
+
+.video__toolbar-play {
+  width: 24px;
+  height: 33px;
+  cursor: pointer;
+  fill: #626262; }
+
+.video__length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #626262;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none; }
+  .video__length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; }
+
+.video__volume {
+  display: flex;
+  align-items: center;
+  margin-right: 15px; }
+
+.video__volume-icon {
+  width: 24px;
+  height: 33px;
+  fill: #626262; }
+
+.video__volume-level {
+  width: 58px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 1px;
+  background-color: #626262;
+  outline: none; }
+  .video__volume-level::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%; }
+
 .reviews {
   position: relative;
   color: #666;
   background: #fff; }
   .reviews::before {
     content: "";
-    width: 9.875rem;
-    height: 23.125rem;
+    width: 158px;
+    height: 370px;
     position: absolute;
     left: 0;
     bottom: -20%;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/dec+pat-reviews.png") center no-repeat;
+    background: url("../img/png/reviews-decor.png") center no-repeat;
     background-size: cover; }
   .reviews::after {
     content: "";
-    width: 10.8125rem;
-    height: 6.1875rem;
+    width: 173px;
+    height: 99px;
     position: absolute;
     top: 1%;
     right: 0;
     z-index: 20;
     display: block;
-    background: url("../img/reviews/raspberries.png") center no-repeat;
+    background: url("../img/png/reviews-raspberries.png") center no-repeat;
     background-size: cover; }
 
 @media screen and (max-width: 768px) {
@@ -1475,12 +1261,12 @@ input, textarea {
   margin-bottom: 5.33%;
   position: relative;
   display: flex;
-  background: url("../img/reviews/review-bg.png") no-repeat right center;
+  background: url("../img/png/review-bg.png") no-repeat right center;
   background-size: cover; }
   .reviews-block::before {
     content: "";
-    width: 5.625rem;
-    height: 5.625rem;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background: #fff;
     position: absolute;
@@ -1500,13 +1286,13 @@ input, textarea {
   @media screen and (max-width: 768px) {
       .reviews-block::after {
         content: "";
-        width: 7.25rem;
-        height: 10rem;
+        width: 116px;
+        height: 160px;
         position: absolute;
         top: 0;
         right: 0;
         display: block;
-        background: url("../img/reviews/pattern.png");
+        background: url("../img/png/reviews-pattern.png");
         background-size: cover; } }
 
 .reviews-block__item {
@@ -1514,7 +1300,7 @@ input, textarea {
 
 .reviews-block__item--active {
   display: flex;
-  min-height: 18.125rem; }
+  min-height: 290px; }
   @media screen and (max-width: 768px) {
     .reviews-block__item--active {
       flex-direction: column;
@@ -1576,8 +1362,8 @@ input, textarea {
   position: relative; }
   .carousel__item--active::before {
     content: "";
-    width: 5.78125rem;
-    height: 5.8rem;
+    width: 92.5px;
+    height: 92.8px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1590,114 +1376,25 @@ input, textarea {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-width: 5.78125rem;
-  max-height: 5.8rem;
+  max-width: 92.5px;
+  max-height: 92.8px;
   border-radius: 50%; }
-
-.video__player {
-  position: relative;
-  width: 70.22%; }
-
-.video__poster {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.video__play {
-  width: 15.375rem;
-  height: 22.125rem;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  fill: #fff; }
-
-.video__play--active {
-  display: none; }
-
-.video__toolbar {
-  width: 70.22%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #3e3e3e; }
-
-.video__duration, .video__volume {
-  display: flex;
-  align-items: center; }
-
-.video__duration {
-  display: flex;
-  align-items: center;
-  flex: 1; }
-
-.video__toolbar-play {
-  width: 1.5rem;
-  height: 2.0625rem;
-  cursor: pointer;
-  fill: #626262; }
-
-.video__length {
-  width: 100%;
-  height: 4px;
-  border-radius: 1px;
-  background-color: #626262;
-  -webkit-appearance: none;
-  appearance: none;
-  outline: none; }
-  .video__length::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    background: #626262;
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%; }
-
-.video__volume {
-  display: flex;
-  align-items: center;
-  margin-right: 0.9375rem; }
-
-.video__volume-icon {
-  width: 1.5rem;
-  height: 2.0625rem;
-  fill: #626262; }
-
-.video__volume-level {
-  width: 3.625rem;
-  height: 4px;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 1px;
-  background-color: #626262;
-  outline: none; }
-  .video__volume-level::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    background: #626262;
-    cursor: pointer;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%; }
 
 .form-block {
   position: relative;
   background: #cfdeda;
   color: #0f5a47;
-  background: url("../img/form/pattern.png"); }
+  background: url("../img/png/form-pattern.png"); }
   .form-block::before {
     content: "";
-    width: 12.3125rem;
-    height: 16.5rem;
+    width: 197px;
+    height: 264px;
     position: absolute;
     top: -20%;
     right: 0;
     z-index: 10;
     display: block;
-    background: url("../img/form/leaves-form-decor.png");
+    background: url("../img/png/form-blackberry.png");
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .form-block::before {
@@ -1710,13 +1407,13 @@ input, textarea {
   position: relative; }
   .form__container::before {
     content: "";
-    width: 67.8125rem;
-    height: 14.9375rem;
+    width: 1085px;
+    height: 239px;
     position: absolute;
     right: 0;
     bottom: 3%;
     display: block;
-    background: url("../img/form/blueberry-form-decor.png") no-repeat;
+    background: url("../img/png/form-blueberry.png") no-repeat;
     background-size: cover; }
     @media screen and (max-width: 768px) {
       .form__container::before {
@@ -1780,7 +1477,7 @@ input, textarea {
 
 .form-input {
   width: 100%;
-  height: 3.6875rem;
+  height: 59px;
   padding-left: 2.4%;
   border: 3px solid transparent; }
   .form-input:focus {
@@ -1809,7 +1506,7 @@ input, textarea {
 
 .form__comments-textarea {
   width: 100%;
-  height: 11.25rem;
+  height: 180px;
   border: 3px solid transparent;
   resize: none; }
   .form__comments-textarea:focus {
@@ -1836,9 +1533,9 @@ input, textarea {
   display: none; }
 
 .form__change-div, .form__card-div {
-  width: 1.625rem;
-  height: 1.625rem;
-  margin-right: 0.5625rem;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -1887,16 +1584,16 @@ input, textarea {
   align-items: center; }
 
 .form__call-div {
-  width: 1.625rem;
-  height: 1.625rem;
-  margin-right: 0.5625rem;
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
   background-color: #fff;
   position: relative; }
 
 .form__call-input:checked + div.form__call-div::before {
   content: "";
-  width: 0.5rem;
-  height: 0.125rem;
+  width: 8px;
+  height: 2px;
   position: absolute;
   bottom: 50%;
   left: 25%;
@@ -1932,12 +1629,6 @@ input, textarea {
 .yandex-map {
   width: 100%;
   height: 80%; }
-
-.map__pic {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  max-width: 100%; }
 
 .footer__container {
   padding: 2.19% 0;
@@ -1975,7 +1666,7 @@ input, textarea {
   fill: #b2b2b2; }
 
 .social-list__item--active {
-  margin-right: 1.25rem; }
+  margin-right: 20px; }
   .social-list__item--active:last-child {
     margin-right: 0; }
   .social-list__item--active:hover .social-list__pic {
@@ -1983,20 +1674,20 @@ input, textarea {
     fill: #000000; }
 
 .social-list__vk-icon {
-  width: 1.4375rem;
-  height: 0.8125rem; }
+  width: 23px;
+  height: 13px; }
 
 .social-list__fb-icon {
-  width: 1.25rem;
-  height: 1.25rem; }
+  width: 20px;
+  height: 20px; }
 
 .social-list__inst-icon {
-  width: 1.25rem;
-  height: 1.25rem; }
+  width: 20px;
+  height: 20px; }
 
 .social-list__twitt-icon {
-  width: 1.25rem;
-  height: 1rem; }
+  width: 20px;
+  height: 16px; }
 
 .fixed-nav {
   position: fixed;
@@ -2013,7 +1704,7 @@ input, textarea {
   align-items: center; }
 
 .fixed-nav__item {
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
   display: flex; }
   .fixed-nav__item:last-child {
     margin-bottom: 0; }
@@ -2035,8 +1726,8 @@ input, textarea {
 
 .fixed-nav__item--active::after {
   content: "";
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 50%;
   left: 50%;

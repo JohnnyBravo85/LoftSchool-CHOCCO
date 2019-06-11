@@ -22,8 +22,8 @@
     background: #fff;
     &::after {
       content: "";
-      width: 8rem;
-      height: 23rem;
+      width: 80px;
+      height: 230px;
       display: block;
       position: absolute;
       left: 0;
@@ -61,10 +61,10 @@
   font-weight: 700;
   color: $colblack;
   @include tablets {
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
   @include phones {
-    font-size: 2.2rem;
+    font-size: 2.2em;
   }
 }
 
@@ -139,8 +139,8 @@
     }
   }
   @include phones {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 45px;
+    height: 45px;
     margin-bottom: 2%;
   }
 }

@@ -7,8 +7,8 @@ const {src, dest, task, series, watch, parallel} = require('gulp'),
       reload = browserSync.reload, //Перезагрузка сервера
       // sassGlob = require('gulp-sass-glob'), //Автодобавление файло scss в @import
       autoprefixer = require('gulp-autoprefixer'), //Автопрефикс
-      px2rem = require('gulp-smile-px2rem'), //Перевод пиксилей в rem
-      gcmq = require('gulp-group-css-media-queries'), //Группировка медизапросов
+      // px2rem = require('gulp-smile-px2rem'), //Перевод пиксилей в rem
+      // gcmq = require('gulp-group-css-media-queries'), //Группировка медизапросов
       sourcemaps = require('gulp-sourcemaps'), //Навигация по css develompment для удобства отладок ошибок
       cleanCSS = require('gulp-clean-css'), //Минификация css файла
       babel = require('gulp-babel'), //Установка поддержки js в старых браузерах
@@ -19,7 +19,7 @@ const {src, dest, task, series, watch, parallel} = require('gulp'),
 
 const env = process.env.NODE_ENV
 
-const {SRC_PATH, DIST_PATH, STYLES_LIBS, JS_LIBS} = require('./gulp.config');
+const {SRC_PATH, DIST_PATH, STYLES_LIBS, JS_LIBS} = require('./gulp.config.js');
 
 sass.compiler = require('node-sass');
 
@@ -41,20 +41,20 @@ task('sass:style', function () {
          .pipe(concat('main.min.scss'))
         //  .pipe(sassGlob())
          .pipe(sass().on('error', sass.logError))
-         .pipe(px2rem())
+        //  .pipe(px2rem())
          .pipe(gulpif(env === 'prod', autoprefixer({
           browsers: ['last 2 versions'],
           cascade: false
           })))
-         .pipe(gulpif(env === 'prod', gcmq()))
+        //  .pipe(gulpif(env === 'prod', gcmq()))
          .pipe(gulpif(env === 'prod', cleanCSS({compatibility: 'ie8'})))
          .pipe(gulpif(env === 'dev', sourcemaps.write()))
-         .pipe(dest(DIST_PATH))
+         .pipe(dest(`${DIST_PATH}/css`))
          .pipe(reload({stream: true}));
 });
 
 task('scripts:js', function () {
-  return src([JS_LIBS, `${SRC_PATH}/js/*js`])
+  return src([...JS_LIBS, `${SRC_PATH}/js/*js`])
          .pipe(gulpif(env === 'dev', sourcemaps.init({largeFile: true})))
          .pipe(concat('main.min.js', {newLine: ';'}))
          .pipe(gulpif(env === 'prod', babel({
@@ -62,7 +62,7 @@ task('scripts:js', function () {
           })))
          .pipe(gulpif(env === 'prod', uglify()))
          .pipe(gulpif(env === 'dev', sourcemaps.write()))
-         .pipe(dest(DIST_PATH))
+         .pipe(dest(`${DIST_PATH}/js`))
          .pipe(reload({stream: true}));
 });
 
@@ -99,6 +99,12 @@ task('copy:jpeg', function () {
          .pipe(reload({stream: true}));
 });
 
+task('copy:video', function () {
+  return src(`${SRC_PATH}/video/*mp4`)
+         .pipe(dest(`${DIST_PATH}/video/`))
+         .pipe(reload({stream: true}));
+});
+
 task('server', function() {
   browserSync.init({
       server: {
@@ -113,12 +119,13 @@ task('watch', function() {
   watch(`${SRC_PATH}/css/**/*.scss`, series('sass:style'));
   watch(`${SRC_PATH}/js/*.js`, series('scripts:js'));
   watch(`${SRC_PATH}/img/svg/*.svg`, series('svg:icons'));
+  watch(`${SRC_PATH}/video/*.mp4`, series('copy:html'));
   watch(`${SRC_PATH}/*.html`, series('copy:html'));
 
 });
 
 //Дефольтный task
-task('default', series('clean', parallel('copy:html', 'sass:style', 'scripts:js', 'svg:icons', 'copy:png', 'copy:jpeg'),
+task('default', series('clean', parallel('copy:html', 'sass:style', 'scripts:js', 'svg:icons', 'copy:png', 'copy:jpeg', 'copy:video'),
                                 parallel('watch', 'server')));
         
-task('build', series('clean', parallel('copy:html', 'sass:style', 'scripts:js', 'svg:icons', 'copy:png', 'copy:jpeg')));
+task('build', series('clean', parallel('copy:html', 'sass:style', 'scripts:js', 'svg:icons', 'copy:png', 'copy:jpeg', 'copy:video')));

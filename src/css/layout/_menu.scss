@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   opacity: .8;
-  background: url("../jpeg/menu/menu-bg.jpg") no-repeat;
+  background: url("../img/jpeg/menu-bg.jpg") no-repeat;
   background-size: cover;
   color: $colwhite;
   &::before {
@@ -103,7 +103,7 @@
   animation: accordion__description 1s ease-in-out forwards;
   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
   @include tablets {
-    width: 18rem;
+    width: 250px;
   }
 }
 

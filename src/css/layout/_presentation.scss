@@ -130,21 +130,21 @@
   display: flex;
   align-items: flex-start;
   @include tablets {
-    width: 22.2rem;
-    height: 23.2rem;
+    width: 325px;
+    height: 325px;
     margin-right: 0;
     margin-bottom: 4%;
     order: -10;
     &::before {
       content: "";
-      width: 23.2rem;
-      height: 15.5rem;
+      width: 325px;
+      height: 217px;
       position: absolute;
       bottom: 0;
       right: 0;
       display: block;
       z-index: 30;
-      background: url("../img/welcome/tablets-leaves.png") no-repeat center center;
+      background: url("../img/png/welcome-tablets-berries.png") no-repeat center center;
       background-size: cover;
       @include phones {
         width: 100%;
@@ -154,8 +154,8 @@
     }
   }
   @include phones {
-    width: 17rem;
-    height: 17rem;
+    width: 170px;
+    height: 170px;
   }
 }
 

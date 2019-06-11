@@ -7,8 +7,8 @@
   position: relative;
   &::before {
     content: "";
-    width: rem(512px);
-    height: rem(548px);
+    width: 512px;
+    height: 548px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -20,8 +20,8 @@
       top: 8%;
     }
     @include phones {
-    width: rem(320px);
-    height: rem(480px);
+    width: 320px;
+    height: 480px;
     }
   }
 }
@@ -38,8 +38,8 @@
   }
   &::before {
     content: "";
-    width: rem(1056px);
-    height: rem(353px);
+    width: 1056px;
+    height: 353px;
     position: absolute;
     right: 3.5%;
     bottom: -8.5%;
