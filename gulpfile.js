@@ -95,7 +95,7 @@ task('copy:png', function () {
 
 task('copy:jpeg', function () {
   return src(`${SRC_PATH}/img/jpeg/*`)
-         .pipe(dest(`${DIST_PATH}/img/jpg`))
+         .pipe(dest(`${DIST_PATH}/img/jpeg`))
          .pipe(reload({stream: true}));
 });
 
