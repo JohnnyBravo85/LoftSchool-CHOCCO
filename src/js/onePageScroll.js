@@ -36,7 +36,40 @@
     step = 100;
 
   let transformFlag = true;
-  wrapper.addEventListener(['wheel','touchmove'], function (e) {
+  window.addEventListener('wheel', function (e) {
+
+    if (e.deltaY > 0) {
+      if (transformFlag && count < sectionsLength - 1) {
+        for(let i = 0; i < fixedNavItemLength; ++i) {
+          fixedNavItem[i].classList.remove('fixed-nav__item--active');
+        }
+        ++count;
+        onePageScroll.style.transform = `translateY(-${count * step}%)`;
+        fixedNavItem[count].classList.add('fixed-nav__item--active');
+        transformFlag = false;
+        setTimeout(function () {
+          transformFlag = true;
+        }, delay);
+      }
+    }
+
+    if (e.deltaY < 0) {
+      if (transformFlag && count > 0) {
+        for(let i = 0; i < fixedNavItemLength; ++i) {
+          fixedNavItem[i].classList.remove('fixed-nav__item--active');
+        }
+        --count;
+        onePageScroll.style.transform = `translateY(-${count * step}%)`;
+        fixedNavItem[count].classList.add('fixed-nav__item--active');
+        transformFlag = false;
+        setTimeout(function () {
+          transformFlag = true;
+        }, delay);
+      }
+    }
+  });
+
+  window.addEventListener('touchmove', function (e) {
 
     if (e.deltaY > 0) {
       if (transformFlag && count < sectionsLength - 1) {
