@@ -40,8 +40,8 @@ body {
   position: relative;
   bottom: 0;
   right: 0;
-  transition: transform;
-  transition-delay: 0.7s;
+  transition-property: transform;
+  transition-duration: 1s;
   will-change: transform;
   @include phones{
    min-height: initial;
