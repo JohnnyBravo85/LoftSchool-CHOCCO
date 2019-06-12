@@ -1,4 +1,4 @@
-;(function () {
+;(function() {
   ymaps.ready(init);
 
   let markers = [{

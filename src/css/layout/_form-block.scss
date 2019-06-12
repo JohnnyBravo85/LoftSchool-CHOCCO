@@ -5,8 +5,8 @@
   background: url("../img/png/form-pattern.png");
   &::before {
     content: "";
-    width: 197px;
-    height: 264px;
+    width: rem(197px);
+    height: rem(264px);
     position: absolute;
     top: -20%;
     right: 0;
@@ -19,7 +19,7 @@
     }
   }
   @include phones {
-    min-height: 480px;
+    min-height: rem(480px);
   }
 }
 
@@ -27,8 +27,8 @@
   position: relative;
   &::before {
     content: "";
-    width: 1085px;
-    height: 239px;
+    width: rem(1085px);
+    height: rem(239px);
     position: absolute;
     right: 0;
     bottom: 3%;
@@ -108,7 +108,7 @@
 
 .form-input {
   width: 100%;
-  height: 59px;
+  height: rem(59px);
   padding-left: 2.4%;
   border: 3px solid transparent;
   &:focus {
@@ -144,7 +144,7 @@
 
 .form__comments-textarea {
   width: 100%;
-  height: 180px;
+  height: rem(180px);
   border: 3px solid transparent;
   resize: none;
   &:focus {

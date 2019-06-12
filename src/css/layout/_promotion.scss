@@ -5,8 +5,8 @@
   z-index: 40;
   &::before {
     content: "";
-    width: 161px;
-    height: 292px;
+    width: rem(161px);
+    height: rem(292px);
     display: block;
     position: absolute;
     left: 0;
@@ -22,8 +22,8 @@
     background: #fff;
     &::after {
       content: "";
-      width: 80px;
-      height: 230px;
+      width: rem(80px);
+      height: rem(230px);
       display: block;
       position: absolute;
       left: 0;
@@ -112,8 +112,8 @@
 
 .promo-list__pic {
   margin-bottom: 11.29%;
-  width: 125px;
-  height: 125px;
+  width: rem(125px);
+  height: rem(125px);
   position: relative;
   display: flex;
   justify-content: center;

@@ -8,7 +8,7 @@ const {src, dest, task, series, watch, parallel} = require('gulp'),
       // sassGlob = require('gulp-sass-glob'), //Автодобавление файло scss в @import
       autoprefixer = require('gulp-autoprefixer'), //Автопрефикс
       // px2rem = require('gulp-smile-px2rem'), //Перевод пиксилей в rem
-      // gcmq = require('gulp-group-css-media-queries'), //Группировка медизапросов
+      gcmq = require('gulp-group-css-media-queries'), //Группировка медизапросов
       sourcemaps = require('gulp-sourcemaps'), //Навигация по css develompment для удобства отладок ошибок
       cleanCSS = require('gulp-clean-css'), //Минификация css файла
       babel = require('gulp-babel'), //Установка поддержки js в старых браузерах
@@ -42,11 +42,11 @@ task('sass:style', function () {
         //  .pipe(sassGlob())
          .pipe(sass().on('error', sass.logError))
         //  .pipe(px2rem())
-         .pipe(gulpif(env === 'prod', autoprefixer({
+         .pipe(autoprefixer({
           browsers: ['last 2 versions'],
           cascade: false
-          })))
-        //  .pipe(gulpif(env === 'prod', gcmq()))
+          }))
+         .pipe(gulpif(env === 'prod', gcmq()))
          .pipe(gulpif(env === 'prod', cleanCSS({compatibility: 'ie8'})))
          .pipe(gulpif(env === 'dev', sourcemaps.write()))
          .pipe(dest(`${DIST_PATH}/css`))

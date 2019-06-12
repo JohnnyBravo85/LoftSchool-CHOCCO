@@ -1,4 +1,4 @@
-;(function () {
+;(function(){
   window.onload = function () {
     let video = document.querySelector('#video');
     video.addEventListener('click', playStop);

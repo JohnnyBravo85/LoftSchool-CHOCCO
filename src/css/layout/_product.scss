@@ -3,8 +3,8 @@
   background: $bggrey;
   &::before {
     content: "";
-    width: 196px;
-    height: 578px;
+    width: rem(196px);
+    height: rem(578px);
     position: absolute;
     right: 0;
     bottom: -53%;
@@ -17,7 +17,8 @@
 .product__container {
   position: relative;
   @include tablets {
-    max-width: 460px;
+    max-width: 100%;
+    padding: 0 10%;
   }
 }
 
@@ -66,6 +67,7 @@
   flex-shrink: 0;
   @include tablets {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -80,10 +82,10 @@
 }
 
 .product-list__img-inner {
-  max-width: 392px;
+  max-width: rem(392px);
   position: relative;
   @include tablets {
-    max-width: 305px;
+    max-width: rem(305px);
   }
 }
 
@@ -100,7 +102,7 @@
   flex-direction: column;
   z-index: 10;
   @include tablets {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }

@@ -130,15 +130,15 @@
   display: flex;
   align-items: flex-start;
   @include tablets {
-    width: 325px;
-    height: 325px;
+    width: rem(325px);
+    height: rem(325px);
     margin-right: 0;
     margin-bottom: 4%;
     order: -10;
     &::before {
       content: "";
-      width: 325px;
-      height: 217px;
+      width: rem(325px);
+      height: rem(217px);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -154,8 +154,8 @@
     }
   }
   @include phones {
-    width: 170px;
-    height: 170px;
+    width: rem(170px);
+    height: rem(170px);
   }
 }
 

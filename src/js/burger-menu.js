@@ -1,4 +1,4 @@
-;(function () {
+;(function(){
   const burgerMenu = document.querySelector('.burger-menu'),
     nav = document.querySelector('.nav'),
     сompanyList = document.querySelector('.сompany-list'),

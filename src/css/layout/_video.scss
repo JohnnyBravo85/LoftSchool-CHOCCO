@@ -12,8 +12,8 @@
 }
 
 .video__play {
-  width: 246px;
-  height: 354px;
+  width: rem(246px);
+  height: rem(354px);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;

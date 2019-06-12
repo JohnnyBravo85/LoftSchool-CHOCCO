@@ -40,7 +40,8 @@ body {
   position: relative;
   bottom: 0;
   right: 0;
-  transition: transform .7s;
+  transition: transform;
+  transition-delay: 0.7s;
   will-change: transform;
   @include phones{
    min-height: initial;
@@ -48,7 +49,7 @@ body {
 }
 
 .section {
-  height: 100%;
+  height: 100vh;
   min-height: 650px;
   display: flex;
   @include phones {

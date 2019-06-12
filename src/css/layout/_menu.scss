@@ -20,8 +20,8 @@
   }
   &::after {
     content: "";
-    width: 104px;
-    height: 114px;
+    width: rem(104px);
+    height: rem(114px);
     position: absolute;
     top: -11%;
     left: 4%;
@@ -69,7 +69,7 @@
 }
 
 .accordion__pic {
-  width: 100px;
+  width: rem(100px);
   height: 100%;
   object-fit: cover;
   opacity: .4;
@@ -98,19 +98,19 @@
 }
 
 .accordion-item--active .accordion__description {
-  width: 430px;
+  width: rem(430px);
   padding: 56px 26px;
   animation: accordion__description 1s ease-in-out forwards;
   transition: width cubic-bezier(.16,.14,.8,1.55) 1s;
   @include tablets {
-    width: 250px;
+    width: rem(250px);
   }
 }
 
 .accordion-item--active {
   &::before {
     content: "";
-    width: 630px;
+    width: rem(630px);
     height: 100%;
     display: block;
     position: absolute;

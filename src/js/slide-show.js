@@ -1,4 +1,4 @@
-;(function () {
+;(function() {
   let carouselItems = document.querySelectorAll('.carousel__item'),
     carouselItemsLength = carouselItems.length,
     reviewsBlockItems = document.querySelectorAll('.reviews-block__item');

@@ -1,4 +1,4 @@
-;(function () {
+;(function(){
   document.addEventListener('keyup', function (e) {
     let keyName = e.keyCode;
 
