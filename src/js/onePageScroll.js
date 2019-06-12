@@ -6,8 +6,7 @@
     сompanyListItem = document.querySelectorAll('.сompany-list__item'),
     сompanyListItemLength = сompanyListItem.length,
     fixedNavItem = document.querySelectorAll('.fixed-nav__item'),
-    fixedNavItemLength = fixedNavItem.length,
-    fixedNavBlock = document.querySelector('fixed-nav__block');
+    fixedNavItemLength = fixedNavItem.length;
 
   for (let i = 0; i < сompanyListItemLength; ++i) {
     сompanyListItem[i].addEventListener('click', function (e) {
@@ -18,7 +17,7 @@
   for(let i = 0; i < fixedNavItemLength; ++i) {
     fixedNavItem[i].addEventListener('click', function (e) {
       for(let j = 0; j < fixedNavItemLength; ++j) {
-        fixedNavItem[i].classList.remove('fixed-nav__item--active');
+        fixedNavItem[j].classList.remove('fixed-nav__item--active');
       }
       onePageScroll.style.transform = `translateY(-${step * i}%)`;
       fixedNavItem[i].classList.add('fixed-nav__item--active');
