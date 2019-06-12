@@ -10,7 +10,11 @@
 
   for (let i = 0; i < сompanyListItemLength; ++i) {
     сompanyListItem[i].addEventListener('click', function (e) {
+      for(let j = 0; j < fixedNavItemLength; ++j) {
+        fixedNavItem[j].classList.remove('fixed-nav__item--active')
+      }
       onePageScroll.style.transform = `translateY(-${step * i}%)`;
+      fixedNavItem[i + 1].classList.add('fixed-nav__item--active');
     });
   }
 
@@ -35,8 +39,12 @@
 
     if (e.deltaY > 0) {
       if (transformFlag && count < sectionsLength - 1) {
+        for(let i = 0; i < fixedNavItemLength; ++i) {
+          fixedNavItem[i].classList.remove('fixed-nav__item--active');
+        }
         ++count;
         onePageScroll.style.transform = `translateY(-${count * step}%)`;
+        fixedNavItem[count].classList.add('fixed-nav__item--active');
         transformFlag = false;
         setTimeout(function () {
           transformFlag = true;
@@ -46,8 +54,12 @@
 
     if (e.deltaY < 0) {
       if (transformFlag && count > 0) {
+        for(let i = 0; i < fixedNavItemLength; ++i) {
+          fixedNavItem[i].classList.remove('fixed-nav__item--active');
+        }
         --count;
         onePageScroll.style.transform = `translateY(-${count * step}%)`;
+        fixedNavItem[count].classList.add('fixed-nav__item--active');
         transformFlag = false;
         setTimeout(function () {
           transformFlag = true;
