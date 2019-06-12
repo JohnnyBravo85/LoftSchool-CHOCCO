@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "jquery": "^3.4.1",
+    "mobile-detect": "^1.4.3",
     "normalize.css": "^8.0.1"
   },
   "scripts": {

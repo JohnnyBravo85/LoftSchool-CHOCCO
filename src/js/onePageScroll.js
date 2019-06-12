@@ -1,6 +1,7 @@
 ;
 (function () {
-  const onePageScroll = document.querySelector('.one-page-scroll'),
+  const wrapper = document.querySelector('.wrapper'),
+    onePageScroll = document.querySelector('.one-page-scroll'),
     sections = document.querySelectorAll('.section'),
     sectionsLength = sections.length,
     сompanyListItem = document.querySelectorAll('.сompany-list__item'),
@@ -35,7 +36,7 @@
     step = 100;
 
   let transformFlag = true;
-  window.addEventListener('wheel', function (e) {
+  wrapper.addEventListener(['wheel','touchmove'], function (e) {
 
     if (e.deltaY > 0) {
       if (transformFlag && count < sectionsLength - 1) {
