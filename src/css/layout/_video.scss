@@ -47,12 +47,26 @@
 .video__toolbar-play {
   width: 24px;
   height: 33px;
+  margin: 0 10px;
+  cursor: pointer;
+  fill: $toolbarbrownlight;
+}
+
+.video__toolbar-pause {
+  width: 24px;
+  height: 33px;
+  margin: 0 10px;
+  display: none;
   cursor: pointer;
   fill: $toolbarbrownlight;
 }
 
 .video__toolbar-play--active {
+  display: none;
+}
 
+.video__toolbar-pause--active {
+  display: block;
 }
 
 .video__length {
