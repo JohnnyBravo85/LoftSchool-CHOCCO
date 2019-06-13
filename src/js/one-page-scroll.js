@@ -79,7 +79,7 @@
 
     lastPosition = e.changedTouches[0].pageY;
 
-    if (currentPosition < lastPosition) {
+    if (currentPosition > lastPosition) {
       if (transformFlag && count < sectionsLength - 1) {
         for(let i = 0; i < fixedNavItemLength; ++i) {
           fixedNavItem[i].classList.remove('fixed-nav__item--active');
@@ -94,7 +94,7 @@
       }
     }
 
-    if (currentPosition > lastPosition) {
+    if (currentPosition < lastPosition) {
       if (transformFlag && count > 0) {
         for(let i = 0; i < fixedNavItemLength; ++i) {
           fixedNavItem[i].classList.remove('fixed-nav__item--active');
