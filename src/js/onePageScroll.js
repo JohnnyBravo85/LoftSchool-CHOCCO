@@ -69,9 +69,17 @@
     }
   });
 
+  let currentPosition;
+  window.addEventListener('touchstart', function(e) {
+    currentPosition = e.targetTouches[0].pageY;
+  });
+
+  let lastPosition;
   window.addEventListener('touchmove', function (e) {
 
-    if (e.deltaY > 0) {
+    lastPosition = e.changedTouches[0].pageY;
+
+    if (currentPosition < lastPosition) {
       if (transformFlag && count < sectionsLength - 1) {
         for(let i = 0; i < fixedNavItemLength; ++i) {
           fixedNavItem[i].classList.remove('fixed-nav__item--active');
@@ -86,7 +94,7 @@
       }
     }
 
-    if (e.deltaY < 0) {
+    if (currentPosition > lastPosition) {
       if (transformFlag && count > 0) {
         for(let i = 0; i < fixedNavItemLength; ++i) {
           fixedNavItem[i].classList.remove('fixed-nav__item--active');
@@ -101,4 +109,5 @@
       }
     }
   });
+
 })()
