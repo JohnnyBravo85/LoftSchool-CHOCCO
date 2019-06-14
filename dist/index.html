@@ -319,15 +319,18 @@
               <svg class="video__toolbar-pause play">
                 <use xlink:href="./img/svg/sprite.svg#pause-cinema-icon"></use>
               </svg>
-              <div id="timer" class="video__timer">
+              <div id="timer" class="video__timer">00:00
               </div>
               <input type="range" id="duration-time" class="video__length">
             </div>
-            <div class="video__volume">
-              <svg class="video__volume-icon">
+            <div class="video__volume-block">
+              <svg class="video__volume">
                 <use xlink:href="./img/svg/sprite.svg#volume-icon"></use>
               </svg>
-              <input type="range" id="volume-level" class="video__volume-level" min="0" max="10">
+              <svg class="video__volume-muted">
+                <use xlink:href="./img/svg/sprite.svg#mute-icon"></use>
+              </svg>
+              <input type="range" id="volume-level" class="video__volume-level">
             </div>
           </div>
         </div>
