@@ -1,0 +1,279 @@
+.form-block {
+  position: relative;
+  background: $bggrey-green;
+  color: $colgreen;
+  background: url("../img/png/form-pattern.png");
+  &::before {
+    content: "";
+    width: rem(197px);
+    height: rem(264px);
+    position: absolute;
+    top: -20%;
+    right: 0;
+    z-index: 10;
+    display: block;
+    background: url("../img/png/form-blackberry.png");
+    background-size: cover;
+    @include tablets {
+      top: -18%;
+    }
+  }
+  @include phones {
+    min-height: rem(480px);
+  }
+}
+
+.form__container {
+  position: relative;
+  &::before {
+    content: "";
+    width: rem(1085px);
+    height: rem(239px);
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    display: block;
+    background: url("../img/png/form-blueberry.png") no-repeat;
+    background-size: cover;
+    @include tablets {
+      content: none;
+    }
+  }
+  @include phones {
+    padding: 0 3%;
+  }
+}
+
+.form__titles {
+  margin-bottom: 5.32%;
+  position: relative;
+  color: $colgreen;
+  z-index: 40;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 40;
+}
+
+.form__client {
+  margin-bottom: 4.26%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  @include tablets {
+    margin-bottom: 7%;
+    flex-direction: column;
+  }
+}
+
+.form__adress-block {
+  width: 48.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  @include tablets {
+    margin-bottom: 3%;
+  }
+}
+
+.form-titles {
+  font-size: 1.125em;
+}
+
+.form-label {
+  width: 100%;
+}
+
+.form__name, .form__phone {
+  width: 47.83%;
+}
+
+.form__home, .form__build, .form__flat, .form__floor {
+  width: 21.74%;
+}
+
+.form-input {
+  width: 100%;
+  height: rem(59px);
+  padding-left: 2.4%;
+  border: 3px solid transparent;
+  &:focus {
+    border: 3px solid #dde3bd;
+  }
+  &:invalid {
+    border: 3px solid skyblue;
+  }
+} 
+
+.form__name-input, .form__phone-input {
+  padding-left: 5%;
+}
+
+.form__home-input, .form__build-input, .form__flat-input, .form__floor-input {
+  padding-left: 11%;
+}
+
+.form__pay-block {
+  width: 48.94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include tablets {
+    width: 100%;
+  }
+}
+
+.form__comments {
+  width: 100%;
+  margin-bottom: 4.35%;
+}
+
+.form__comments-textarea {
+  width: 100%;
+  height: rem(180px);
+  border: 3px solid transparent;
+  resize: none;
+  &:focus {
+    border: 3px solid #dde3bd
+  }
+  &:invalid {
+    border: 3px solid skyblue;
+  }
+}
+
+.form__radio-block {
+  display: flex;
+  margin-bottom: 1.74%;
+  @include tablets {
+    margin-bottom: 3%;
+    justify-content: center;
+  }
+}
+
+.form__change, .form__card {
+  display: flex;
+  align-items: center;
+}
+
+.form__change {
+  margin-right: 12.4%;
+}
+
+.form-radio {
+  display: none;
+}
+
+.form__change-div, .form__card-div {
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.form__change-input:checked + .form__change-div::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  border: 7px solid $colgreen;
+  border-radius: 50%;
+  @include phones {
+    border-width: 4px;
+  }
+}
+
+.form__card-input:checked + .form__card-div::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  border: 7px solid $colgreen;
+  border-radius: 50%;
+  @include phones {
+    border-width: 4px;
+  }
+}
+
+.form__check-block {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+.form-checkbox {
+  display: none;
+}
+
+.form__call {
+  display: flex;
+  align-items: center;
+}
+
+.form__call-div {
+  width: 26px;
+  height: 26px;
+  margin-right: 9px;
+  background-color: #fff;
+  position: relative;
+}
+
+.form__call-input:checked + div.form__call-div::before {
+  content: "";
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  bottom: 50%;
+  left: 25%;
+  transform: rotate(-50deg) skew(-5deg);
+  display: block;
+  border: 3px solid $colgreen;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  z-index: 20;
+}
+
+.form__button-block {
+  width: 48.94%;
+  position: relative;
+  z-index: 20;
+  @include tablets {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__refresh {
+  color: inherit;
+  transition: .3s ease-in-out;
+  &:hover {
+    opacity: .7;
+    transition: .3s ease-in-out;
+  }
+}

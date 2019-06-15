@@ -1,0 +1,122 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  @include laptop {
+    font-size: 14px;
+  }
+  @include tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 10px;
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body-overflow {
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.one-page-scroll {
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  transition-property: transform;
+  transition-duration: 1s;
+  will-change: transform;
+  @include phones{
+   min-height: initial;
+ }
+}
+
+.section {
+  height: 100%;
+  min-height: 650px;
+  display: flex;
+  @include phones {
+    min-height: 100%;
+  }
+}
+
+.container {
+  max-width: 1100px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 7.28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include tablets {
+    max-width: 768px;
+    padding: 0;
+  }
+  @include phones {
+    max-width: 480px;
+  }
+ }
+
+body, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}

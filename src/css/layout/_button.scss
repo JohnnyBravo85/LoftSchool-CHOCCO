@@ -1,0 +1,20 @@
+.button {
+  padding: 22px 35px;
+  position: relative;
+  font-size: 1.19em;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 25%/50%;
+  transition: opacity .3s ease-in-out;
+  color: $butwhite;
+  background: $butgreen;
+  z-index: 40;
+  &:hover {
+    opacity: .7;
+    transition: opacity .3s ease-in-out;
+  }
+}
+
+.form__button {
+  margin-right: 6.31%;
+}

@@ -1,0 +1,196 @@
+.reviews {
+  position: relative;
+  color: $colgrey;
+  background: $bgwhite;
+  &::before {
+    content: "";
+    width: rem(158px);
+    height: rem(370px);
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    z-index: 20;
+    display: block;
+    background: url("../img/png/reviews-decor.png") center no-repeat;
+    background-size: cover;
+  }
+  &::after {
+    content: "";
+    width: rem(173px);
+    height: rem(99px);
+    position: absolute;
+    top: 1%;
+    right: 0;
+    z-index: 20;
+    display: block;
+    background: url("../img/png/reviews-raspberries.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.reviews__container {
+  @include tablets {
+    max-width: 460px;
+  }
+  @include phones {
+    padding: 0 20%;
+  }
+}
+
+.reviews__titles {
+  margin-bottom: 6.28%;
+  position: relative;
+  z-index: 10;
+  @include tablets {
+    margin-bottom: 10%;
+  }
+  @include phones {
+    margin-bottom: 5%;
+  }
+}
+
+.reviews-block {
+  padding: 4.79%;
+  margin-bottom: 5.33%;
+  position: relative;
+  display: flex;
+  background: url("../img/png/review-bg.png") no-repeat right center;
+  background-size: cover;
+  &::before {
+    content: "";
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 50%;
+    background: $bgwhite;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include tablets {
+    margin-bottom: 8%;
+    padding-top: 10%;
+    background: #f8faf9;
+    &::before {
+      top: -10%;
+    }
+  @include phones {
+    &::before {
+      top: -11%;
+    }
+  }
+    &::after {
+      content: "";
+      width: rem(116px);
+      height: rem(160px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      background: url("../img/png/reviews-pattern.png");
+      background-size: cover;
+    }
+  }
+}
+
+.reviews-block__item {
+  display: none;
+}
+
+.reviews-block__item--active {
+  display: flex;
+  min-height: rem(290px);
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews-block__img {
+  margin-right: 2.13%;
+  position: relative;
+  z-index: 10;
+  @include tablets {
+    margin-bottom: 3%;
+    margin-right: 0;
+  }
+}
+
+.reviews-block__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-block__review {
+  width: 46.07%;
+  text-align: left;
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.reviews-block__title {
+  margin-bottom: 6.68%;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: $collightblack;
+}
+
+.reviews-block__text {
+  margin-bottom: 7.39%;
+  font-size: 1.125em;
+}
+
+.reviews-block__user {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 20;
+}
+
+.carousel__item {
+  margin-right: 4.48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.carousel__item--active {
+  position: relative;
+  &::before {
+    content: "";
+    width: rem(92.5px);
+    height: rem(92.8px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 8px solid #0f5a47;
+    border-radius: 50%;
+  }
+  
+}
+
+.carousel__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: rem(92.5px);
+  max-height: rem(92.8px);
+  border-radius: 50%;
+}

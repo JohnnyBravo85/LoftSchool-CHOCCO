@@ -1,0 +1,199 @@
+.promotion {
+  position: relative;
+  color: $colblack;
+  background: url("../img/png/promo-pattern.png") left center no-repeat;
+  z-index: 40;
+  &::before {
+    content: "";
+    width: rem(161px);
+    height: rem(292px);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -14.5%;
+    z-index: 20;
+    background: url("../img/png/promo-raspberries.png") center no-repeat;
+    background-size: cover;
+  }
+  @include tablets {
+    background: url("../img/png/promo-pattern.png") left top 30% no-repeat;
+  }
+  @include phones {
+    background: #fff;
+    &::after {
+      content: "";
+      width: rem(80px);
+      height: rem(230px);
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 32%;
+      z-index: 20;
+      background: url("../img/png/promo-pattern.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.promotion__container {
+  @include tablets {
+    max-width: 460px;
+  }
+  @include phones {
+    padding: 0 20%;
+  }
+}
+
+.promotion__promo {
+  width: 100%;
+  margin-bottom: 6.07%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablets {
+    margin-bottom: 3%;
+  }
+}
+
+.titles {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $colblack;
+  @include tablets {
+    font-size: 2.5em;
+  }
+  @include phones {
+    font-size: 2.2em;
+  }
+}
+
+.promotion__titles {
+  margin-bottom: 2.45%;
+}
+
+.promotion__text {
+  max-width: 43.2%;
+  font-size: 1.125em;
+  text-align: center;
+  color: $colgrey;
+  @include tablets {
+    width: 100%;
+  }
+  @include phones {
+    max-width: 100%;
+  }
+}
+
+.promo-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.promo-list__item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablets {
+      width: 100%;
+    }
+    @include phones {
+      margin-bottom: 4%;
+    }
+}
+
+.promo-list__pic {
+  margin-bottom: 11.29%;
+  width: rem(125px);
+  height: rem(125px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: $bglightestgrey;
+  &::after {
+    content: "";
+    width: 67px;
+    height: 21px;
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    background: url("../img/png/promo-points.png");
+    background-size: cover;
+  }
+  @include tablets {
+    margin-bottom: 3%;
+    &::after {
+      content: none;
+    }
+  }
+  @include phones {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 2%;
+  }
+}
+
+.promo-list__man-icon {
+  width: 52.8%;
+  height: 55.2%;
+}
+
+.promo-list__smile-icon {
+  width: 56%;
+  height: 55.2%;
+}
+
+.promo-list__strength-icon {
+  width: 60%;
+  height: 51.2%;
+}
+
+.promo-list__svg {
+  fill: transparent;
+  stroke: #2a2a29;
+  stroke-width: .75;
+  @include phones {
+    width: 50%;
+    height: 40%;
+  }
+}
+
+.promo-list__item:last-child .promo-list__pic::after {
+  content: none;
+}
+
+.promo-list__item h4 {
+  margin-bottom: 9.68%;
+  font-size: 1.69em;
+  @include tablets {
+    margin-bottom: 3%;
+  }
+  @include phones {
+    margin-bottom: 1%;
+  }
+}
+
+.promo-list__item p {
+  max-width: 88.98%;
+  font-size: 1.125em;
+  text-align: center;
+  color: $colgrey;
+  @include tablets {
+    width: 60.22%;
+  }
+  @include tablets {
+    width: 80%;
+  }
+}
