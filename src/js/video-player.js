@@ -106,7 +106,7 @@
       videoPlayBigButton.classList.remove('video__play--active');
       videoToolbarPlayButton.classList.remove('video__toolbar-play--active');
       videoToolbarPauseButton.classList.remove('video__toolbar-pause--active');
-      this.src = video.src;
+      // this.src = video.src;
     });
   }
 })()
