@@ -32,7 +32,7 @@
     margin-top: 6.07%;
   }
   @include tablets {
-    width: calc(100%/2 - 20px);
+    width: calc(80%/2 - 20px);
     margin-right: 20px;
     &:nth-child(even) {
       margin-top:0;
@@ -40,6 +40,7 @@
     }
   }
   @include phones {
+    width: calc(80%/2 - 10px);
     margin-right: 10px;
   }
 }

@@ -1,6 +1,7 @@
 .video__player {
   position: relative;
   width: 70.22%;
+  background: #3e3e3e;
 }
 
 .video__poster {
@@ -19,6 +20,10 @@
   top: 50%;
   left: 50%;
   fill: #fff;
+  @include phones {
+    width: rem(150px);
+    heigth: rem(150px);
+  }
 }
 
 .video__play--active {
